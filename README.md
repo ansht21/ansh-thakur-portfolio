@@ -1,53 +1,47 @@
 # Ansh Thakur — Data Analyst Portfolio
 
-Personal portfolio website for **Ansh Thakur**, entry-level Data Analyst.
+A professional, recruiter-ready portfolio built with **React, Vite, and Tailwind CSS**.
 
 **Live site:** https://ansh-thakur.netlify.app/
-
-## About
-
-A clean, responsive, single-page portfolio built with plain HTML, CSS, and JavaScript.
-It presents two end-to-end data analytics projects, technical skills, internship
-experience, education, and an analytics workflow — designed for recruiters.
-
-## Projects
-
-| Project | Description |
-| --- | --- |
-| [Supply Chain Performance Analysis](https://gitlab.com/ansht_121/data-analytics/-/tree/main/supply-chain-performance-analysis) | $82.7M revenue / 7,991 orders; delivery performance, warehouse variance, and profit margin analysis using SQL, Python, Excel, and Power BI. |
-| [Uber Trip Demand Analysis](https://gitlab.com/ansht_121/data-analytics/-/tree/main/uber-trip-demand-analysis) | 35,000 trip records; surge-pricing windows, vehicle-tier economics, and airport demand answered with SQL and Power BI. |
-
-Full analytics repository: [gitlab.com/ansht_121/data-analytics](https://gitlab.com/ansht_121/data-analytics)
-
-## Tech Stack
-
-- HTML5, CSS3, Vanilla JavaScript
-- Google Fonts (Inter)
-- No frameworks, no build step — deployable to any static host
 
 ## Sections
 
 - Hero
 - About
 - Skills
-- Projects
 - Experience
 - Education
-- Analytics Workflow
+- Projects (Supply Chain & Ride Demand analytics)
+- Key Insights
+- How I Work (Analytics Workflow)
+- Certifications
+- Resume
+- Project Files
 - Contact
+- Footer
 
-## Getting Started
+## Tech Stack
+
+- React 19 + Vite 8
+- Tailwind CSS v4
+- Framer Motion
+- lucide-react
+
+## Development
 
 ```bash
-# Serve locally
-python -m http.server 8000
-# Open http://localhost:8000
+npm install
+npm run dev       # start dev server
+npm run build     # production build
+npm run lint      # ESLint
 ```
 
-## Contact
+## Project Source
 
-- Email: ansht1194@gmail.com
-- LinkedIn: [ansh-thakur-5407192b4](https://www.linkedin.com/in/ansh-thakur-5407192b4/)
-- GitLab: [ansht_121](https://gitlab.com/ansht_121)
+Analytics project code, SQL scripts, notebooks, and dashboards are hosted on GitLab:
 
-© 2025 Ansh Thakur
+https://gitlab.com/ansht_121/data-analytics
+
+## Resume
+
+`public/Ansh_Thakur_Data_Analyst_Resume.pdf`
