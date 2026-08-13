@@ -71,7 +71,7 @@ if (backToTop) {
 
 // ── Scroll-in animation (fade-up) ──────────────────────────────────
 const animTargets = document.querySelectorAll(
-  '.kpi-card, .about-card, .skill-group, .project-card, ' +
+  '.glance, .hero-badges, .about-card, .skill-group, .project-card, ' +
   '.timeline-item, .edu-card, .workflow-step, .contact-btn'
 );
 
@@ -89,7 +89,3 @@ if ('IntersectionObserver' in window) {
 
   animTargets.forEach(el => observer.observe(el));
 }
-
-// ── Current year in footer ─────────────────────────────────────────
-const yearEl = document.querySelector('.footer-year');
-if (yearEl) yearEl.textContent = new Date().getFullYear();
