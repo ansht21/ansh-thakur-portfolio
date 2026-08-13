@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ansh Thakur | Data Analyst – Python, SQL, Power BI &amp; Excel</title>
+  <meta name="description" content="Ansh Thakur is an entry-level Data Analyst skilled in Python, SQL, Power BI, and Excel. Projects in supply-chain performance analysis and ride-demand analytics.">
+  <meta name="keywords" content="Data Analyst, Business Intelligence, Python, SQL, Power BI, Excel, Ansh Thakur, portfolio">
+  <meta name="author" content="Ansh Thakur">
+  <meta property="og:title" content="Ansh Thakur | Data Analyst Portfolio">
+  <meta property="og:description" content="Entry-level Data Analyst – Python, SQL, Power BI and Excel. End-to-end projects in supply-chain and ride-demand analytics.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ansh-thakur.netlify.app/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-content">
+      <a href="#hero" class="logo" aria-label="Ansh Thakur – back to top">AT</a>
+      <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-links" id="nav-menu" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#workflow">Workflow</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="hero-label">Data Analyst &amp; Business Intelligence</p>
+        <h1>Ansh Thakur</h1>
+        <p class="hero-tools">Python &middot; SQL &middot; Power BI &middot; Excel</p>
+        <p class="hero-desc">
+          I turn raw transactional data into decisions that save money, reveal bottlenecks,
+          and answer the questions a business actually cares about.
+          B.Sc Information Technology graduate with two end-to-end analytics projects
+          covering supply-chain operations ($82.7M revenue, 7,991 orders) and
+          ride-demand pricing (35,000 trips, 8 business questions answered with verified SQL).
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+        <div class="hero-links">
+          <a href="https://gitlab.com/ansht_121" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitLab profile">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 01-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 014.82 2a.43.43 0 01.58 0 .42.42 0 01.11.18l2.44 7.49h8.1l2.44-7.51a.42.42 0 01.58-.17.43.43 0 01.17.17l2.44 7.51L23 13.45a.84.84 0 01-.35.94z"/></svg>
+            GitLab
+          </a>
+          <a href="https://www.linkedin.com/in/ansh-thakur-5407192b4/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn profile">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+      <div class="hero-kpis" aria-label="Key project metrics">
+        <div class="kpi-card">
+          <span class="kpi-value">35,000</span>
+          <span class="kpi-label">Trips Analysed</span>
+          <span class="kpi-context">Uber demand project</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-value">$82.7M</span>
+          <span class="kpi-label">Revenue Reviewed</span>
+          <span class="kpi-context">Supply chain project</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-value">7,991</span>
+          <span class="kpi-label">Orders Analysed</span>
+          <span class="kpi-context">2018–2020 dataset</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am an entry-level Data Analyst with a B.Sc in Information Technology,
+            looking for my first full-time role in data analytics or business intelligence.
+            My work focuses on asking the right business question first, then letting the
+            data answer it honestly — including when the answer is "don't act here."
+          </p>
+          <p>
+            Both of my portfolio projects were designed to reflect real analyst work:
+            cleaning messy raw data, writing layered SQL queries, building dashboards
+            that non-technical stakeholders can actually read, and reporting negative
+            findings alongside the positive ones.
+          </p>
+          <ul class="about-list">
+            <li>Data cleaning, validation, and feature engineering with Python and Pandas</li>
+            <li>SQL analysis using window functions, CTEs, and aggregations</li>
+            <li>KPI design and business-facing dashboards in Power BI and Excel</li>
+            <li>Identifying what the data <em>cannot</em> support, not just what it can</li>
+            <li>Translating findings into concrete, evidence-backed recommendations</li>
+          </ul>
+        </div>
+        <div class="about-cards">
+          <div class="about-card">
+            <span class="about-icon" aria-hidden="true">📊</span>
+            <h3>Data Analysis</h3>
+            <p>Python (Pandas, NumPy), SQL, EDA, statistical analysis, and KPI design</p>
+          </div>
+          <div class="about-card">
+            <span class="about-icon" aria-hidden="true">📈</span>
+            <h3>Visualisation</h3>
+            <p>Power BI, Excel dashboards, Matplotlib, Seaborn — built for stakeholders</p>
+          </div>
+          <div class="about-card">
+            <span class="about-icon" aria-hidden="true">🧠</span>
+            <h3>Business Thinking</h3>
+            <p>Framing questions, interpreting results, and knowing when not to act</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills section section-alt">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3>Core Analytics</h3>
+          <div class="tags">
+            <span class="tag tag-primary">Data Analysis</span>
+            <span class="tag tag-primary">Data Cleaning</span>
+            <span class="tag tag-primary">EDA</span>
+            <span class="tag tag-primary">KPI Reporting</span>
+            <span class="tag tag-primary">Business Intelligence</span>
+            <span class="tag tag-primary">Data Visualisation</span>
+            <span class="tag tag-primary">Statistical Analysis</span>
+            <span class="tag tag-primary">Data Validation</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <div class="tags">
+            <span class="tag tag-primary">Python</span>
+            <span class="tag tag-primary">SQL</span>
+            <span class="tag tag-secondary">Java</span>
+            <span class="tag tag-secondary">HTML</span>
+            <span class="tag tag-secondary">CSS</span>
+            <span class="tag tag-secondary">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Python Libraries</h3>
+          <div class="tags">
+            <span class="tag tag-primary">Pandas</span>
+            <span class="tag tag-primary">NumPy</span>
+            <span class="tag tag-primary">Matplotlib</span>
+            <span class="tag tag-primary">Seaborn</span>
+            <span class="tag tag-secondary">Plotly</span>
+            <span class="tag tag-secondary">Scikit-learn</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>BI &amp; Analytics Tools</h3>
+          <div class="tags">
+            <span class="tag tag-primary">Power BI</span>
+            <span class="tag tag-primary">Microsoft Excel</span>
+            <span class="tag tag-primary">MySQL</span>
+            <span class="tag tag-secondary">Tableau</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Workflow &amp; Dev Tools</h3>
+          <div class="tags">
+            <span class="tag tag-secondary">Jupyter Notebook</span>
+            <span class="tag tag-secondary">VS Code</span>
+            <span class="tag tag-secondary">Google Colab</span>
+            <span class="tag tag-secondary">Git</span>
+            <span class="tag tag-secondary">GitLab</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-sub">End-to-end analytics projects — from raw CSV to business recommendation.</p>
+
+      <!-- Project 1: Supply Chain -->
+      <article class="project-card" aria-label="Supply Chain Performance Analysis project">
+        <div class="project-image">
+          <img src="images/supplychain-dashboard.png"
+               alt="Excel supply chain analytics dashboard showing KPI cards, revenue by channel, and delivery-days chart"
+               loading="lazy" width="600" height="338">
+        </div>
+        <div class="project-body">
+          <div class="project-header">
+            <span class="project-badge">SQL · Python · Excel · Power BI</span>
+            <h3>Supply Chain Performance Analysis</h3>
+          </div>
+          <p class="project-problem">
+            <strong>Business problem:</strong> Half of all orders arrive late and $41M of revenue is exposed.
+            Is that one bad warehouse — or the entire network?
+          </p>
+          <div class="project-findings">
+            <div class="finding-item">
+              <span class="finding-value">50.5%</span>
+              <span class="finding-label">On-time rate (≤5 days target)</span>
+            </div>
+            <div class="finding-item">
+              <span class="finding-value">$41.0M</span>
+              <span class="finding-label">Revenue on late orders</span>
+            </div>
+            <div class="finding-item">
+              <span class="finding-value">0.08%</span>
+              <span class="finding-label">Variance between warehouses</span>
+            </div>
+            <div class="finding-item">
+              <span class="finding-value">37.4%</span>
+              <span class="finding-label">Average profit margin</span>
+            </div>
+          </div>
+          <p class="project-insight">
+            The answer surprised the brief: <strong>no single warehouse is at fault</strong>.
+            Only 0.08% of delivery-time variance sits between sites — the lateness is systemic,
+            not localisable. NMK1003 tops the raw late-order count because it handles 31.4% of
+            all volume, not because it is slow. A per-site improvement project would have fixed nothing.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Window Functions</span>
+            <span class="tech-tag">Excel VBA</span>
+            <span class="tech-tag">openpyxl</span>
+            <span class="tech-tag">Power BI</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/supply-chain-performance-analysis"
+               target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+              View Project on GitLab
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: Uber -->
+      <article class="project-card project-card-reverse" aria-label="Uber Trip Demand Analysis project">
+        <div class="project-image">
+          <img src="images/uber-dashboard.png"
+               alt="Power BI dashboard showing Uber trip demand by hour, vehicle category revenue, and airport trip share"
+               loading="lazy" width="600" height="338">
+        </div>
+        <div class="project-body">
+          <div class="project-header">
+            <span class="project-badge">SQL · Python · Power BI · Excel</span>
+            <h3>Uber Trip Demand Analysis</h3>
+          </div>
+          <p class="project-problem">
+            <strong>Business problem:</strong> When should a ride-hailing operator surge-price,
+            where should premium vehicles be positioned, and which fleet tier to grow?
+            35,000 trip records, 8 business questions answered.
+          </p>
+          <div class="project-findings">
+            <div class="finding-item">
+              <span class="finding-value">31.2%</span>
+              <span class="finding-label">Demand in just 5–7 PM</span>
+            </div>
+            <div class="finding-item">
+              <span class="finding-value">54.8%</span>
+              <span class="finding-label">Revenue from airport trips</span>
+            </div>
+            <div class="finding-item">
+              <span class="finding-value">2.8×</span>
+              <span class="finding-label">Uber Black vs Pool per km</span>
+            </div>
+            <div class="finding-item">
+              <span class="finding-value">3 of 8</span>
+              <span class="finding-label">Findings are "don't act"</span>
+            </div>
+          </div>
+          <p class="project-insight">
+            Three of the eight findings tell the business <strong>not</strong> to act:
+            no weekend fare effect (0.9% gap), no seasonal cycle (11% month variance),
+            and no valid "top zones" strategy (4 of 5 zones needed to reach 80% of revenue).
+            Knowing where not to spend is part of the job.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">CTEs</span>
+            <span class="tech-tag">LAG()</span>
+            <span class="tech-tag">ROW_NUMBER()</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Seaborn</span>
+            <span class="tech-tag">Power BI</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/uber-trip-demand-analysis"
+               target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+              View Project on GitLab
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <div class="projects-cta">
+        <a href="https://gitlab.com/ansht_121/data-analytics" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+          Browse Full Data Analytics Repository on GitLab
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="experience section section-alt">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-body">
+            <div class="timeline-header">
+              <h3>Data Science Intern</h3>
+              <span class="timeline-org">Oasis Infobyte (OIBSIP)</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Spam detection model using TF-IDF and Logistic Regression — 96.32% accuracy on held-out test set</li>
+              <li>Sales prediction model using Linear Regression — R² = 0.91</li>
+              <li>MNIST digit classifier using CNN — 98.83% accuracy</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">TF-IDF</span>
+              <span class="tech-tag">CNN</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-body">
+            <div class="timeline-header">
+              <h3>Data Science Intern</h3>
+              <span class="timeline-org">Unified Mentor</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Completed data science projects covering Python-based data analysis and machine learning</li>
+              <li>Applied exploratory data analysis, feature engineering, and model evaluation techniques</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Data Analysis</span>
+              <span class="tech-tag">Machine Learning</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="education section">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="edu-card">
+        <div class="edu-icon" aria-hidden="true">🎓</div>
+        <div class="edu-body">
+          <h3>B.Sc Information Technology</h3>
+          <p class="edu-meta">Graduated 2025 &middot; CGPA 7.26 / 10</p>
+          <p class="edu-desc">
+            Core coursework in data structures, databases, statistics, web technologies,
+            and software development. Built end-to-end analytics projects applying Python,
+            SQL, and data visualisation to real business datasets.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analytics Workflow -->
+  <section id="workflow" class="workflow section section-alt">
+    <div class="container">
+      <h2 class="section-title">Analytics Workflow</h2>
+      <p class="section-sub">How I approach every data project — from business question to recommendation.</p>
+      <ol class="workflow-steps" aria-label="Analytics workflow steps">
+        <li class="workflow-step">
+          <div class="step-number" aria-hidden="true">1</div>
+          <div class="step-body">
+            <h3>Business Problem</h3>
+            <p>Define the specific question the business needs answered. Avoid starting with the data.</p>
+          </div>
+        </li>
+        <li class="workflow-step">
+          <div class="step-number" aria-hidden="true">2</div>
+          <div class="step-body">
+            <h3>Data Collection &amp; Inspection</h3>
+            <p>Load raw data, audit nulls, check data types, and understand what each field means.</p>
+          </div>
+        </li>
+        <li class="workflow-step">
+          <div class="step-number" aria-hidden="true">3</div>
+          <div class="step-body">
+            <h3>Data Cleaning &amp; Engineering</h3>
+            <p>Remove duplicates, handle missing values, standardise formats, calculate derived metrics.</p>
+          </div>
+        </li>
+        <li class="workflow-step">
+          <div class="step-number" aria-hidden="true">4</div>
+          <div class="step-body">
+            <h3>SQL / Python Analysis</h3>
+            <p>Run aggregations, window functions, CTEs, and Python EDA to surface patterns.</p>
+          </div>
+        </li>
+        <li class="workflow-step">
+          <div class="step-number" aria-hidden="true">5</div>
+          <div class="step-body">
+            <h3>Visualisation &amp; Dashboard</h3>
+            <p>Build Power BI or Excel dashboards that communicate findings to non-technical readers.</p>
+          </div>
+        </li>
+        <li class="workflow-step">
+          <div class="step-number" aria-hidden="true">6</div>
+          <div class="step-body">
+            <h3>KPI Interpretation</h3>
+            <p>Distinguish reliable findings from noise, and report negative results honestly.</p>
+          </div>
+        </li>
+        <li class="workflow-step">
+          <div class="step-number" aria-hidden="true">7</div>
+          <div class="step-body">
+            <h3>Business Recommendation</h3>
+            <p>Deliver clear, evidence-backed actions — including where the data says not to act.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact section">
+    <div class="container contact-inner">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-sub">
+        Open to Data Analyst and Business Intelligence Analyst opportunities.
+        Feel free to reach out by email or connect on LinkedIn.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:ansht1194@gmail.com" class="contact-btn" aria-label="Send email to Ansh Thakur">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          </span>
+          <span class="contact-text">
+            <strong>Email</strong>
+            <small>ansht1194@gmail.com</small>
+          </span>
+        </a>
+        <a href="https://www.linkedin.com/in/ansh-thakur-5407192b4/" target="_blank" rel="noopener noreferrer" class="contact-btn" aria-label="Ansh Thakur on LinkedIn">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </span>
+          <span class="contact-text">
+            <strong>LinkedIn</strong>
+            <small>ansh-thakur-5407192b4</small>
+          </span>
+        </a>
+        <a href="https://gitlab.com/ansht_121" target="_blank" rel="noopener noreferrer" class="contact-btn" aria-label="Ansh Thakur on GitLab">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" aria-hidden="true"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 01-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 014.82 2a.43.43 0 01.58 0 .42.42 0 01.11.18l2.44 7.49h8.1l2.44-7.51a.42.42 0 01.58-.17.43.43 0 01.17.17l2.44 7.51L23 13.45a.84.84 0 01-.35.94z"/></svg>
+          </span>
+          <span class="contact-text">
+            <strong>GitLab</strong>
+            <small>gitlab.com/ansht_121</small>
+          </span>
+        </a>
+        <a href="https://gitlab.com/ansht_121/data-analytics" target="_blank" rel="noopener noreferrer" class="contact-btn" aria-label="Data analytics projects on GitLab">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </span>
+          <span class="contact-text">
+            <strong>Portfolio Projects</strong>
+            <small>data-analytics repo</small>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 Ansh Thakur</p>
+      <p class="footer-tagline">Data Analyst &middot; Python &middot; SQL &middot; Power BI &middot; Excel</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
