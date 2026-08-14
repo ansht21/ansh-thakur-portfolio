@@ -438,6 +438,24 @@ ul { list-style: none; }
 .about-card p { font-size: .9rem; color: var(--muted); }
 
 /* ── Skills ── */
+/* Skills note (supporting web skills) */
+.skills-note {
+  margin: 1.25rem auto 0;
+  max-width: 640px;
+  text-align: center;
+  font-size: .85rem;
+  color: var(--muted);
+}
+
+/* Resume section actions */
+.resume-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -479,8 +497,7 @@ ul { list-style: none; }
 /* ── Projects ── */
 .project-card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns: 1fr;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -490,8 +507,6 @@ ul { list-style: none; }
   transition: box-shadow var(--transition), border-color var(--transition);
 }
 .project-card:hover { box-shadow: var(--shadow-lg); border-color: var(--border-light); }
-.project-card-reverse { direction: rtl; }
-.project-card-reverse > * { direction: ltr; }
 
 .project-image {
   position: relative;
@@ -509,7 +524,7 @@ ul { list-style: none; }
 
 /* Show full dashboards — match each screenshot's real aspect ratio */
 .project-card--supply .project-image { aspect-ratio: 1364 / 656; }
-.project-card--uber   .project-image { aspect-ratio: 1129 / 783; }
+.project-card--uber   .project-image { aspect-ratio: 1129 / 549; }
 
 .project-body { padding: 2rem; display: flex; flex-direction: column; gap: 1.25rem; }
 
@@ -969,8 +984,7 @@ ul { list-style: none; }
   }
   .glance-head { display: none; }
   .glance-row .glance-proj { grid-column: 1 / -1; }
-  .project-card,
-  .project-card-reverse { grid-template-columns: 1fr; direction: ltr; }
+  .project-card { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {

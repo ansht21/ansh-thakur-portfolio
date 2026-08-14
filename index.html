@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=9">
+  <link rel="stylesheet" href="styles.css?v=11">
 </head>
 <body>
 
@@ -29,11 +29,12 @@
       <ul class="nav-links" id="nav-menu" role="list">
         <li><a href="#about">Summary</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#workflow">Workflow</a></li>
+        <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="nav-actions">
@@ -104,9 +105,9 @@
       </div>
 
       <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
         <a href="https://gitlab.com/ansht_121/ansh-thakur-portfolio/-/raw/main/Ansh_Thakur_Data_Analyst_Resume.pdf"
-           target="_blank" rel="noopener noreferrer" class="btn btn-primary">Download Resume</a>
-        <a href="#projects" class="btn btn-outline">View Projects</a>
+           target="_blank" rel="noopener noreferrer" class="btn btn-outline">Download Resume</a>
         <a href="#contact" class="btn btn-secondary">Contact Me</a>
       </div>
       <div class="hero-links">
@@ -139,20 +140,19 @@
             intelligence — turning raw data into clear, actionable business insights.
           </p>
           <p>
-            B.Sc. IT graduate from Gondwana University, seeking a first full-time role in
+            A B.Sc. IT graduate from Gondwana University seeking a first full-time role in
             Data Analytics or Business Intelligence. My work starts with the business
             question, then lets the data answer it honestly — including when the answer
             is &ldquo;don&rsquo;t act here.&rdquo;
           </p>
           <p>
-            Both of my portfolio projects were designed to reflect real analyst work:
-            cleaning messy raw data, writing layered SQL queries, building dashboards
-            that non-technical stakeholders can actually read, and reporting negative
-            findings alongside the positive ones. Three of the eight Uber findings and
-            several supply-chain results tell the business <em>not</em> to act.
+            Both portfolio projects reflect real analyst work: cleaning messy raw data,
+            writing layered SQL queries, building dashboards that non-technical
+            stakeholders can actually read, and reporting negative findings alongside the
+            positive ones — several results tell the business <em>not</em> to act.
           </p>
           <ul class="about-list">
-            <li>Data cleaning, validation, and feature engineering with Python and Pandas</li>
+            <li>Data cleaning, validation, and preprocessing with Python and Pandas</li>
             <li>SQL analysis using window functions, CTEs, and aggregations</li>
             <li>KPI design and business-facing dashboards in Power BI and Excel</li>
             <li>Identifying what the data <em>cannot</em> support, not just what it can</li>
@@ -187,27 +187,26 @@
       <div class="skills-grid">
 
         <div class="skill-group">
-          <h3>Core Analytics</h3>
+          <h3>Core Data Analysis</h3>
           <div class="tags">
-            <span class="tag tag-primary">Data Analysis</span>
             <span class="tag tag-primary">Data Cleaning</span>
-            <span class="tag tag-primary">EDA</span>
-            <span class="tag tag-primary">KPI Reporting</span>
-            <span class="tag tag-primary">Business Intelligence</span>
-            <span class="tag tag-primary">Data Visualisation</span>
-            <span class="tag tag-primary">Statistical Analysis</span>
             <span class="tag tag-primary">Data Validation</span>
+            <span class="tag tag-primary">Data Preprocessing</span>
+            <span class="tag tag-primary">Data Wrangling</span>
+            <span class="tag tag-primary">Exploratory Data Analysis</span>
+            <span class="tag tag-primary">Statistical Analysis</span>
+            <span class="tag tag-primary">KPI Reporting</span>
+            <span class="tag tag-primary">Data Visualisation</span>
+            <span class="tag tag-primary">Business Intelligence</span>
           </div>
         </div>
 
         <div class="skill-group">
-          <h3>Languages</h3>
+          <h3>Programming &amp; Databases</h3>
           <div class="tags">
             <span class="tag tag-primary">Python</span>
             <span class="tag tag-primary">SQL</span>
-            <span class="tag tag-secondary">HTML</span>
-            <span class="tag tag-secondary">CSS</span>
-            <span class="tag tag-secondary">JavaScript</span>
+            <span class="tag tag-primary">MySQL</span>
           </div>
         </div>
 
@@ -218,28 +217,61 @@
             <span class="tag tag-primary">NumPy</span>
             <span class="tag tag-primary">Matplotlib</span>
             <span class="tag tag-primary">Seaborn</span>
-            <span class="tag tag-secondary">Plotly</span>
-            <span class="tag tag-secondary">Scikit-learn</span>
+            <span class="tag tag-primary">Plotly</span>
+            <span class="tag tag-primary">Scikit-learn</span>
           </div>
         </div>
 
         <div class="skill-group">
-          <h3>BI &amp; Analytics Tools</h3>
+          <h3>BI &amp; Visualization</h3>
           <div class="tags">
             <span class="tag tag-primary">Power BI</span>
             <span class="tag tag-primary">Microsoft Excel</span>
-            <span class="tag tag-primary">MySQL</span>
           </div>
         </div>
 
         <div class="skill-group">
-          <h3>Workflow &amp; Dev Tools</h3>
+          <h3>Tools &amp; Workflow</h3>
           <div class="tags">
-            <span class="tag tag-secondary">Jupyter Notebook</span>
-            <span class="tag tag-secondary">VS Code</span>
-            <span class="tag tag-secondary">Google Colab</span>
-            <span class="tag tag-secondary">Git</span>
-            <span class="tag tag-secondary">GitLab</span>
+            <span class="tag tag-primary">Jupyter Notebook</span>
+            <span class="tag tag-primary">Google Colab</span>
+            <span class="tag tag-primary">VS Code</span>
+            <span class="tag tag-primary">Git</span>
+            <span class="tag tag-primary">GitLab</span>
+          </div>
+        </div>
+
+      </div>
+      <p class="skills-note">Also familiar with: HTML, CSS, and JavaScript — the web stack this portfolio is built with.</p>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="experience section section-alt">
+    <div class="container">
+      <h2 class="section-title">Internship Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-body">
+            <div class="timeline-header">
+              <h3>Data Analytics Intern</h3>
+              <span class="timeline-org">Unified Mentor Pvt. Ltd. · Sep 2025 – Dec 2025</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Performed data cleaning, transformation, and validation on large datasets using Python (Pandas) and Excel</li>
+              <li>Applied SQL for data extraction, multi-table joins, subqueries, and window functions</li>
+              <li>Built automated reporting workflows and KPI dashboards for business stakeholders</li>
+              <li>Developed Power BI dashboards with DAX measures for executive reporting</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">Excel</span>
+            </div>
           </div>
         </div>
 
@@ -336,6 +368,7 @@
             <span class="tech-tag">Window Functions</span>
             <span class="tech-tag">Excel VBA</span>
             <span class="tech-tag">openpyxl</span>
+            <span class="tech-tag">ABC Classification</span>
             <span class="tech-tag">Power BI</span>
           </div>
           <div class="project-actions">
@@ -348,11 +381,11 @@
       </article>
 
       <!-- Project 2: Uber -->
-      <article class="project-card project-card-reverse project-card--uber" aria-label="Uber Trip Demand Analysis project">
+      <article class="project-card project-card--uber" aria-label="Uber Trip Demand Analysis project">
         <div class="project-image">
           <img src="images/uber-dashboard.png"
                alt="Power BI dashboard showing Uber trip demand by hour, vehicle category revenue, and airport trip share"
-               loading="lazy" width="600" height="338">
+               loading="lazy" width="600" height="292">
         </div>
         <div class="project-body">
           <div class="project-header">
@@ -422,38 +455,6 @@
     </div>
   </section>
 
-  <!-- Experience -->
-  <section id="experience" class="experience section section-alt">
-    <div class="container">
-      <h2 class="section-title">Internship Experience</h2>
-      <div class="timeline">
-
-        <div class="timeline-item">
-          <div class="timeline-marker" aria-hidden="true"></div>
-          <div class="timeline-body">
-            <div class="timeline-header">
-              <h3>Data Analytics Intern</h3>
-              <span class="timeline-org">Unified Mentor Pvt. Ltd. · Sep 2025 – Dec 2025</span>
-            </div>
-            <ul class="timeline-points">
-              <li>Performed data cleaning, transformation, and validation on large datasets using Python (Pandas) and Excel</li>
-              <li>Applied SQL for data extraction, multi-table joins, subqueries, and window functions</li>
-              <li>Built KPI dashboards and automated reporting workflows for business stakeholders</li>
-            </ul>
-            <div class="timeline-tags">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Pandas</span>
-              <span class="tech-tag">SQL</span>
-              <span class="tech-tag">Power BI</span>
-              <span class="tech-tag">Excel</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
   <!-- Education -->
   <section id="education" class="education section">
     <div class="container">
@@ -461,21 +462,24 @@
       <div class="edu-card">
         <div class="edu-icon" aria-hidden="true">🎓</div>
         <div class="edu-body">
-          <h3>B.Sc Information Technology</h3>
-          <p class="edu-meta">Graduated 2025 &middot; CGPA 7.26 / 10</p>
-          <p class="edu-desc">
-            Core coursework in data structures, databases, statistics, web technologies,
-            and software development. Built end-to-end analytics projects applying Python,
-            SQL, and data visualisation to real business datasets.
-          </p>
+          <h3>Bachelor of Science in Information Technology (B.Sc. IT)</h3>
+          <p class="edu-meta">Sardar Patel Mahavidyalaya, Chandrapur &middot; Gondwana University, Maharashtra</p>
+          <p class="edu-meta">Jul 2022 – May 2025 &middot; CGPA 7.26 / 10</p>
         </div>
       </div>
+    </div>
+  </section>
 
+  <!-- Professional Training -->
+  <section id="training" class="education section section-alt">
+    <div class="container">
+      <h2 class="section-title">Professional Training</h2>
       <div class="edu-card">
         <div class="edu-icon" aria-hidden="true">🧠</div>
         <div class="edu-body">
-          <h3>Professional Training — Data Science &amp; Analytics</h3>
-          <p class="edu-meta">Digital Edify Institute, Hyderabad &middot; Jun 2025 – Nov 2025</p>
+          <h3>Data Science &amp; Analytics</h3>
+          <p class="edu-meta">Digital Edify Institute, Hyderabad, Telangana</p>
+          <p class="edu-meta">Jun 2025 – Nov 2025</p>
         </div>
       </div>
     </div>
@@ -537,15 +541,15 @@
         <li class="workflow-step">
           <div class="step-number" aria-hidden="true">2</div>
           <div class="step-body">
-            <h3>Data Collection &amp; Inspection</h3>
+            <h3>Data Inspection</h3>
             <p>Load raw data, audit nulls, check data types, and understand what each field means.</p>
           </div>
         </li>
         <li class="workflow-step">
           <div class="step-number" aria-hidden="true">3</div>
           <div class="step-body">
-            <h3>Data Cleaning &amp; Engineering</h3>
-            <p>Remove duplicates, handle missing values, standardise formats, calculate derived metrics.</p>
+            <h3>Cleaning &amp; Validation</h3>
+            <p>Remove duplicates, handle missing values, standardise formats, run data quality checks.</p>
           </div>
         </li>
         <li class="workflow-step">
@@ -577,6 +581,20 @@
           </div>
         </li>
       </ol>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume" class="resume section section-alt">
+    <div class="container">
+      <h2 class="section-title">Resume</h2>
+      <p class="section-sub">My one-page ATS-friendly resume — concise, recruiter-focused, and consistent with everything on this page.</p>
+      <div class="resume-actions">
+        <a href="https://gitlab.com/ansht_121/ansh-thakur-portfolio/-/raw/main/Ansh_Thakur_Data_Analyst_Resume.pdf"
+           target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Resume</a>
+        <a href="https://gitlab.com/ansht_121/ansh-thakur-portfolio/-/raw/main/Ansh_Thakur_Data_Analyst_Resume.pdf"
+           target="_blank" rel="noopener noreferrer" class="btn btn-outline">Download Resume</a>
+      </div>
     </div>
   </section>
 
@@ -637,8 +655,8 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
           </span>
           <span class="contact-text">
-            <strong>Portfolio Projects</strong>
-            <small>data-analytics repo</small>
+            <strong>Data Analytics</strong>
+            <small>gitlab.com/ansht_121/data-analytics</small>
           </span>
         </a>
       </div>
@@ -664,6 +682,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=8"></script>
+  <script src="script.js?v=11"></script>
 </body>
 </html>
