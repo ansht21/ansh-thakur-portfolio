@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
 
@@ -26,11 +26,6 @@
         <svg viewBox="0 0 48 48" width="20" height="20" aria-hidden="true"><rect x="6" y="22" width="10" height="20" rx="2" fill="#f472b6"/><rect x="19" y="10" width="10" height="32" rx="2" fill="#60a5fa"/><rect x="32" y="16" width="10" height="26" rx="2" fill="#a78bfa"/></svg>
         <span>AT</span>
       </a>
-      <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
       <ul class="nav-links" id="nav-menu" role="list">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -40,6 +35,17 @@
         <li><a href="#workflow">Workflow</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+        <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
     </div>
   </nav>
 
@@ -55,7 +61,6 @@
             <line x1="4" y1="44" x2="44" y2="44" stroke="#3a3a40" stroke-width="2"/>
           </svg>
         </div>
-        <p class="hero-label">Data Analytics Portfolio</p>
         <h1>Ansh Thakur</h1>
         <p class="hero-tagline">Turning Raw Data into Business Strategy</p>
         <p class="hero-tools">Data Analyst &middot; Python &middot; SQL &middot; Power BI &middot; Excel</p>
@@ -571,6 +576,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2"></script>
 </body>
 </html>

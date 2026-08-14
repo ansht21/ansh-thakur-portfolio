@@ -69,6 +69,28 @@ if (backToTop) {
   });
 }
 
+// ── Theme toggle (light / dark) ───────────────────────────────────
+const themeToggle = document.getElementById('themeToggle');
+const rootEl = document.documentElement;
+
+if (themeToggle) {
+  if (localStorage.getItem('theme') === 'light') rootEl.dataset.theme = 'light';
+
+  const syncToggle = () => {
+    const isLight = rootEl.dataset.theme === 'light';
+    themeToggle.setAttribute('aria-pressed', String(isLight));
+    themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark theme' : 'Switch to light theme');
+  };
+
+  themeToggle.addEventListener('click', () => {
+    rootEl.dataset.theme = rootEl.dataset.theme === 'light' ? 'dark' : 'light';
+    localStorage.setItem('theme', rootEl.dataset.theme);
+    syncToggle();
+  });
+
+  syncToggle();
+}
+
 // ── Scroll-in animation (fade-up) ──────────────────────────────────
 const animTargets = document.querySelectorAll(
   '.glance, .hero-badges, .about-card, .skill-group, .project-card, ' +
