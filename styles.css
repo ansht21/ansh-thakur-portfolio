@@ -491,8 +491,8 @@ ul { list-style: none; }
 .project-image {
   position: relative;
   overflow: hidden;
-  min-height: 280px;
   background: var(--bg-2);
+  aspect-ratio: 16 / 9;
 }
 .project-image img {
   width: 100%;
@@ -501,6 +501,10 @@ ul { list-style: none; }
   transition: transform .4s ease;
 }
 .project-card:hover .project-image img { transform: scale(1.03); }
+
+/* Show full dashboards — match each screenshot's real aspect ratio */
+.project-card--supply .project-image { aspect-ratio: 1364 / 656; }
+.project-card--uber   .project-image { aspect-ratio: 1129 / 783; }
 
 .project-body { padding: 2rem; display: flex; flex-direction: column; gap: 1.25rem; }
 
@@ -824,7 +828,6 @@ ul { list-style: none; }
   .glance-row .glance-proj { grid-column: 1 / -1; }
   .project-card,
   .project-card-reverse { grid-template-columns: 1fr; direction: ltr; }
-  .project-image { min-height: 220px; }
 }
 
 @media (max-width: 768px) {
