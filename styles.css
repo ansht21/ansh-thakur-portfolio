@@ -659,6 +659,52 @@ ul { list-style: none; }
 .edu-meta { font-size: .875rem; color: var(--primary); font-weight: 600; margin-bottom: .75rem; }
 .edu-desc { font-size: .9rem; color: var(--muted); line-height: 1.75; }
 
+/* ── Certifications ── */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.cert-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color var(--transition), transform var(--transition),
+              box-shadow var(--transition);
+}
+.cert-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+.cert-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(61,111,224,.16), rgba(124,92,224,.16));
+  border: 1px solid var(--border-light);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-body { flex: 1; display: flex; flex-direction: column; gap: .15rem; }
+.cert-body h3 { font-size: .95rem; font-weight: 700; color: var(--text); }
+.cert-body p { font-size: .8rem; color: var(--muted); }
+.cert-arrow { font-size: .8rem; font-weight: 700; color: var(--primary); white-space: nowrap; }
+
 /* ── Workflow ── */
 .workflow-steps {
   display: grid;
