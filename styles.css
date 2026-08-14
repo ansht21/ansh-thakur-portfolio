@@ -563,6 +563,19 @@ ul { list-style: none; }
 }
 .project-insight strong { color: var(--text); }
 
+.project-impact {
+  font-size: .9rem;
+  color: var(--text);
+  line-height: 1.7;
+  padding: .9rem 1rem;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--primary);
+  border-radius: var(--radius-sm);
+}
+.project-impact strong { color: var(--primary); }
+.project-impact em { color: var(--text); font-style: italic; }
+
 .project-tech { display: flex; flex-wrap: wrap; gap: .4rem; }
 .tech-tag {
   background: var(--bg-2);
