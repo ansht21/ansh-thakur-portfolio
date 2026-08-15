@@ -6,7 +6,6 @@
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
@@ -14,7 +13,7 @@
 
 ---
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-ansh--thakur.netlify.app-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://ansh-thakur.netlify.app/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-ansh--thakur.netlify.app-14345E?style=for-the-badge&logo=netlify&logoColor=white)](https://ansh-thakur.netlify.app/)
 [![Data Analytics Repo](https://img.shields.io/badge/GitLab-Data_Analytics-6C8CFF?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/ansht_121/data-analytics)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ansh-thakur-5407192b4/)
 [![Email](https://img.shields.io/badge/Email-ansht1194@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ansht1194@gmail.com)
@@ -25,9 +24,9 @@
 
 **I answer business questions with data — including the ones where the answer is "don't do it."**
 
-Two end-to-end analytics projects covering **43,000 records**: a supply-chain P&L and fulfilment audit, and a ride-demand and pricing analysis. Every figure below is reproducible from the committed SQL and Python in my [Data Analytics repository](https://gitlab.com/ansht_121/data-analytics).
+Two end-to-end analytics projects covering **42,991 records**: a supply-chain P&L and fulfilment audit, and a ride-demand and pricing analysis. Every figure below is reproducible from the committed SQL and Python in my [Data Analytics repository](https://gitlab.com/ansht_121/data-analytics).
 
-As a **B.Sc IT graduate** and **aspiring Data Analyst**, I specialize in translating complex datasets into clean, reliable, and actionable business insights.
+As an **entry-level Data Analyst**, I specialize in translating complex datasets into clean, reliable, and actionable business insights.
 
 ---
 
@@ -44,11 +43,11 @@ As a **B.Sc IT graduate** and **aspiring Data Analyst**, I specialize in transla
 
 | Category | Technologies & Libraries | Key Methodologies |
 | :--- | :--- | :--- |
-| **Languages** | Python, SQL (MySQL / PostgreSQL), HTML/CSS | Exploratory Data Analysis (EDA), Statistical Analysis |
-| **Data Libraries** | Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn | Data Cleaning, Feature Engineering, Outlier Detection |
-| **BI & Visualization** | Power BI, Advanced Microsoft Excel (VBA, Power Query, Pivots) | Interactive Dashboard Design, Executive KPI Reporting |
-| **Development Workflow** | Google Colab, Git & GitLab, PowerShell / Bash | Automation Scripting, ETL Pipeline Construction |
-| **SQL Techniques** | CTEs, `LAG()`, `RANK()`, `ROW_NUMBER()`, running `SUM() OVER`, `STDDEV_SAMP` | Cohort Banding, Pareto Analysis, Trend Detection |
+| **Languages** | Python, SQL, HTML/CSS | Exploratory Data Analysis (EDA), Statistical Analysis |
+| **Data Libraries** | Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn, Plotly | Data Cleaning, Data Validation, Data Preprocessing |
+| **BI & Visualization** | Power BI, Advanced Microsoft Excel | Interactive Dashboard Design, Executive KPI Reporting |
+| **Development Workflow** | Google Colab, Jupyter Notebook, VS Code, Git & GitLab | Reproducible Analysis, Automation Scripting |
+| **SQL Techniques** | CTEs, `LAG()`, `RANK()`, `ROW_NUMBER()`, running `SUM() OVER`, `STDDEV_SAMP` | Variance Decomposition, Pareto Analysis, Trend Detection |
 
 ---
 
@@ -71,7 +70,7 @@ If an interviewer asks one of these, the query and the number are already in my 
 
 ## 📊 Featured Analytical Projects
 
-### 1. 📦 [Inventory & Logistics Performance Analytics](https://gitlab.com/ansht_121/data-analytics/-/tree/main/supply-chain-performance-analysis)
+### 1. 📦 [Supply Chain Performance Analysis](https://gitlab.com/ansht_121/data-analytics/-/tree/main/supply-chain-performance-analysis)
 
 ![Supply Chain Dashboard](images/supply-chain-dashboard.png)
 
@@ -88,7 +87,7 @@ If an interviewer asks one of these, the query and the number are already in my 
   * Used **ABC Classification** to segment the 47-SKU catalogue by revenue contribution (A-items = 78.7% of revenue) — with an honest read that this catalogue shows only moderate, not textbook 80/20, concentration.
   * Shipped a reproducible Python pipeline so every quoted figure regenerates from the raw data.
 
-### 2. 🚖 [Ride Demand Forecasting & Revenue Analytics](https://gitlab.com/ansht_121/data-analytics/-/tree/main/uber-trip-demand-analysis)
+### 2. 🚖 [Uber Trip Demand Analysis](https://gitlab.com/ansht_121/data-analytics/-/tree/main/uber-trip-demand-analysis)
 
 ![Uber Power BI Dashboard](images/uber-dashboard.png)
 
