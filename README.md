@@ -72,9 +72,9 @@ If an interviewer asks one of these, the query and the number are already in my 
 
 ### 1. 📦 [Supply Chain Performance Analysis](https://gitlab.com/ansht_121/data-analytics/-/tree/main/supply-chain-performance-analysis)
 
-![Supply Chain Dashboard](images/supply-chain-dashboard.png)
+![Supply Chain Dashboard](images/supplychain-dashboard.webp)
 
-![Supply Chain Heatmap](images/supplychain-heatmap.png)
+![Supply Chain Heatmap](images/supplychain-heatmap.webp)
 
 *An end-to-end operational analytics project featuring a Python data cleaning pipeline, custom SQL metrics, and an automated, fully interactive 10-chart Excel dashboard.*
 
@@ -89,9 +89,9 @@ If an interviewer asks one of these, the query and the number are already in my 
 
 ### 2. 🚖 [Uber Trip Demand Analysis](https://gitlab.com/ansht_121/data-analytics/-/tree/main/uber-trip-demand-analysis)
 
-![Uber Power BI Dashboard](images/uber-dashboard.png)
+![Uber Power BI Dashboard](images/uber-dashboard.webp)
 
-![Uber Demand Heatmap](images/uber-heatmap.png)
+![Uber Demand Heatmap](images/uber-heatmap.webp)
 
 *A comprehensive revenue and behavioral analysis of ride-sharing transactions using SQL data warehousing, Python visualization, and Excel dashboarding.*
 
