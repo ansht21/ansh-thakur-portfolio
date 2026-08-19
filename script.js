@@ -40,6 +40,7 @@
   // ── Active nav link on scroll ─────────────────────────────────────
   var sections = document.querySelectorAll('section[id], header[id]');
   var navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+  var ticking = false;
 
   function setActiveLink() {
     var current = '';
@@ -49,8 +50,11 @@
     navLinks.forEach(function (a) {
       a.classList.toggle('active', a.getAttribute('href') === '#' + current);
     });
+    ticking = false;
   }
-  window.addEventListener('scroll', setActiveLink, { passive: true });
+  window.addEventListener('scroll', function () {
+    if (!ticking) { requestAnimationFrame(setActiveLink); ticking = true; }
+  }, { passive: true });
   setActiveLink();
 
   // ── Smooth scroll (respects prefers-reduced-motion) ───────────────
@@ -67,11 +71,18 @@
 
   // ── Back to top ────────────────────────────────────────────────────
   var backToTop = document.getElementById('backToTop');
+  var bttTicking = false;
   if (backToTop) {
     window.addEventListener('scroll', function () {
-      var show = window.scrollY > 400;
-      backToTop.classList.toggle('show', show);
-      backToTop.hidden = !show;
+      if (!bttTicking) {
+        requestAnimationFrame(function () {
+          var show = window.scrollY > 400;
+          backToTop.classList.toggle('show', show);
+          backToTop.hidden = !show;
+          bttTicking = false;
+        });
+        bttTicking = true;
+      }
     }, { passive: true });
     backToTop.addEventListener('click', function () {
       window.scrollTo({ top: 0, behavior: prefersReduced ? 'auto' : 'smooth' });

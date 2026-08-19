@@ -570,10 +570,17 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-2);
 .back-top:hover { transform: translateY(-3px); }
 
 /* ── Scroll-in animation ── */
-.fade-up { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
-.fade-up.in { opacity: 1; transform: none; }
+.fade-up { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; will-change: opacity, transform; }
+.fade-up.in { opacity: 1; transform: none; will-change: auto; }
 @media (prefers-reduced-motion: reduce) {
-  .fade-up { opacity: 1; transform: none; transition: none; }
+  .fade-up { opacity: 1; transform: none; transition: none; will-change: auto; }
+}
+
+/* ── CSS containment for performance ── */
+.hero, .section { contain: layout style; }
+.skill-card, .exp-card, .edu-card, .cert-card, .project,
+.strength, .resume-card, .repo-card, .contact-card {
+  contain: layout style paint;
 }
 
 /* ── Responsive tweaks ── */
