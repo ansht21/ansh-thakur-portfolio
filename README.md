@@ -17,7 +17,7 @@
 [![GitLab](https://img.shields.io/badge/GitLab-Profile-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/ansht_121)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live_Site-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://ansh-thakur.netlify.app/)
 [![Data Analytics](https://img.shields.io/badge/GitLab-Data_Analytics-6C8CFF?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/ansht_121/data-analytics)
-[![Machine Learning](https://img.shields.io/badge/GitLab-Machine_Learning-A97BFF?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/ansht_121/machine-learning-project)
+[![Data Science & ML](https://img.shields.io/badge/GitLab-Data_Science_%26_ML-A97BFF?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/ansht_121/machine-learning-project)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ansh-thakur-5407192b4/)
 [![Email](https://img.shields.io/badge/Email-ansht1194@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ansht1194@gmail.com)
 
@@ -27,7 +27,7 @@
 
 **I answer business questions with data — including the ones where the answer is "don't do it."**
 
-B.Sc. IT graduate and Data Analytics Intern who turns raw data into reproducible, business-actionable insight — and, increasingly, into predictive models and full-stack applications. My public work spans **10 end-to-end projects** across data analytics, machine learning, and web development, with every headline figure traceable to committed code.
+B.Sc. IT graduate and Data Analytics Intern who turns raw data into reproducible, business-actionable insight — and, increasingly, into predictive models. My public work spans **8 end-to-end projects** across data analytics and data science / machine learning, with every headline figure traceable to committed code.
 
 As an **entry-level Data Analyst** with a growing **machine learning** toolkit, I specialize in translating complex datasets into clean, reliable, and actionable business insights.
 
@@ -38,8 +38,7 @@ As an **entry-level Data Analyst** with a growing **machine learning** toolkit, 
 | Domain | What's Inside | Headline |
 | :--- | :--- | :--- |
 | 📊 [**Data Analytics**](https://gitlab.com/ansht_121/data-analytics) | 2 end-to-end projects · 42,991 records · SQL + Python + Power BI | Late delivery proven systemic (0.08% between-warehouse variance) |
-| 🤖 [**Machine Learning**](https://gitlab.com/ansht_121/machine-learning-project) | 6 projects · scikit-learn + TensorFlow + NLP | CNN digit recognition at **98.83%** test accuracy |
-| 🖥️ [**Full-Stack**](https://gitlab.com/ansht_121/college-full-stack-project) | 2 complete apps · React + Node/Express + Java Spring | JWT auth, role-based dashboards, REST APIs |
+| 🤖 [**Data Science & ML**](https://gitlab.com/ansht_121/machine-learning-project) | 6 projects · scikit-learn + TensorFlow + NLP | CNN digit recognition at **98.83%** test accuracy |
 
 ---
 
@@ -112,9 +111,9 @@ If an interviewer asks one of these, the query and the number are already in my 
 
 ---
 
-## 🤖 Machine Learning Projects
+## 🤖 Data Science & ML Projects
 
-Six end-to-end projects in my [Machine Learning repository](https://gitlab.com/ansht_121/machine-learning-project) — each structured as a proper package with modular `src/`, `tests/`, and `params.yaml`, not just a loose notebook.
+Six end-to-end projects in my [Data Science & ML repository](https://gitlab.com/ansht_121/machine-learning-project) — each structured as a proper package with modular `src/`, `tests/`, and `params.yaml`, not just a loose notebook.
 
 | # | Project | Type | Approach | Result |
 | :-- | :--- | :--- | :--- | :--- |
@@ -126,15 +125,6 @@ Six end-to-end projects in my [Machine Learning repository](https://gitlab.com/a
 | 6 | Music Recommendation | Recommender | Content-based, cosine similarity | Top-K similar tracks |
 
 > Model complexity is matched to the problem — Linear Regression where the relationship is linear, Random Forest where it is not — and limitations (like the sentiment model's minority-class recall) are reported honestly.
-
----
-
-## 🖥️ Full-Stack Projects
-
-Two complete applications in my [full-stack repository](https://gitlab.com/ansht_121/college-full-stack-project) — proof I can build the application layer around the data, not just analyse it.
-
-* **Academic Grade Management System** — React + Node/Express + MySQL, with JWT authentication, role-based admin/faculty/student dashboards, marks entry, automatic grade & SGPA calculation, and semester rank lists.
-* **Warehouse Inventory Management System** — Java **Spring Boot** REST API (layered controller/service/repository architecture, Spring Security + JWT, OpenAPI/Swagger) with a React + Vite frontend.
 
 ---
 
