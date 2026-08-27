@@ -1,20 +1,23 @@
 <div align="center">
 
-# 👨‍💻 Ansh Thakur — Data Analyst Portfolio
+# 👨‍💻 Ansh Thakur — Portfolio
 
-### Data Analyst | Python, SQL, Power BI & Excel | Data Analytics & Business Intelligence
+### Data Analyst & Machine Learning Practitioner · Python · SQL · Power BI · scikit-learn · TensorFlow
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
-![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)
 
 ---
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-ansh--thakur.netlify.app-14345E?style=for-the-badge&logo=netlify&logoColor=white)](https://ansh-thakur.netlify.app/)
-[![Data Analytics Repo](https://img.shields.io/badge/GitLab-Data_Analytics-6C8CFF?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/ansht_121/data-analytics)
+[![GitLab](https://img.shields.io/badge/GitLab-Profile-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/ansht_121)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live_Site-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://ansh-thakur.netlify.app/)
+[![Data Analytics](https://img.shields.io/badge/GitLab-Data_Analytics-6C8CFF?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/ansht_121/data-analytics)
+[![Machine Learning](https://img.shields.io/badge/GitLab-Machine_Learning-A97BFF?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/ansht_121/machine-learning-project)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ansh-thakur-5407192b4/)
 [![Email](https://img.shields.io/badge/Email-ansht1194@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ansht1194@gmail.com)
 
@@ -24,36 +27,38 @@
 
 **I answer business questions with data — including the ones where the answer is "don't do it."**
 
-Two end-to-end analytics projects covering **42,991 records**: a supply-chain P&L and fulfilment audit, and a ride-demand and pricing analysis. Every figure below is reproducible from the committed SQL and Python in my [Data Analytics repository](https://gitlab.com/ansht_121/data-analytics).
+B.Sc. IT graduate and Data Analytics Intern who turns raw data into reproducible, business-actionable insight — and, increasingly, into predictive models and full-stack applications. My public work spans **10 end-to-end projects** across data analytics, machine learning, and web development, with every headline figure traceable to committed code.
 
-As an **entry-level Data Analyst**, I specialize in translating complex datasets into clean, reliable, and actionable business insights.
+As an **entry-level Data Analyst** with a growing **machine learning** toolkit, I specialize in translating complex datasets into clean, reliable, and actionable business insights.
 
 ---
 
 ## 📈 Portfolio at a Glance
 
-| Project | Scale | Stack | Headline Result |
-|---------|-------|-------|-----------------|
-| **Supply Chain Performance** | 7,991 orders · 47 SKUs | Python · SQL · Excel VBA | $82.7M revenue / $30.9M profit analysed; late delivery proven systemic, not warehouse-specific |
-| **Uber Trip Demand** | 35,000 trips | MySQL · Python · Power BI | 5–7 PM carries 31.2% of demand; airport trips are 39.6% of volume but 54.8% of revenue |
+| Domain | What's Inside | Headline |
+| :--- | :--- | :--- |
+| 📊 [**Data Analytics**](https://gitlab.com/ansht_121/data-analytics) | 2 end-to-end projects · 42,991 records · SQL + Python + Power BI | Late delivery proven systemic (0.08% between-warehouse variance) |
+| 🤖 [**Machine Learning**](https://gitlab.com/ansht_121/machine-learning-project) | 6 projects · scikit-learn + TensorFlow + NLP | CNN digit recognition at **98.83%** test accuracy |
+| 🖥️ [**Full-Stack**](https://gitlab.com/ansht_121/college-full-stack-project) | 2 complete apps · React + Node/Express + Java Spring | JWT auth, role-based dashboards, REST APIs |
 
 ---
 
-## 🛠️ Core Analytical Skills & Tools
+## 🛠️ Core Skills & Tools
 
 | Category | Technologies & Libraries | Key Methodologies |
 | :--- | :--- | :--- |
-| **Languages** | Python, SQL, HTML/CSS | Exploratory Data Analysis (EDA), Statistical Analysis |
-| **Data Libraries** | Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn, Plotly | Data Cleaning, Data Validation, Data Preprocessing |
-| **BI & Visualization** | Power BI, Advanced Microsoft Excel | Interactive Dashboard Design, Executive KPI Reporting |
-| **Development Workflow** | Google Colab, Jupyter Notebook, VS Code, Git & GitLab | Reproducible Analysis, Automation Scripting |
+| **Languages** | Python, SQL (MySQL), JavaScript, Java, HTML/CSS | Exploratory Data Analysis, Statistical Analysis |
+| **Data & ML Libraries** | Pandas, NumPy, scikit-learn, TensorFlow/Keras, NLTK, Matplotlib, Seaborn | Data Cleaning, Feature Engineering, Model Training |
+| **Machine Learning** | CNNs, Linear/Logistic Regression, Random Forest, TF-IDF NLP, recommenders | Classification, Regression, NLP, Model Evaluation |
+| **BI & Visualization** | Power BI (DAX), Advanced Microsoft Excel (VBA, Power Query, Pivots) | Interactive Dashboards, Executive KPI Reporting |
 | **SQL Techniques** | CTEs, `LAG()`, `RANK()`, `ROW_NUMBER()`, running `SUM() OVER`, `STDDEV_SAMP` | Variance Decomposition, Pareto Analysis, Trend Detection |
+| **Development** | Google Colab, Jupyter, VS Code, Git & GitLab, React, Node/Express, Spring Boot | Reproducible Analysis, REST APIs, Automation Scripting |
 
 ---
 
 ## 🎯 Business Questions I Answered
 
-If an interviewer asks one of these, the query and the number are already in my [repository](https://gitlab.com/ansht_121/data-analytics).
+If an interviewer asks one of these, the query and the number are already in my [Data Analytics repository](https://gitlab.com/ansht_121/data-analytics).
 
 | Business Question | Finding | Decision It Drives |
 |:--|:--|:--|
@@ -68,7 +73,7 @@ If an interviewer asks one of these, the query and the number are already in my 
 
 ---
 
-## 📊 Featured Analytical Projects
+## 📊 Featured Data Analytics Projects
 
 ### 1. 📦 [Supply Chain Performance Analysis](https://gitlab.com/ansht_121/data-analytics/-/tree/main/supply-chain-performance-analysis)
 
@@ -107,6 +112,32 @@ If an interviewer asks one of these, the query and the number are already in my 
 
 ---
 
+## 🤖 Machine Learning Projects
+
+Six end-to-end projects in my [Machine Learning repository](https://gitlab.com/ansht_121/machine-learning-project) — each structured as a proper package with modular `src/`, `tests/`, and `params.yaml`, not just a loose notebook.
+
+| # | Project | Type | Approach | Result |
+| :-- | :--- | :--- | :--- | :--- |
+| 1 | Handwritten Digit Recognition | Image classification | CNN (TensorFlow/Keras), MNIST | **98.83%** test accuracy |
+| 2 | Spam Email Detection | Binary NLP | TF-IDF + Logistic Regression | **96.32%** test accuracy |
+| 3 | Sales Prediction | Regression | Linear Regression | **R² = 0.91** |
+| 4 | Car Price Prediction | Regression | Random Forest Regressor | MAE · MSE · R² |
+| 5 | Tweet Sentiment Analysis | Multi-class NLP | TF-IDF (n-grams) + balanced LogReg | **71%** acc · 0.70 F1 |
+| 6 | Music Recommendation | Recommender | Content-based, cosine similarity | Top-K similar tracks |
+
+> Model complexity is matched to the problem — Linear Regression where the relationship is linear, Random Forest where it is not — and limitations (like the sentiment model's minority-class recall) are reported honestly.
+
+---
+
+## 🖥️ Full-Stack Projects
+
+Two complete applications in my [full-stack repository](https://gitlab.com/ansht_121/college-full-stack-project) — proof I can build the application layer around the data, not just analyse it.
+
+* **Academic Grade Management System** — React + Node/Express + MySQL, with JWT authentication, role-based admin/faculty/student dashboards, marks entry, automatic grade & SGPA calculation, and semester rank lists.
+* **Warehouse Inventory Management System** — Java **Spring Boot** REST API (layered controller/service/repository architecture, Spring Security + JWT, OpenAPI/Swagger) with a React + Vite frontend.
+
+---
+
 ## 💼 Experience
 
 **Data Analytics Intern** — *Unified Mentor Pvt. Ltd.* (Sep 2025 – Dec 2025)
@@ -129,15 +160,15 @@ If an interviewer asks one of these, the query and the number are already in my 
 
 ## 🧾 Certifications
 
-- **Deloitte Data Analytics Job Simulation** — Forage ([Verify](https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_Pn2fgx9uC9r33pJRp_1750857267981_completion_certificate.pdf))
 - **Tata GenAI Powered Data Analytics Job Simulation** — Forage ([Verify](https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_Pn2fgx9uC9r33pJRp_1752581188250_completion_certificate.pdf))
+- **Deloitte Data Analytics Job Simulation** — Forage ([Verify](https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_Pn2fgx9uC9r33pJRp_1750857267981_completion_certificate.pdf))
 - **British Airways Data Science Job Simulation** — Forage ([Verify](https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/tMjbs76F526fF5v3G/NjynCWzGSaWXQCxSX_tMjbs76F526fF5v3G_Pn2fgx9uC9r33pJRp_1754161186122_completion_certificate.pdf))
 
 ---
 
 ## 📄 Resume
 
-[Download Resume (PDF)](Ansh_Thakur_Data_Analyst_Resume.pdf)
+[Download Resume (PDF)](Analyst_Resume.pdf)
 
 ---
 
@@ -147,7 +178,10 @@ If an interviewer asks one of these, the query and the number are already in my 
 ansh-thakur-portfolio/
 │
 ├── images/                     # Dashboard & heatmap screenshots
-├── Ansh_Thakur_Data_Analyst_Resume.pdf
+├── index.html                  # Portfolio website source
+├── styles.css
+├── script.js
+├── Analyst_Resume.pdf          # Downloadable resume
 └── README.md                   # This portfolio
 ```
 
@@ -159,8 +193,8 @@ I am actively seeking entry-level **Data Analyst**, **Business Intelligence Anal
 
 <div align="center">
 
+[![GitLab](https://img.shields.io/badge/GitLab-ansht__121-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/ansht_121)
 [![Portfolio](https://img.shields.io/badge/Portfolio-ansh--thakur.netlify.app-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://ansh-thakur.netlify.app/)
-[![Data Analytics Repo](https://img.shields.io/badge/GitLab-Data_Analytics-6C8CFF?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/ansht_121/data-analytics)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ansh-thakur-5407192b4/)
 [![Email](https://img.shields.io/badge/Email-ansht1194@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ansht1194@gmail.com)
 
