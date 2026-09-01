@@ -537,6 +537,17 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-2);
 .contact .section-kicker { color: var(--accent); }
 [data-theme="dark"] .contact .section-kicker { color: var(--accent); }
 
+/* ── Contact: dark-mode readability (ink var flips to light in dark theme) ── */
+[data-theme="dark"] .contact { background: var(--card); color: var(--ink); }
+[data-theme="dark"] .contact .section-title { color: var(--ink); }
+[data-theme="dark"] .contact .section-sub { color: var(--muted); }
+[data-theme="dark"] .contact-card { background: var(--card-hi); border-color: var(--border); color: var(--ink); }
+[data-theme="dark"] .contact-card:hover { background: #2a3246; }
+[data-theme="dark"] .contact-card small { color: var(--muted); }
+[data-theme="dark"] .contact-ico { background: var(--primary-soft); }
+[data-theme="dark"] .skip-link { background: var(--ink); color: var(--bg); }
+[data-theme="dark"] .skip-link:focus { color: var(--bg); }
+
 .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px;
   max-width: 980px; margin: 0 auto; }
 .contact-card { display: flex; align-items: center; gap: 16px; background: rgba(255,255,255,.05);
