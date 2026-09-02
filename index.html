@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ansh Thakur — Data Analyst | Python · SQL · Power BI · Excel</title>
-  <meta name="description" content="Ansh Thakur is an entry-level Data Analyst skilled in Python, SQL, MySQL, Power BI, and Excel. End-to-end analytics projects in supply-chain performance and Uber trip demand — with negative findings reported honestly.">
-  <meta name="keywords" content="Ansh Thakur, Data Analyst, Business Intelligence, Python, SQL, MySQL, Power BI, Excel, EDA, KPI Reporting, Supply Chain Analysis, Uber Trip Analysis, Data Analytics Portfolio">
+  <title>Ansh Thakur — Data Analyst & Data Scientist | Python · SQL · ML · Power BI · Excel</title>
+  <meta name="description" content="Ansh Thakur is an entry-level Data Analyst & Data Scientist skilled in Python, SQL, MySQL, Power BI, Excel, and scikit-learn. End-to-end projects in supply-chain performance, Uber trip demand, subscription retention analytics, and machine learning — with negative findings reported honestly.">
+  <meta name="keywords" content="Ansh Thakur, Data Analyst, Data Scientist, Business Intelligence, Python, SQL, MySQL, Power BI, Excel, scikit-learn, Machine Learning, EDA, KPI Reporting, Supply Chain Analysis, Uber Trip Analysis, Customer Churn, Data Analytics Portfolio">
   <meta name="author" content="Ansh Thakur">
   <meta name="theme-color" content="#14345e">
 
-  <meta property="og:title" content="Ansh Thakur — Data Analyst | Python · SQL · Power BI · Excel">
-  <meta property="og:description" content="Entry-level Data Analyst skilled in Python, SQL, MySQL, Power BI, and Excel. Data cleaning, validation, EDA, KPI reporting, and business intelligence — with end-to-end analytics projects in supply-chain performance and Uber trip demand.">
+  <meta property="og:title" content="Ansh Thakur — Data Analyst & Data Scientist | Python · SQL · ML · Power BI · Excel">
+  <meta property="og:description" content="Entry-level Data Analyst & Data Scientist skilled in Python, SQL, MySQL, Power BI, Excel, and scikit-learn. Projects in supply-chain performance, Uber trip demand, subscription retention analytics, and machine learning.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ansh-thakur.netlify.app/">
   <meta property="og:image" content="https://ansh-thakur.netlify.app/images/supplychain-dashboard.png">
@@ -318,7 +318,7 @@
         <div class="section-head">
           <span class="section-kicker">04 · Case Studies</span>
           <h2 class="section-title">Projects</h2>
-          <p class="section-sub">Two end-to-end analytics case studies. Business problem → data → analysis → findings → recommendation. Every figure reproduces from the committed SQL and Python.</p>
+          <p class="section-sub">Three end-to-end case studies spanning data analytics and predictive data science. Business problem → data → analysis → findings → recommendation. Every figure reproduces from the committed SQL, Python, and notebooks.</p>
           <span class="rule" aria-hidden="true"></span>
         </div>
 
@@ -439,6 +439,60 @@
                   <span class="tech-tag">Power BI</span>
                 </div>
                 <a href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/uber-trip-demand-analysis" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View on GitLab →</a>
+              </div>
+            </div>
+          </article>
+<!-- Project 3: Subscription Retention Analytics -->
+          <article class="project" aria-label="Subscription Retention Analytics case study">
+            <div class="project-top">
+              <div class="project-img">
+                <img src="images/retention-model.png" alt="Confusion matrix and ROC curves for the customer churn prediction model" loading="lazy" decoding="async">
+              </div>
+              <div class="project-heading">
+                <span class="proj-tag">Case Study 03</span>
+                <h3 class="project-title">Subscription Retention Analytics</h3>
+                <div class="proj-meta-row">
+                  <div class="meta"><div class="meta-num">7,043</div><div class="meta-lbl">customers</div></div>
+                  <div class="meta"><div class="meta-num">26.6%</div><div class="meta-lbl">churn rate</div></div>
+                  <div class="meta"><div class="meta-num">80.0%</div><div class="meta-lbl">LogReg accuracy</div></div>
+                  <div class="meta"><div class="meta-num">0.839</div><div class="meta-lbl">ROC-AUC</div></div>
+                </div>
+                <p class="project-desc">A subscription business is losing 26.6% of customers — $139K of monthly revenue at risk. This project traces the loss through the full analytics stack and then scores each customer for retention action.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">1</span> Business Problem</p>
+                <p>Which customers leave, why, and what does the revenue at risk look like? The answer must be actionable per customer, not just per segment.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">2</span> Approach</p>
+                <p>SQL (7 business-question queries with window functions) → Excel dashboard (KPI cards + chart data) → statistics (chi-square + Welch&rsquo;s t, all significant) → predictive classification (Logistic Regression + Random Forest with leakage-safe engineered features).</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">3</span> Key Findings</p>
+                <div class="findings">
+                  <div class="finding"><div class="finding-val">42.7%</div><div class="finding-lbl">month-to-month churn rate vs 2.8% two-year</div></div>
+                  <div class="finding"><div class="finding-val">0.839</div><div class="finding-lbl">ROC-AUC, LogReg (vs 0.734 baseline)</div></div>
+                  <div class="finding"><div class="finding-val">0.41</div><div class="finding-lbl">Cramér&rsquo;s V — contract type effect size</div></div>
+                  <div class="finding"><div class="finding-val">-0.86</div><div class="finding-lbl">Cohen&rsquo;s d — tenure, churned vs retained</div></div>
+                </div>
+                <p>Month-to-month + fiber-optic is the top revenue-at-risk segment (72% of the total). The model&rsquo;s top drivers match the EDA and the statistics — insight confirmed three independent ways.</p>
+              </div>
+              <div class="case dont">
+                <p class="case-lbl"><span class="case-n">4</span> Business Recommendation</p>
+                <p><strong>Do</strong> convert month-to-month customers to annual plans early (year-1 risk window), target fiber-optic customers with service-quality outreach, and push auto-pay incentives off electronic check. <strong>Do not</strong> spend retention budget evenly — the revenue-at-risk ranking shows where it buys the most saved revenue.</p>
+              </div>
+              <div class="project-foot">
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Scikit-learn</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">SQL</span>
+                  <span class="tech-tag">Window Functions</span>
+                  <span class="tech-tag">Excel</span>
+                  <span class="tech-tag">openpyxl</span>
+                  <span class="tech-tag">Statistics</span>
+                </div>
+                <a href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/subscription-retention-analytics" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View on GitLab →</a>
               </div>
             </div>
           </article>
@@ -592,19 +646,19 @@
       </div>
     </section>
 
-    <!-- Data Analytics Repository -->
+    <!-- Data Analytics & ML Repositories -->
     <section id="repository" class="section">
       <div class="container">
         <div class="section-head">
           <span class="section-kicker">11 · Source Code</span>
-          <h2 class="section-title">Data Analytics Repository</h2>
-          <p class="section-sub">The technical evidence behind every number on this page — committed SQL, Python, and dashboards.</p>
+          <h2 class="section-title">Data Analytics & ML Repositories</h2>
+          <p class="section-sub">The technical evidence behind every number on this page — committed SQL, Python, notebooks, and dashboards.</p>
           <span class="rule" aria-hidden="true"></span>
         </div>
         <div class="repo-card">
           <div class="repo-info">
             <h3>gitlab.com/ansht_121/data-analytics</h3>
-            <p class="repo-stars">Two self-contained project directories · fully reproducible</p>
+            <p class="repo-stars">Three self-contained project directories · fully reproducible</p>
             <p>Every quoted metric on this site regenerates from the committed code. Each project directory bundles its own SQL scripts, Python notebooks, raw / cleaned datasets, Excel / Power BI dashboards, screenshots, and a detailed README.</p>
             <a href="https://gitlab.com/ansht_121/data-analytics" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Open Repository →</a>
           </div>
@@ -613,6 +667,27 @@
             <ul>
               <li><span class="dir">supply-chain-performance-analysis/</span><br>Python pipeline · MySQL schema · SQL queries · Excel/VBA dashboard · Power BI guide · notebook · README</li>
               <li><span class="dir">uber-trip-demand-analysis/</span><br>MySQL cleaning pipeline · SQL analytics · Python EDA · Power BI report · Excel summaries · notebook · README</li>
+              <li><span class="dir">subscription-retention-analytics/</span><br>SQL queries · Excel dashboard · statistics (chi-square, Welch&rsquo;s t) · Logistic Regression + Random Forest · notebooks · README</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="repo-card">
+          <div class="repo-info">
+            <h3>gitlab.com/ansht_121/machine-learning-project</h3>
+            <p class="repo-stars">Six end-to-end ML projects · classification, regression, NLP, deep learning</p>
+            <p>Handwritten digit recognition (CNN, 98.8%), spam detection (TF-IDF + Logistic Regression, 96.3%), sales prediction (R² 0.91), car price prediction, sentiment analysis, and a content-based music recommender.</p>
+            <a href="https://gitlab.com/ansht_121/machine-learning-project" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Open Repository →</a>
+          </div>
+          <div class="repo-contents">
+            <h4>Contents</h4>
+            <ul>
+              <li><span class="dir">image_classification_project/</span><br>CNN (TensorFlow/Keras) on 70K MNIST images · 98.83% test accuracy</li>
+              <li><span class="dir">spam_email_detection_project/</span><br>TF-IDF + Logistic Regression · 96.32% accuracy · precision/recall/F1</li>
+              <li><span class="dir">sales_prediction_project/</span><br>Linear Regression · R² 0.91 · MSE 2.86</li>
+              <li><span class="dir">car_price_prediction_project/</span><br>Random Forest Regressor · MAE / MSE / R²</li>
+              <li><span class="dir">sentiment_Analysis_project/</span><br>TF-IDF + Logistic Regression · NLP · F1 0.70</li>
+              <li><span class="dir">music_recommendation_system/</span><br>Content-based recommender · cosine similarity</li>
             </ul>
           </div>
         </div>
