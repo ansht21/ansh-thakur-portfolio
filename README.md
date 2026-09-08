@@ -37,7 +37,7 @@ As an **entry-level Data Analyst** with a growing **machine learning** toolkit, 
 
 | Domain | What's Inside | Headline |
 | :--- | :--- | :--- |
-| 📊 [**Data Analytics**](https://gitlab.com/ansht_121/data-analytics) | 2 end-to-end projects · 42,991 records · SQL + Python + Power BI | Late delivery proven systemic (0.08% between-warehouse variance) |
+| 📊 [**Data Analytics**](https://gitlab.com/ansht_121/data-analytics) | 3 end-to-end projects · 50,023 records · SQL + Python + Power BI | Late delivery proven systemic (0.08% between-warehouse variance) |
 | 🤖 [**Data Science & ML**](https://gitlab.com/ansht_121/machine-learning-project) | 6 projects · scikit-learn + TensorFlow + NLP | CNN digit recognition at **98.83%** test accuracy |
 
 ---
@@ -108,6 +108,20 @@ If an interviewer asks one of these, the query and the number are already in my 
   * Built a MySQL schema over 35,000 records with `ROW_NUMBER()` deduplication and null validation.
   * Conducted vehicle-category analysis measuring revenue per ride and revenue-to-distance efficiency (Uber Black ₹40.06/km vs Uber Pool ₹14.08/km).
   * Reported three **negative findings** (no weekend fare effect, no seasonality, no zone concentration) that removed unjustified recommendations.
+
+### 3. 📊 [Subscription Retention Analytics](https://gitlab.com/ansht_121/data-analytics/-/tree/main/subscription-retention-analytics)
+
+![Churn Dashboard](images/retention-model.png)
+
+*End-to-end churn risk and revenue-at-risk analysis on 7,032 customers, delivered through a custom Python pipeline, SQL cohort analysis, and an interactive Excel dashboard.*
+
+* **Business Challenge:** A subscription business is losing ~26% of customers. Which customers leave, when, why, and what revenue is exposed — so retention spend can be prioritised by dollars saved, not by gut feel.
+* **Tech Stack:** Python (Pandas, Seaborn, openpyxl), SQL (MySQL — `LAG`, `RANK`, `STDDEV_SAMP`, CTEs), Microsoft Excel (native charts, filterable table), Jupyter.
+* **Key Achievements:**
+  * Identified **Month-to-month contracts churn at 42.7%** versus near-zero on two-year plans (chi-square = 1179.5, Cramér's V 0.41) and quantified that **month-to-month + fiber-optic = 72% of revenue at risk**.
+  * Built a 5-KPI, 6-chart executive Excel dashboard with a left-side Filters panel matching the supply-chain reference style — native, filterable, formula-driven from the ChartData sheet.
+  * Caught a confounder: fiber-optic customers churn more, but a large part of the effect is the contract mix, not the service itself — the dashboard splits the two.
+  * Reported three **negative findings** (senior citizen flag not material, partner/dependents effect only via tenure, paperless billing not independent of payment method) that kept the recommendations honest.
 
 ---
 
