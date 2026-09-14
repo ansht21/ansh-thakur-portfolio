@@ -176,7 +176,7 @@ Six end-to-end projects in my [Data Science & ML repository](https://gitlab.com/
 
 ## 📄 Resume
 
-[Download Resume (PDF)](Analyst_Resume.pdf)
+[Download Resume (PDF)](Ansh_Thakur_MCA_Resume.pdf)
 
 ---
 
@@ -189,7 +189,7 @@ ansh-thakur-portfolio/
 ├── index.html                  # Portfolio website source
 ├── styles.css
 ├── script.js
-├── Analyst_Resume.pdf          # Downloadable resume
+├── Ansh_Thakur_MCA_Resume.pdf  # Downloadable resume (MCA internship version)
 └── README.md                   # This portfolio
 ```
 
