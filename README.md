@@ -2,7 +2,7 @@
 
 # 👨‍💻 Ansh Thakur — Portfolio
 
-### Data Analyst & Machine Learning Practitioner · MCA '27 · Python · SQL · Power BI · scikit-learn · TensorFlow
+### Data Analyst & Machine Learning Practitioner · Python · SQL · Power BI · scikit-learn · TensorFlow
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
@@ -27,9 +27,9 @@
 
 **I answer business questions with data — including the ones where the answer is "don't do it."**
 
-MCA final-year candidate (Class of 2027) and B.Sc. IT graduate (2025) who turns raw data into reproducible, business-actionable insight — and, increasingly, into predictive models. My public work spans **9 end-to-end projects** across data analytics and data science / machine learning, with every headline figure traceable to committed code.
+B.Sc. IT graduate and Data Analytics Intern who turns raw data into reproducible, business-actionable insight — and, increasingly, into predictive models. My public work spans **9 end-to-end projects** across data analytics and data science / machine learning, with every headline figure traceable to committed code.
 
-As a **final-year MCA student** with a growing **machine learning** toolkit, I specialize in translating complex datasets into clean, reliable, and actionable business insights — and I'm currently open to **Data Analyst / Data Science internships** (Hyderabad or remote).
+As an **entry-level Data Analyst** with a growing **machine learning** toolkit, I specialize in translating complex datasets into clean, reliable, and actionable business insights.
 
 ---
 
@@ -156,10 +156,6 @@ Six end-to-end projects in my [Data Science & ML repository](https://gitlab.com/
 
 ## 🎓 Education
 
-**Master of Computer Applications (MCA)**
-*Final Year — Expected Graduation 2027*
-[College / University — to be added]
-
 **Bachelor of Science in Information Technology (B.Sc. IT)**
 *Sardar Patel Mahavidyalaya, Chandrapur — Gondwana University, Maharashtra*
 **CGPA: 7.26/10** · 2022 – 2025
@@ -197,7 +193,7 @@ ansh-thakur-portfolio/
 
 ## 📬 Contact & Collaboration
 
-I am actively seeking **Data Analyst**, **Data Science**, or **Business Intelligence internships** (Hyderabad or remote) where I can help teams turn complex data into clean, business-boosting decisions.
+I am actively seeking entry-level **Data Analyst**, **Business Intelligence Analyst**, or **Data Engineer** roles where I can help teams turn complex data into clean, business-boosting decisions.
 
 <div align="center">
 
