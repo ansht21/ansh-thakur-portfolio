@@ -77,7 +77,7 @@ If an interviewer asks one of these, the query and the number are already in my 
 |:--|:--|:--|
 | Half our orders are late — which warehouse is at fault? | **None.** Only **0.08%** of delivery-time variance is between warehouses; all six have 2.82–2.88 day spread. | Fix upstream scheduling, not a facility — a per-site project would fix nothing |
 | Isn't our biggest warehouse the worst offender? | **No — a volume illusion.** It causes 31.9% of late orders but handles 31.4% of all orders. | Always normalise counts by volume before ranking anything |
-| Are discounts eating our margin? Should we cap them? | **No.** Orders at 20%+ discount return **38.28%** margin — *higher* than the 5–10% band. | Don't cap discounts; you'd lose revenue protecting nothing |
+| Are discounts eating our margin? Should we cap them? | **Yes — at high levels.** Orders at 20%+ discount return only **4.64%** margin versus 31.02% in the 5–10% band, with 373 orders unprofitable. | Set product-level profit floors and review the 20%+ discount band |
 | When should a ride-hailing firm surge-price? | **5–7 PM carries 31.2% of demand** in 3 of 24 hours — and the surge *starts* at 5 PM, not 6 PM when volume peaks. | Launch driver incentives by 4:30 PM, an hour ahead of peak |
 | Do higher-rated drivers earn more per trip? | **No, and the obvious read is backwards.** Low-rated drivers show higher fares — but only because they drive longer trips. Fare-per-km is flat at ₹22.06–22.41. | Investigate long-trip rider experience; don't penalise drivers |
 | Can we focus on just our top revenue zones? | **No.** It takes **4 of 5 zones** to reach 80% of revenue. | Keep coverage city-wide — the 80/20 assumption fails here |
