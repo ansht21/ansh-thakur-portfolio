@@ -15,7 +15,7 @@
 ---
 
 [![GitLab](https://img.shields.io/badge/GitLab-Profile-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/ansht_121)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live_Site-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://ansh-thakur.netlify.app/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live_Site-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://ansh-thakur-netlify.netlify.app/)
 [![Data Analytics](https://img.shields.io/badge/GitLab-Data_Analytics-6C8CFF?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/ansht_121/data-analytics)
 [![Data Science & ML](https://img.shields.io/badge/GitLab-Data_Science_%26_ML-A97BFF?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/ansht_121/machine-learning-project)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ansh-thakur-5407192b4/)
@@ -29,7 +29,7 @@
 
 B.Sc. IT graduate and Data Analytics Intern who turns raw data into reproducible, business-actionable insight — and, increasingly, into predictive models. My public work spans **9 end-to-end projects** across data analytics and data science / machine learning, with every headline figure traceable to committed code.
 
-As an **entry-level Data Analyst** with a growing **machine learning** toolkit, I specialize in translating complex datasets into clean, reliable, and actionable business insights.
+As an **entry-level Data Analyst** with a growing **machine learning** toolkit, I specialize in translating complex datasets into clean, reliable, and actionable business insights. I work **AI-first with human validation**: AI co-pilots the repetitive work — code drafting, documentation, dashboard scaffolding — while every generated output is run, debugged, and verified against the raw data before it reaches a stakeholder.
 
 ---
 
@@ -50,8 +50,22 @@ As an **entry-level Data Analyst** with a growing **machine learning** toolkit, 
 | **Data & ML Libraries** | Pandas, NumPy, scikit-learn, TensorFlow/Keras, NLTK, Matplotlib, Seaborn | Data Cleaning, Feature Engineering, Model Training |
 | **Machine Learning** | CNNs, Linear/Logistic Regression, Random Forest, TF-IDF NLP, recommenders | Classification, Regression, NLP, Model Evaluation |
 | **BI & Visualization** | Power BI (DAX), Advanced Microsoft Excel (VBA, Power Query, Pivots) | Interactive Dashboards, Executive KPI Reporting |
+| **AI-Assisted Analytics** | AI pair-programming, prompt engineering, AI-assisted EDA & documentation | Co-Pilot Workflows, Human Validation Gates, Data Storytelling |
 | **SQL Techniques** | CTEs, `LAG()`, `RANK()`, `ROW_NUMBER()`, running `SUM() OVER`, `STDDEV_SAMP` | Variance Decomposition, Pareto Analysis, Trend Detection |
 | **Development** | Google Colab, Jupyter, VS Code, Git & GitLab, React, Node/Express, Spring Boot | Reproducible Analysis, REST APIs, Automation Scripting |
+
+---
+
+## 🤝 How I Work in the AI Era
+
+The four skills that keep an analyst relevant as AI handles more of the execution:
+
+| Pillar | What It Means in Practice |
+| :--- | :--- |
+| **System design over syntax** | End-to-end pipeline thinking — raw data → cleaning → SQL warehouse → BI layer — designed for reproducibility and scale. AI drafts code; architecture stays a human decision. |
+| **AI as co-pilot, not competitor** | Prompt engineering and AI-assisted workflows accelerate cleaning, query drafting, and docs. Every AI output is run, debugged, and validated against source data — hallucinated SQL doesn't ship. |
+| **Business understanding** | Every skill is applied against a business question: what decision does this analysis drive? Three of my case studies returned "don't act" — the answer that saves budget. |
+| **Communication & storytelling** | Insights ship as stakeholder-ready narratives — headline first, caveats where they matter, dashboards a non-technical reader can navigate solo. |
 
 ---
 
@@ -198,7 +212,7 @@ I am actively seeking entry-level **Data Analyst**, **Business Intelligence Anal
 <div align="center">
 
 [![GitLab](https://img.shields.io/badge/GitLab-ansht__121-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/ansht_121)
-[![Portfolio](https://img.shields.io/badge/Portfolio-ansh--thakur.netlify.app-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://ansh-thakur.netlify.app/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-ansh--thakur-netlify.app-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://ansh-thakur-netlify.netlify.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ansh-thakur-5407192b4/)
 [![Email](https://img.shields.io/badge/Email-ansht1194@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ansht1194@gmail.com)
 
