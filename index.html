@@ -1,449 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ansh Thakur | Data Analyst Portfolio</title>
-<meta name="description" content="Entry-level Data Analyst portfolio showcasing Python, SQL, Power BI, Excel, data analytics projects, dashboards, and business insights.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ansh Thakur | Data Analyst Portfolio</title>
+  <meta name="description" content="Entry-level Data Analyst portfolio showcasing SQL warehousing, Python pipelines, Power BI, Excel financial modeling, and business-focused diagnostic analytics.">
 
-<meta property="og:title" content="Ansh Thakur | Data Analyst Portfolio">
-<meta property="og:description" content="Entry-level Data Analyst portfolio showcasing Python, SQL, Power BI, Excel, data analytics projects, dashboards, and business insights.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://ansh-thakur.netlify.app/">
+  <!-- Open Graph / Social Metadata -->
+  <meta property="og:title" content="Ansh Thakur | Data Analyst & Business Intelligence Portfolio">
+  <meta property="og:description" content="Turning 50,000+ transactional records into reproducible, boardroom-ready business decisions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ansh-thakur-netlify.netlify.app/">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-<style>
-  :root{
-    --paper: #F5F5F0;
-    --paper-2: #EFEEE6;
-    --ink: #14171D;
-    --ink-soft: #4B5058;
-    --line: #DCD9CD;
-    --teal: #1D6C64;
-    --teal-deep: #123F3B;
-    --amber: #B9822E;
-    --white: #FFFFFF;
-    --radius: 3px;
-    --max: 1180px;
-  }
+  <style>
+    :root {
+      --paper: #F5F5F0;
+      --paper-2: #EFEEE6;
+      --ink: #14171D;
+      --ink-soft: #4B5058;
+      --line: #DCD9CD;
+      --teal: #1D6C64;
+      --teal-deep: #123F3B;
+      --amber: #B9822E;
+      --white: #FFFFFF;
+      --radius: 4px;
+      --max: 1180px;
+    }
 
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:'Inter', sans-serif;
-    font-size:16px;
-    line-height:1.55;
-    -webkit-font-smoothing:antialiased;
-  }
-  h1,h2,h3,h4{
-    font-family:'Fraunces', serif;
-    font-weight:500;
-    line-height:1.12;
-    margin:0;
-    letter-spacing:-0.01em;
-  }
-  .mono{font-family:'IBM Plex Mono', monospace;}
-  a{color:inherit;}
-  img{max-width:100%;display:block;}
-  .wrap{max-width:var(--max); margin:0 auto; padding:0 28px;}
-  section{padding:96px 0;}
-  @media (max-width:720px){ section{padding:64px 0;} }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Fraunces', serif;
+      font-weight: 500;
+      line-height: 1.15;
+      margin: 0;
+      letter-spacing: -0.01em;
+    }
+    .mono { font-family: 'IBM Plex Mono', monospace; }
+    a { color: inherit; }
+    img { max-width: 100%; height: auto; display: block; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
+    section { padding: 90px 0; }
+    @media (max-width: 720px) { section { padding: 60px 0; } }
 
-  .eyebrow{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12px;
-    letter-spacing:0.12em;
-    text-transform:uppercase;
-    color:var(--teal-deep);
-    margin-bottom:14px;
-    display:flex;
-    align-items:center;
-    gap:10px;
-  }
-  .eyebrow::before{
-    content:"";
-    width:22px; height:1px;
-    background:var(--amber);
-    display:inline-block;
-  }
+    .eyebrow {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--teal-deep);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 22px; height: 1px;
+      background: var(--amber);
+      display: inline-block;
+    }
 
-  a:focus-visible, button:focus-visible{
-    outline:2px solid var(--teal);
-    outline-offset:3px;
-  }
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid var(--teal);
+      outline-offset: 3px;
+    }
 
-  /* ---------- NAV ---------- */
-  header.site-nav{
-    position:sticky; top:0; z-index:100;
-    background:rgba(245,245,240,0.92);
-    -webkit-backdrop-filter:saturate(140%) blur(8px);
-    backdrop-filter:saturate(140%) blur(8px);
-    border-bottom:1px solid var(--line);
-  }
-  .nav-inner{
-    max-width:var(--max); margin:0 auto; padding:0 28px;
-    height:68px;
-    display:flex; align-items:center; justify-content:space-between;
-  }
-  .brand{
-    font-family:'Fraunces', serif;
-    font-size:20px;
-    font-weight:600;
-    letter-spacing:-0.01em;
-  }
-  .brand span{color:var(--teal);}
-  nav.links{display:flex; gap:34px; align-items:center;}
-  nav.links a{
-    font-size:14px; text-decoration:none; color:var(--ink-soft);
-    position:relative; padding:4px 0;
-  }
-  nav.links a:hover{color:var(--ink);}
-  nav.links a.cta{
-    background:var(--ink); color:var(--paper);
-    padding:9px 18px; border-radius:var(--radius);
-    font-weight:500;
-  }
-  nav.links a.cta:hover{background:var(--teal-deep);}
-  .hamburger{
-    display:none; flex-direction:column; gap:5px;
-    background:none; border:none; cursor:pointer; padding:8px;
-  }
-  .hamburger span{width:24px; height:2px; background:var(--ink); display:block;}
-  .mobile-menu{
-    display:none; flex-direction:column;
-    padding:8px 28px 24px;
-    border-bottom:1px solid var(--line);
-    background:var(--paper);
-  }
-  .mobile-menu a{
-    padding:14px 0; text-decoration:none; color:var(--ink);
-    border-bottom:1px solid var(--line);
-    font-size:15px;
-  }
-  .mobile-menu a:last-child{border-bottom:none;}
-  .mobile-menu.open{display:flex;}
+    /* ---------- NAV ---------- */
+    header.site-nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(245, 245, 240, 0.94);
+      -webkit-backdrop-filter: saturate(140%) blur(8px);
+      backdrop-filter: saturate(140%) blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner {
+      max-width: var(--max); margin: 0 auto; padding: 0 28px;
+      height: 68px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .brand {
+      font-family: 'Fraunces', serif;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .brand span { color: var(--teal); }
+    nav.links { display: flex; gap: 28px; align-items: center; }
+    nav.links a {
+      font-size: 14px; text-decoration: none; color: var(--ink-soft);
+      padding: 4px 0;
+    }
+    nav.links a:hover { color: var(--ink); }
+    nav.links a.cta-btn {
+      background: var(--ink); color: var(--paper);
+      padding: 8px 16px; border-radius: var(--radius);
+      font-weight: 500;
+    }
+    nav.links a.cta-btn:hover { background: var(--teal-deep); }
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      background: none; border: none; cursor: pointer; padding: 8px;
+    }
+    .hamburger span { width: 24px; height: 2px; background: var(--ink); display: block; }
+    .mobile-menu {
+      display: none; flex-direction: column;
+      padding: 12px 28px 24px;
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+    .mobile-menu a {
+      padding: 12px 0; text-decoration: none; color: var(--ink);
+      border-bottom: 1px solid var(--line);
+      font-size: 15px;
+    }
+    .mobile-menu a:last-child { border-bottom: none; }
+    .mobile-menu.open { display: flex; }
 
-  @media (max-width:860px){
-    nav.links{display:none;}
-    .hamburger{display:flex;}
-  }
+    @media (max-width: 860px) {
+      nav.links { display: none; }
+      .hamburger { display: flex; }
+    }
 
-  /* ---------- HERO ---------- */
-  .hero{padding:88px 0 80px;}
-  .hero-grid{
-    display:grid; grid-template-columns:1.15fr 0.85fr; gap:56px; align-items:center;
-  }
-  @media (max-width:900px){ .hero-grid{grid-template-columns:1fr;} }
+    /* ---------- HERO ---------- */
+    .hero { padding: 80px 0 70px; }
+    .hero-grid {
+      display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 48px; align-items: center;
+    }
+    @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } }
 
-  .hero h1{
-    font-size:clamp(38px, 5.4vw, 60px);
-    margin-bottom:6px;
-  }
-  .hero .role{
-    font-family:'IBM Plex Mono', monospace;
-    color:var(--teal-deep);
-    font-size:15px;
-    letter-spacing:0.04em;
-    margin:14px 0 22px;
-  }
-  .hero .stack-row{
-    display:flex; flex-wrap:wrap; gap:8px; margin-bottom:26px;
-  }
-  .chip{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12px;
-    padding:6px 11px;
-    border:1px solid var(--line);
-    border-radius:20px;
-    color:var(--ink-soft);
-    background:var(--white);
-  }
-  .hero p.lead{
-    font-size:17px; color:var(--ink-soft); max-width:52ch; margin-bottom:30px;
-  }
-  .btn-row{display:flex; flex-wrap:wrap; gap:12px;}
-  .btn{
-    display:inline-flex; align-items:center; gap:8px;
-    padding:13px 22px;
-    border-radius:var(--radius);
-    font-size:14px; font-weight:500;
-    text-decoration:none;
-    border:1px solid transparent;
-    cursor:pointer;
-    transition:transform .12s ease;
-  }
-  .btn:hover{transform:translateY(-1px);}
-  .btn-primary{background:var(--ink); color:var(--paper);}
-  .btn-primary:hover{background:var(--teal-deep);}
-  .btn-outline{border-color:var(--ink); color:var(--ink); background:transparent;}
-  .btn-outline:hover{border-color:var(--teal-deep); color:var(--teal-deep);}
-  .btn-ghost{color:var(--ink-soft); text-decoration:underline; padding:13px 4px;}
+    .hero h1 {
+      font-size: clamp(38px, 5.2vw, 56px);
+      margin-bottom: 6px;
+    }
+    .hero .role {
+      font-family: 'IBM Plex Mono', monospace;
+      color: var(--teal-deep);
+      font-size: 15px;
+      margin: 12px 0 20px;
+    }
+    .hero p.lead {
+      font-size: 17px; color: var(--ink-soft); max-width: 52ch; margin-bottom: 16px;
+    }
+    .hero p.sub-lead {
+      font-size: 15px; color: var(--ink-soft); max-width: 52ch; margin-bottom: 28px; line-height: 1.6;
+    }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 20px;
+      border-radius: var(--radius);
+      font-size: 14px; font-weight: 500;
+      text-decoration: none;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: all .15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { background: var(--ink); color: var(--paper); }
+    .btn-primary:hover { background: var(--teal-deep); }
+    .btn-outline { border-color: var(--ink); color: var(--ink); background: transparent; }
+    .btn-outline:hover { border-color: var(--teal-deep); color: var(--teal-deep); }
+    .btn-gitlab { border-color: #E24329; color: #E24329; background: #FFF5F2; }
+    .btn-gitlab:hover { background: #E24329; color: #FFFFFF; }
 
-  /* Hero signature: verified-data readout */
-  .hero-panel{
-    background:var(--white);
-    border:1px solid var(--line);
-    border-radius:6px;
-    padding:26px 26px 22px;
-  }
-  .hero-panel .panel-label{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px; letter-spacing:0.1em; text-transform:uppercase;
-    color:var(--ink-soft); margin-bottom:16px;
-  }
-  .readout-row{
-    display:flex; justify-content:space-between; align-items:baseline;
-    padding:12px 0; border-bottom:1px solid var(--paper-2);
-  }
-  .readout-row:last-child{border-bottom:none;}
-  .readout-row .num{
-    font-family:'IBM Plex Mono', monospace; font-weight:600; font-size:20px; color:var(--teal-deep);
-  }
-  .readout-row .label{font-size:13px; color:var(--ink-soft);}
-  .demand-bar{
-    height:10px; border-radius:6px; background:var(--paper-2);
-    margin-top:16px; overflow:hidden; display:flex;
-  }
-  .demand-bar .seg-peak{background:var(--teal); width:31.2%;}
-  .demand-bar .seg-rest{background:var(--paper-2); flex:1;}
-  .demand-caption{
-    display:flex; justify-content:space-between; font-size:11px;
-    font-family:'IBM Plex Mono', monospace; color:var(--ink-soft); margin-top:8px;
-  }
+    /* Hero Readout Panel */
+    .hero-panel {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 26px 26px 22px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
+    .hero-panel .panel-label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--ink-soft); margin-bottom: 16px; display: flex; justify-content: space-between;
+    }
+    .readout-row {
+      display: flex; justify-content: space-between; align-items: baseline;
+      padding: 11px 0; border-bottom: 1px solid var(--paper-2);
+    }
+    .readout-row:last-child { border-bottom: none; }
+    .readout-row .num {
+      font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 20px; color: var(--teal-deep);
+    }
+    .readout-row .label { font-size: 13.5px; color: var(--ink-soft); }
+    .badge-pass {
+      background: #E8F5E9; color: #2E7D32; font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px; padding: 2px 7px; border-radius: 4px; font-weight: 600;
+    }
 
-  /* ---------- ABOUT ---------- */
-  .about-grid{
-    display:grid; grid-template-columns:0.9fr 1.1fr; gap:60px;
-  }
-  @media (max-width:860px){ .about-grid{grid-template-columns:1fr; gap:32px;} }
-  .about-grid p{color:var(--ink-soft); margin-bottom:16px; font-size:16px;}
-  .fact-list{list-style:none; margin:0; padding:0;}
-  .fact-list li{
-    display:flex; justify-content:space-between; gap:16px;
-    padding:14px 0; border-bottom:1px solid var(--line);
-    font-size:14px;
-  }
-  .fact-list li span:first-child{color:var(--ink-soft);}
-  .fact-list li span:last-child{font-family:'IBM Plex Mono', monospace; text-align:right;}
+    /* ---------- ABOUT ---------- */
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 50px;
+    }
+    @media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; gap: 32px; } }
+    .about-grid p { color: var(--ink-soft); margin-bottom: 16px; font-size: 15.5px; line-height: 1.65; }
+    .fact-list { list-style: none; margin: 0; padding: 0; }
+    .fact-list li {
+      display: flex; justify-content: space-between; gap: 16px;
+      padding: 13px 0; border-bottom: 1px solid var(--line);
+      font-size: 14px;
+    }
+    .fact-list li span:first-child { color: var(--ink-soft); }
+    .fact-list li span:last-child { font-family: 'IBM Plex Mono', monospace; text-align: right; }
 
-  /* ---------- SKILLS ---------- */
-  .skills-grid{
-    display:grid; grid-template-columns:repeat(5, 1fr); gap:1px;
-    background:var(--line); border:1px solid var(--line);
-  }
-  @media (max-width:960px){ .skills-grid{grid-template-columns:repeat(2, 1fr);} }
-  @media (max-width:520px){ .skills-grid{grid-template-columns:1fr;} }
-  .skill-col{background:var(--white); padding:26px 22px;}
-  .skill-col h3{font-size:13px; font-family:'IBM Plex Mono', monospace; letter-spacing:0.06em; text-transform:uppercase; color:var(--teal-deep); margin-bottom:16px;}
-  .skill-col ul{list-style:none; margin:0; padding:0;}
-  .skill-col li{font-size:14px; color:var(--ink-soft); padding:6px 0;}
+    /* ---------- SKILLS ---------- */
+    .skills-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
+      background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden;
+    }
+    @media (max-width: 960px) { .skills-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 520px) { .skills-grid { grid-template-columns: 1fr; } }
+    .skill-col { background: var(--white); padding: 26px 22px; }
+    .skill-col h3 {
+      font-size: 13px; font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--teal-deep); margin-bottom: 16px;
+    }
+    .skill-col ul { list-style: none; margin: 0; padding: 0; }
+    .skill-col li { font-size: 14px; color: var(--ink-soft); padding: 5px 0; border-bottom: 1px dotted var(--paper-2); }
+    .skill-col li:last-child { border-bottom: none; }
 
-  /* ---------- EXPERIENCE ---------- */
-  .exp-card{
-    background:var(--white); border:1px solid var(--line); border-radius:6px;
-    padding:34px 34px;
-  }
-  .exp-top{display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:18px;}
-  .exp-top h3{font-size:22px;}
-  .exp-top .exp-org{color:var(--teal-deep); font-size:15px; margin-top:4px;}
-  .exp-top .exp-date{
-    font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--ink-soft);
-    border:1px solid var(--line); padding:6px 12px; border-radius:20px; white-space:nowrap;
-  }
-  .exp-card ul{margin:0; padding-left:20px; color:var(--ink-soft);}
-  .exp-card li{margin-bottom:9px; font-size:15px;}
+    /* ---------- EXPERIENCE ---------- */
+    .exp-card {
+      background: var(--white); border: 1px solid var(--line); border-radius: 6px;
+      padding: 32px;
+    }
+    .exp-top { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 16px; }
+    .exp-top h3 { font-size: 22px; }
+    .exp-top .exp-org { color: var(--teal-deep); font-size: 15px; margin-top: 4px; font-weight: 500; }
+    .exp-top .exp-date {
+      font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; color: var(--ink-soft);
+      border: 1px solid var(--line); padding: 5px 12px; border-radius: 20px; white-space: nowrap;
+    }
+    .exp-card ul { margin: 0; padding-left: 20px; color: var(--ink-soft); }
+    .exp-card li { margin-bottom: 10px; font-size: 14.5px; line-height: 1.6; }
 
-  /* ---------- PROJECTS ---------- */
-  .project-card{
-    background:var(--white); border:1px solid var(--line); border-radius:6px;
-    margin-bottom:28px; overflow:hidden;
-  }
-  .project-head{
-    padding:32px 34px 0; display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap;
-  }
-  .project-head h3{font-size:26px; margin-bottom:8px;}
-  .project-head .tagline{color:var(--ink-soft); font-size:15px; max-width:56ch;}
-  .project-tech{display:flex; flex-wrap:wrap; gap:7px; margin:16px 0 0;}
-  .project-body{padding:24px 34px 34px; display:grid; grid-template-columns:1fr 1fr; gap:32px;}
-  @media (max-width:860px){ .project-body{grid-template-columns:1fr;} }
+    /* ---------- PROJECTS ---------- */
+    .project-card {
+      background: var(--white); border: 1px solid var(--line); border-radius: 6px;
+      margin-bottom: 40px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    }
+    .project-head {
+      padding: 32px 34px 20px; border-bottom: 1px solid var(--paper-2);
+    }
+    .project-head h3 { font-size: 26px; margin-bottom: 10px; }
+    .project-head .tagline { color: var(--ink-soft); font-size: 15px; max-width: 65ch; line-height: 1.5; }
+    .project-tech { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 14px; }
+    .chip {
+      font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 4px 10px;
+      border: 1px solid var(--line); border-radius: 20px; color: var(--ink-soft); background: var(--paper);
+    }
+    .project-body {
+      padding: 28px 34px 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: start;
+    }
+    @media (max-width: 900px) { .project-body { grid-template-columns: 1fr; } }
 
-  .finding-list{list-style:none; margin:0 0 20px; padding:0;}
-  .finding-list li{
-    display:flex; gap:10px; font-size:14.5px; color:var(--ink-soft);
-    padding:9px 0; border-bottom:1px solid var(--paper-2);
-  }
-  .finding-list li:last-child{border-bottom:none;}
-  .finding-list li::before{content:"—"; color:var(--amber); flex-shrink:0;}
+    .case-section-title {
+      font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--teal-deep); margin-bottom: 8px; font-weight: 600;
+    }
+    .case-block { margin-bottom: 20px; }
+    .case-block p { margin: 0; font-size: 14.5px; color: var(--ink-soft); line-height: 1.55; }
 
-  .viz-box{
-    background:var(--paper); border:1px solid var(--line); border-radius:6px;
-    padding:20px; display:flex; flex-direction:column; justify-content:center;
-  }
-  .viz-caption{
-    font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft);
-    text-transform:uppercase; letter-spacing:.06em; margin-top:10px; text-align:center;
-  }
-  .project-actions{
-    display:flex; gap:12px; flex-wrap:wrap; padding:0 34px 30px;
-  }
-  .project-actions .btn{padding:11px 18px; font-size:13.5px;}
+    .finding-list { list-style: none; margin: 0; padding: 0; }
+    .finding-list li {
+      display: flex; gap: 10px; font-size: 14px; color: var(--ink-soft);
+      padding: 8px 0; border-bottom: 1px solid var(--paper-2); line-height: 1.5;
+    }
+    .finding-list li:last-child { border-bottom: none; }
+    .finding-list li::before { content: "—"; color: var(--amber); flex-shrink: 0; font-weight: bold; }
 
-  /* ---------- ANALYTICAL HIGHLIGHTS ---------- */
-  .metrics-grid{
-    display:grid; grid-template-columns:repeat(3, 1fr); gap:1px;
-    background:var(--line); border:1px solid var(--line);
-  }
-  @media (max-width:760px){ .metrics-grid{grid-template-columns:repeat(2,1fr);} }
-  @media (max-width:480px){ .metrics-grid{grid-template-columns:1fr;} }
-  .metric{background:var(--white); padding:32px 26px;}
-  .metric .num{
-    font-family:'IBM Plex Mono', monospace; font-weight:600;
-    font-size:34px; color:var(--teal-deep);
-  }
-  .metric .cap{font-size:13.5px; color:var(--ink-soft); margin-top:8px;}
+    .preview-box {
+      border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: var(--paper);
+    }
+    .preview-caption {
+      font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--ink-soft);
+      text-transform: uppercase; letter-spacing: .06em; padding: 10px; text-align: center;
+      background: var(--paper-2); border-top: 1px solid var(--line);
+    }
+    .project-actions {
+      display: flex; gap: 12px; flex-wrap: wrap; padding: 0 34px 28px;
+    }
 
-  /* ---------- CERTIFICATIONS ---------- */
-  .cert-list{display:flex; flex-direction:column; gap:1px; background:var(--line); border:1px solid var(--line); border-radius:6px; overflow:hidden;}
-  .cert-item{
-    background:var(--white); padding:20px 26px;
-    display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;
-  }
-  .cert-item .cert-name{font-size:15.5px; font-weight:500;}
-  .cert-item .cert-issuer{font-size:13px; color:var(--ink-soft); font-family:'IBM Plex Mono', monospace; margin-top:3px;}
+    /* ---------- HIGHLIGHTS ---------- */
+    .metrics-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+      background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden;
+    }
+    @media (max-width: 760px) { .metrics-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .metrics-grid { grid-template-columns: 1fr; } }
+    .metric { background: var(--white); padding: 28px 24px; }
+    .metric .num {
+      font-family: 'IBM Plex Mono', monospace; font-weight: 600;
+      font-size: 32px; color: var(--teal-deep);
+    }
+    .metric .cap { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
 
-  /* ---------- PROJECT FILES ---------- */
-  .files-panel{
-    background:var(--teal-deep); color:var(--paper);
-    border-radius:8px; padding:48px 44px;
-    display:flex; justify-content:space-between; align-items:center; gap:28px; flex-wrap:wrap;
-  }
-  .files-panel h2{color:var(--white); font-size:28px; margin-bottom:10px;}
-  .files-panel p{color:#C9DAD8; max-width:52ch; font-size:15px;}
-  .files-panel .btn-primary{background:var(--amber); color:var(--ink);}
-  .files-panel .btn-primary:hover{background:#CC9640;}
-  .github-note{
-    margin-top:26px; font-size:12.5px; color:#9FBAB6;
-    border-top:1px solid rgba(255,255,255,0.14); padding-top:16px;
-  }
+    /* ---------- CERTIFICATIONS ---------- */
+    .cert-list {
+      display: flex; flex-direction: column; gap: 1px;
+      background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden;
+    }
+    .cert-item {
+      background: var(--white); padding: 18px 24px;
+      display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;
+    }
+    .cert-item .cert-name { font-size: 15px; font-weight: 500; }
+    .cert-item .cert-issuer { font-size: 13px; color: var(--ink-soft); font-family: 'IBM Plex Mono', monospace; margin-top: 3px; }
+    .cert-verify { font-size: 13px; color: var(--teal); font-weight: 500; text-decoration: underline; }
 
-  /* ---------- CONTACT ---------- */
-  .contact-grid{
-    display:grid; grid-template-columns:1fr 1fr; gap:40px;
-  }
-  @media (max-width:760px){ .contact-grid{grid-template-columns:1fr;} }
-  .contact-card{
-    background:var(--white); border:1px solid var(--line); border-radius:6px; padding:36px;
-  }
-  .contact-row{display:flex; justify-content:space-between; padding:14px 0; border-bottom:1px solid var(--paper-2); font-size:14.5px;}
-  .contact-row:last-child{border-bottom:none;}
-  .contact-row a{text-decoration:underline; text-decoration-color:var(--line);}
-  .contact-cta{
-    background:var(--paper-2); border-radius:6px; padding:36px;
-    display:flex; flex-direction:column; justify-content:center;
-  }
+    /* ---------- REPO BANNER ---------- */
+    .repo-banner {
+      background: var(--teal-deep); color: var(--paper); border-radius: 6px;
+      padding: 40px; display: flex; justify-content: space-between; align-items: center;
+      gap: 24px; flex-wrap: wrap;
+    }
+    .repo-banner h2 { color: var(--white); font-size: 26px; margin-bottom: 8px; }
+    .repo-banner p { color: #C9DAD8; max-width: 55ch; font-size: 14.5px; margin: 0; line-height: 1.5; }
 
-  /* ---------- FOOTER ---------- */
-  footer{
-    border-top:1px solid var(--line); padding:36px 0; margin-top:20px;
-  }
-  .footer-inner{
-    display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px;
-    font-size:13px; color:var(--ink-soft);
-  }
-  .footer-links{display:flex; gap:20px;}
-  .footer-links a{text-decoration:none;}
-  .footer-links a:hover{color:var(--teal-deep);}
+    /* ---------- CONTACT ---------- */
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
+    @media (max-width: 760px) { .contact-grid { grid-template-columns: 1fr; } }
+    .contact-card {
+      background: var(--white); border: 1px solid var(--line); border-radius: 6px; padding: 32px;
+    }
+    .contact-row {
+      display: flex; justify-content: space-between; padding: 13px 0; border-bottom: 1px solid var(--paper-2); font-size: 14.5px;
+    }
+    .contact-row:last-child { border-bottom: none; }
+    .contact-row a { text-decoration: underline; text-decoration-color: var(--line); }
+    .contact-cta {
+      background: var(--paper-2); border-radius: 6px; padding: 32px;
+      display: flex; flex-direction: column; justify-content: center;
+    }
 
-  @media (prefers-reduced-motion: reduce){
-    html{scroll-behavior:auto;}
-    *{transition:none !important;}
-  }
-
-  .skip-link{
-    position:absolute; left:-999px; top:0; z-index:200;
-    background:var(--ink); color:var(--paper);
-    padding:12px 18px; border-radius:0 0 6px 0;
-    font-size:14px; text-decoration:none;
-  }
-  .skip-link:focus{left:0;}
-</style>
+    footer { border-top: 1px solid var(--line); padding: 32px 0; margin-top: 20px; font-size: 13px; color: var(--ink-soft); }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a { text-decoration: none; }
+    .footer-links a:hover { color: var(--teal-deep); }
+  </style>
 </head>
 <body>
-<a href="#main" class="skip-link">Skip to content</a>
 
 <header class="site-nav">
   <div class="nav-inner">
     <a href="#home" class="brand">Ansh<span>.</span>Thakur</a>
     <nav class="links" aria-label="Primary">
-      <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
-      <a href="#certifications">Certifications</a>
+      <a href="#certifications">Credentials</a>
       <a href="#contact">Contact</a>
-      <a href="#projects" class="cta">View Projects</a>
+      <a href="Analyst_Resume.pdf" class="cta-btn" target="_blank">View Resume</a>
     </nav>
     <button class="hamburger" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
       <span></span><span></span><span></span>
     </button>
   </div>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
-    <a href="#certifications">Certifications</a>
+    <a href="#certifications">Credentials</a>
     <a href="#contact">Contact</a>
+    <a href="Analyst_Resume.pdf" target="_blank">View Resume (PDF)</a>
   </div>
 </header>
 
 <main id="main">
+
 <!-- ================= HERO ================= -->
 <section class="hero" id="home">
   <div class="wrap hero-grid">
     <div>
-      <div class="eyebrow">Entry-Level Data Analyst</div>
+      <div class="eyebrow">Data Analyst · BI &amp; Applied Analytics</div>
       <h1>Ansh Thakur</h1>
-      <div class="role mono">Python · SQL · Power BI · Excel</div>
-      <p class="lead">Turning raw data into reliable analysis, clear dashboards, and actionable business insights.</p>
-      <p class="lead" style="margin-top:-14px; font-size:15px;">
-        B.Sc. IT graduate currently pursuing an MCA, with a Data Analytics internship
-        and hands-on project work across Python, SQL, Power BI and Excel — building
-        cleaning pipelines, KPI dashboards, and business-facing reports from real datasets.
+      <div class="role mono">SQL · Power BI · Python · Advanced Excel</div>
+      <p class="lead">
+        I answer business questions with data — including the ones where the answer is "don't do it."
+      </p>
+      <p class="sub-lead">
+        B.Sc. IT graduate and Data Analytics Intern who turns transactional records into reproducible,
+        actionable insights. Specialized in volume normalization, margin protection, and executive KPI dashboards.
       </p>
       <div class="btn-row">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="Ansh_Thakur_Data_Analyst_Resume.pdf" class="btn btn-outline" download>Download Resume</a>
-        <a href="https://www.linkedin.com/in/ansh-thakur-5407192b4/" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="#projects" class="btn btn-primary">Explore Projects</a>
+        <a href="Analyst_Resume.pdf" class="btn btn-outline" download>Download Resume (PDF)</a>
+        <a href="https://gitlab.com/ansht_121/data-analytics" class="btn btn-gitlab" target="_blank" rel="noopener">GitLab Portfolio ↗</a>
       </div>
     </div>
     <div class="hero-panel">
-      <div class="panel-label">Verified Project Findings</div>
-      <div class="readout-row">
-        <span class="label">Ride records analyzed</span>
-        <span class="num">35,000+</span>
+      <div class="panel-label">
+        <span>Verified Portfolio Scope</span>
+        <span class="badge-pass">18/18 Tests Pass</span>
       </div>
       <div class="readout-row">
-        <span class="label">Orders analyzed (supply chain)</span>
+        <span class="label">Total Records Analysed</span>
+        <span class="num">50,034</span>
+      </div>
+      <div class="readout-row">
+        <span class="label">Supply Chain Orders ($73M Net Rev)</span>
         <span class="num">7,991</span>
       </div>
       <div class="readout-row">
-        <span class="label">Revenue analyzed</span>
-        <span class="num">$82.7M</span>
+        <span class="label">Inter-Warehouse Delay Variance</span>
+        <span class="num">0.08%</span>
       </div>
-      <div class="demand-bar" aria-hidden="true">
-        <div class="seg-peak"></div><div class="seg-rest"></div>
+      <div class="readout-row">
+        <span class="label">5–7 PM Ride Demand Surge</span>
+        <span class="num">31.2%</span>
       </div>
-      <div class="demand-caption">
-        <span>5–7 PM demand share</span><span>31.2%</span>
+      <div class="readout-row">
+        <span class="label">Month-to-Month Churn Revenue Risk</span>
+        <span class="num">72.0%</span>
       </div>
     </div>
   </div>
@@ -453,32 +441,25 @@
 <section id="about">
   <div class="wrap about-grid">
     <div>
-      <div class="eyebrow">About</div>
-      <h2 style="font-size:32px; margin-bottom:18px;">Analyst profile, built on real data work.</h2>
+      <div class="eyebrow">Professional Profile</div>
+      <h2 style="font-size:32px; margin-bottom:18px;">Business-focused, reproducible analysis.</h2>
       <p>
-        I'm an Information Technology graduate currently completing a Master of Computer
-        Applications, with a focused Data Analytics internship and a portfolio built entirely
-        on hands-on project work — not coursework alone.
+        I am an entry-level Data Analyst with an Information Technology degree (CGPA 7.26) and hands-on internship experience at Unified Mentor Pvt. Ltd.
       </p>
       <p>
-        My work centers on the full analysis lifecycle: cleaning and validating messy datasets,
-        writing SQL to answer specific business questions, building dashboards in Power BI and
-        Excel, and translating the results into KPI reporting and recommendations a non-technical
-        stakeholder can act on.
+        My work focuses on the full analytics lifecycle: ingesting and cleaning raw operational data, writing structured SQL to answer strategic questions, designing interactive dashboards in Power BI and Excel, and presenting findings that protect business capital.
       </p>
       <p>
-        I'm looking for an entry-level Data Analyst, BI, or Reporting role where I can keep
-        building that pipeline — from raw data to a decision someone actually makes.
+        I prioritize diagnostic rigor over superficial charts — identifying volume illusions, testing for confounders, and ensuring every quoted headline figure is traceable to committed code.
       </p>
     </div>
     <ul class="fact-list">
-      <li><span>Education</span><span>B.Sc. IT — Gondwana University</span></li>
-      <li><span>CGPA</span><span>7.26 / 10</span></li>
-      <li><span>Currently pursuing</span><span>MCA, Ballarpur Institute of Technology (2025–2027)</span></li>
-      <li><span>Internship</span><span>Data Analytics — Unified Mentor Pvt. Ltd.</span></li>
-      <li><span>Training</span><span>Data Analytics — Digital Edify Institute</span></li>
-      <li><span>Location</span><span>Chandrapur, Maharashtra, India</span></li>
-      <li><span>Core stack</span><span>Python · SQL · Power BI · Excel</span></li>
+      <li><span>Degree</span><span>B.Sc. IT — Gondwana University (2022–2025)</span></li>
+      <li><span>Academic Merit</span><span>7.26 / 10 CGPA</span></li>
+      <li><span>Practical Experience</span><span>Data Analytics Intern — Unified Mentor Pvt. Ltd.</span></li>
+      <li><span>Technical Training</span><span>Data Analytics — Digital Edify</span></li>
+      <li><span>Location</span><span>Maharashtra, India</span></li>
+      <li><span>Core Competencies</span><span>SQL · Power BI · Excel VBA · Python (Pandas)</span></li>
     </ul>
   </div>
 </section>
@@ -486,42 +467,51 @@
 <!-- ================= SKILLS ================= -->
 <section id="skills" style="background:var(--paper-2);">
   <div class="wrap">
-    <div class="eyebrow">Skills</div>
-    <h2 style="font-size:32px; margin-bottom:36px;">What I work with.</h2>
+    <div class="eyebrow">Technical Competencies</div>
+    <h2 style="font-size:32px; margin-bottom:34px;">Structured tools &amp; capabilities.</h2>
     <div class="skills-grid">
       <div class="skill-col">
-        <h3>Data Analysis</h3>
+        <h3>SQL &amp; Warehousing</h3>
         <ul>
-          <li>Python</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li>
-          <li>Seaborn</li><li>EDA</li><li>Data Cleaning</li><li>Data Validation</li>
-        </ul>
-      </div>
-      <div class="skill-col">
-        <h3>SQL &amp; Databases</h3>
-        <ul>
-          <li>SQL</li><li>MySQL</li><li>PostgreSQL</li><li>Joins</li>
-          <li>Subqueries</li><li>CTEs</li><li>Window Functions</li><li>Database Design</li>
+          <li>MySQL &amp; PostgreSQL</li>
+          <li>CTEs &amp; Subqueries</li>
+          <li>Window Functions (`LAG`, `RANK`)</li>
+          <li>`ROW_NUMBER()` Deduplication</li>
+          <li>Relational Schema Design</li>
+          <li>Running Totals &amp; Pareto Analysis</li>
         </ul>
       </div>
       <div class="skill-col">
         <h3>BI &amp; Visualization</h3>
         <ul>
-          <li>Power BI</li><li>DAX</li><li>Power Query</li><li>Advanced Excel</li>
-          <li>VBA</li><li>Pivot Tables</li><li>Tableau</li>
+          <li>Microsoft Power BI</li>
+          <li>DAX Calculated Measures</li>
+          <li>Power Query Data Models</li>
+          <li>Advanced Excel &amp; Pivot Tables</li>
+          <li>VBA / Macro Automation</li>
+          <li>Executive KPI Dashboards</li>
         </ul>
       </div>
       <div class="skill-col">
-        <h3>Analytics &amp; Business</h3>
+        <h3>Python Analytics</h3>
         <ul>
-          <li>KPI Reporting</li><li>Dashboard Development</li><li>Business Analysis</li>
-          <li>Process Improvement</li><li>Requirement Analysis</li><li>Documentation</li>
-          <li>Analytical Thinking</li><li>Problem Solving</li>
+          <li>Pandas &amp; NumPy</li>
+          <li>Exploratory Data Analysis (EDA)</li>
+          <li>SciPy Statistical Hypothesis Testing</li>
+          <li>ANOVA Variance Decomposition</li>
+          <li>Matplotlib &amp; Seaborn</li>
+          <li>Streamlit Interactive Apps</li>
         </ul>
       </div>
       <div class="skill-col">
-        <h3>Tools</h3>
+        <h3>Business Analytics</h3>
         <ul>
-          <li>Jupyter Notebook</li><li>Google Colab</li><li>VS Code</li><li>Git</li>
+          <li>P&amp;L Margin &amp; Discount Analysis</li>
+          <li>ABC Inventory Classification</li>
+          <li>Cohort Retention Analysis</li>
+          <li>Demand Surge Scheduling</li>
+          <li>Root Cause &amp; Trap Auditing</li>
+          <li>GitLab Version Control &amp; Tests</li>
         </ul>
       </div>
     </div>
@@ -532,7 +522,7 @@
 <section id="experience">
   <div class="wrap">
     <div class="eyebrow">Experience</div>
-    <h2 style="font-size:32px; margin-bottom:36px;">Where I've applied this.</h2>
+    <h2 style="font-size:32px; margin-bottom:32px;">Practical industry background.</h2>
     <div class="exp-card">
       <div class="exp-top">
         <div>
@@ -542,9 +532,10 @@
         <div class="exp-date">Sep 2025 – Dec 2025</div>
       </div>
       <ul>
-        <li>Cleaned and structured raw datasets to prepare them for reliable downstream analysis.</li>
-        <li>Built dashboards to surface key metrics for business review.</li>
-        <li>Automated recurring reporting workflows to reduce manual reporting effort.</li>
+        <li>Cleaned, standardized, and validated transactional datasets across multiple business domains using Python (Pandas) and SQL.</li>
+        <li>Automated recurring monthly KPI reporting routines in Microsoft Excel using formulas and VBA macros, cutting manual reporting overhead.</li>
+        <li>Built interactive Power BI dashboards using custom DAX measures to surface revenue trends, operational bottlenecks, and customer cohorts.</li>
+        <li>Documented data cleaning rules and analytical methodologies to ensure full auditability across reporting deliverables.</li>
       </ul>
     </div>
   </div>
@@ -553,174 +544,179 @@
 <!-- ================= PROJECTS ================= -->
 <section id="projects" style="background:var(--paper-2);">
   <div class="wrap">
-    <div class="eyebrow">Featured Projects</div>
-    <h2 style="font-size:32px; margin-bottom:36px;">Two projects, worked end to end.</h2>
+    <div class="eyebrow">Flagship Case Studies</div>
+    <h2 style="font-size:32px; margin-bottom:34px;">Three end-to-end analytical solutions.</h2>
 
     <!-- PROJECT 1: SUPPLY CHAIN -->
     <article class="project-card" id="project-supply-chain">
       <div class="project-head">
-        <div>
-          <h3>Supply Chain Inventory &amp; Performance Optimization</h3>
-          <p class="tagline">Cleaned and analyzed 7,991 orders across 47 SKUs to find out whether late
-          deliveries were a warehouse-specific problem or a systemic one — and to prioritize inventory
-          attention using ABC classification.</p>
-          <div class="project-tech">
-            <span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">SQL / MySQL</span>
-            <span class="chip">Excel / VBA</span><span class="chip">Power BI · DAX</span>
-          </div>
+        <h3>1. Supply Chain Inventory &amp; Performance Optimization</h3>
+        <p class="tagline">Disproved a multi-million-dollar warehouse overhaul by proving late deliveries were systemic, and identified an executive pricing floor to prevent discount margin erosion.</p>
+        <div class="project-tech">
+          <span class="chip">Python (Pandas, openpyxl)</span>
+          <span class="chip">MySQL (CTEs, STDDEV)</span>
+          <span class="chip">ANOVA Principles</span>
+          <span class="chip">Excel VBA Dashboard</span>
         </div>
       </div>
       <div class="project-body">
         <div>
-          <h4 style="font-size:15px; font-family:'IBM Plex Mono',monospace; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-soft); margin-bottom:14px;">Key Findings</h4>
-          <ul class="finding-list">
-            <li>Delivery-time variance between warehouses is just <strong>0.08%</strong> — the late-delivery issue is systemic, not concentrated in one site.</li>
-            <li>ABC classification shows <strong>78.7%</strong> of revenue comes from A-tier SKUs, out of 47 total.</li>
-            <li>Full pipeline analyzed <strong>$82.7M</strong> in revenue and <strong>$30.9M</strong> in profit across 7,991 orders.</li>
-            <li>Excel/VBA dashboard automates the reporting layer; Power BI/DAX used for supporting analysis views.</li>
-          </ul>
+          <div class="case-block">
+            <div class="case-section-title">Business Problem &amp; Scope</div>
+            <p>Half of 7,991 orders missed the 5-day delivery target ($36.3M exposed). Management prepared to overhaul warehouse NMK1003 due to its high late-order volume.</p>
+          </div>
+          <div class="case-block">
+            <div class="case-section-title">Methodology &amp; Finding</div>
+            <ul class="finding-list">
+              <li><strong>Volume Illusion Caught:</strong> NMK1003 generated 31.9% of late orders simply because it handled 31.4% of total order volume.</li>
+              <li><strong>ANOVA Variance Decomposition:</strong> Revealed that <strong>only 0.08%</strong> of delivery-time variance was between facilities; all six sites share an identical 2.82–2.88 day spread.</li>
+              <li><strong>Discount Cliff:</strong> Orders with $\ge 20\%$ discount collapsed net margin to <strong>4.64%</strong> (vs. 31.02% at 5–10% discount).</li>
+            </ul>
+          </div>
+          <div class="case-block">
+            <div class="case-section-title">Strategic Business Action</div>
+            <p>Halted planned physical facility renovations, redirecting investment to upstream 3PL carrier dispatch SLAs. Established an executive 15% discount approval limit.</p>
+          </div>
         </div>
-        <div class="viz-box">
-          <svg viewBox="0 0 320 170" width="100%" role="img" aria-label="ABC classification: A-tier SKUs generate 78.7% of revenue">
-            <text x="0" y="18" font-family="IBM Plex Mono, monospace" font-size="11" fill="#4B5058">ABC CLASSIFICATION — REVENUE SHARE</text>
-            <g transform="translate(0,36)">
-              <rect x="0" y="0" width="320" height="26" rx="3" fill="#EFEEE6"/>
-              <rect x="0" y="0" width="251.8" height="26" rx="3" fill="#1D6C64"/>
-              <text x="8" y="18" font-family="IBM Plex Mono, monospace" font-size="12" fill="#fff">A-tier: 78.7%</text>
-              <text x="256" y="18" font-family="IBM Plex Mono, monospace" font-size="11" fill="#4B5058">B/C: 21.3%</text>
-            </g>
-            <g transform="translate(0,86)">
-              <text x="0" y="0" font-family="IBM Plex Mono, monospace" font-size="11" fill="#4B5058">WAREHOUSE DELIVERY-TIME VARIANCE</text>
-              <rect x="0" y="14" width="320" height="26" rx="3" fill="#EFEEE6"/>
-              <rect x="0" y="14" width="3" height="26" rx="1" fill="#B9822E"/>
-              <text x="10" y="32" font-family="IBM Plex Mono, monospace" font-size="12" fill="#14171D">0.08% variance across sites — systemic, not site-specific</text>
-            </g>
-          </svg>
-          <div class="viz-caption">Chart built from verified project metrics — not a dashboard screenshot</div>
+        <div class="preview-box">
+          <img src="images/supplychain-dashboard.webp" alt="Supply Chain Analytics Dashboard Screenshot" loading="lazy">
+          <div class="preview-caption">Interactive Excel &amp; VBA Operational Dashboard</div>
         </div>
       </div>
       <div class="project-actions">
-        <a href="https://drive.google.com/drive/folders/1N7W-ZWuNlb0WFUhfyA_O1Pp_qg2wmOvW?usp=sharing" class="btn btn-outline" target="_blank" rel="noopener">View Project Files</a>
+        <a href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/supply-chain-performance-analysis" class="btn btn-outline" target="_blank" rel="noopener">View Repository &amp; SQL</a>
       </div>
     </article>
 
-    <!-- PROJECT 2: RIDE OPS -->
+    <!-- PROJECT 2: UBER RIDE OPS -->
     <article class="project-card" id="project-ride-ops">
       <div class="project-head">
-        <div>
-          <h3>Ride Demand Forecasting &amp; Revenue Analytics</h3>
-          <p class="tagline">Analyzed 35,000+ ride records to understand when demand peaks and which
-          trip types actually drive revenue — cleaning the data in SQL before building out the
-          demand and fare analysis in Python and Power BI.</p>
-          <div class="project-tech">
-            <span class="chip">Python</span><span class="chip">SQL / MySQL</span><span class="chip">Power BI</span>
-            <span class="chip">Excel</span><span class="chip">Pandas</span><span class="chip">Matplotlib / Seaborn</span>
-          </div>
+        <h3>2. Ride Demand Acceleration &amp; Dynamic Revenue Analytics</h3>
+        <p class="tagline">Separated peak volume from demand acceleration to optimize fleet mobilization, and uncovered confounding variables behind driver rating metrics.</p>
+        <div class="project-tech">
+          <span class="chip">MySQL (`LAG()`, `ROW_NUMBER`)</span>
+          <span class="chip">Python (EDA)</span>
+          <span class="chip">Power BI (.pbix)</span>
+          <span class="chip">DAX Modeling</span>
         </div>
       </div>
       <div class="project-body">
         <div>
-          <h4 style="font-size:15px; font-family:'IBM Plex Mono',monospace; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-soft); margin-bottom:14px;">Key Findings</h4>
-          <ul class="finding-list">
-            <li>5–7 PM carries <strong>31.2%</strong> of total demand — the clearest single window for supply planning.</li>
-            <li>Airport trips are <strong>39.6%</strong> of ride volume but drive <strong>54.8%</strong> of revenue.</li>
-            <li>Fare-per-km holds steady around <strong>₹22.06–₹22.41</strong> once distance is controlled for.</li>
-            <li>SQL cleaning used window functions and <span class="mono">ROW_NUMBER()</span> deduplication ahead of the Python EDA and Power BI build.</li>
-          </ul>
+          <div class="case-block">
+            <div class="case-section-title">Business Problem &amp; Scope</div>
+            <p>Analyzed 35,000 ride-sharing records across 5 metropolitan zones to determine optimal surge pricing timing and fleet tier deployment.</p>
+          </div>
+          <div class="case-block">
+            <div class="case-section-title">Methodology &amp; Finding</div>
+            <ul class="finding-list">
+              <li><strong>Surge Acceleration Identified:</strong> Using `LAG()` window queries, proved demand accelerates at <strong>5 PM (+138%)</strong>, an hour before the 6 PM volume peak.</li>
+              <li><strong>Airport Revenue Concentration:</strong> Airport trips comprise 39.6% of volume but generate <strong>54.8% of gross revenue</strong> (₹535.77 vs ₹289.40 avg fare).</li>
+              <li><strong>Confounder Caught:</strong> Lower-rated drivers appeared to earn more, but controlling for distance revealed fare/km is flat at ₹22/km (ratings dropped due to trip fatigue).</li>
+            </ul>
+          </div>
+          <div class="case-block">
+            <div class="case-section-title">Strategic Business Action</div>
+            <p>Shifted driver surge incentives to 4:30 PM to mobilize fleet supply ahead of demand. Disproved rating-based driver penalties on long trips.</p>
+          </div>
         </div>
-        <div class="viz-box">
-          <svg viewBox="0 0 320 170" width="100%" role="img" aria-label="Airport trips are 39.6% of volume but 54.8% of revenue">
-            <text x="0" y="18" font-family="IBM Plex Mono, monospace" font-size="11" fill="#4B5058">AIRPORT TRIPS — VOLUME VS REVENUE</text>
-            <g transform="translate(0,32)">
-              <text x="0" y="10" font-family="IBM Plex Mono, monospace" font-size="11" fill="#4B5058">Volume</text>
-              <rect x="0" y="16" width="320" height="18" rx="3" fill="#EFEEE6"/>
-              <rect x="0" y="16" width="126.7" height="18" rx="3" fill="#B9822E"/>
-              <text x="132" y="30" font-family="IBM Plex Mono, monospace" font-size="11" fill="#14171D">39.6%</text>
-            </g>
-            <g transform="translate(0,68)">
-              <text x="0" y="10" font-family="IBM Plex Mono, monospace" font-size="11" fill="#4B5058">Revenue</text>
-              <rect x="0" y="16" width="320" height="18" rx="3" fill="#EFEEE6"/>
-              <rect x="0" y="16" width="175.4" height="18" rx="3" fill="#1D6C64"/>
-              <text x="181" y="30" font-family="IBM Plex Mono, monospace" font-size="11" fill="#fff">54.8%</text>
-            </g>
-            <g transform="translate(0,116)">
-              <text x="0" y="0" font-family="IBM Plex Mono, monospace" font-size="11" fill="#4B5058">5–7 PM DEMAND CONCENTRATION</text>
-              <rect x="0" y="10" width="320" height="18" rx="3" fill="#EFEEE6"/>
-              <rect x="0" y="10" width="99.8" height="18" rx="3" fill="#1D6C64"/>
-              <text x="105" y="24" font-family="IBM Plex Mono, monospace" font-size="11" fill="#14171D">31.2%</text>
-            </g>
-          </svg>
-          <div class="viz-caption">Chart built from verified project metrics — not a dashboard screenshot</div>
+        <div class="preview-box">
+          <img src="images/uber-dashboard.webp" alt="Uber Trip Power BI Dashboard Preview" loading="lazy">
+          <div class="preview-caption">Executive Power BI Hourly Demand &amp; Fare Dashboard</div>
         </div>
       </div>
       <div class="project-actions">
-        <a href="https://drive.google.com/drive/folders/1N7W-ZWuNlb0WFUhfyA_O1Pp_qg2wmOvW?usp=sharing" class="btn btn-outline" target="_blank" rel="noopener">View Project Files</a>
+        <a href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/uber-trip-demand-analysis" class="btn btn-outline" target="_blank" rel="noopener">View Repository &amp; Power BI</a>
+      </div>
+    </article>
+
+    <!-- PROJECT 3: CHURN & RETENTION -->
+    <article class="project-card" id="project-churn">
+      <div class="project-head">
+        <h3>3. Subscription Retention &amp; Revenue-at-Risk Analytics</h3>
+        <p class="tagline">Analyzed 7,032 subscriber records to isolate contract confounders and target retention budgets directly toward high-exposure customer cohorts.</p>
+        <div class="project-tech">
+          <span class="chip">Python (Pandas, SciPy)</span>
+          <span class="chip">Chi-Square &amp; Cramér's V</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">Excel Dashboard</span>
+        </div>
+      </div>
+      <div class="project-body">
+        <div>
+          <div class="case-block">
+            <div class="case-section-title">Business Problem &amp; Scope</div>
+            <p>A subscription business faced a 26.6% customer churn rate. Retention spend needed prioritization based on dollar revenue at risk rather than raw customer count.</p>
+          </div>
+          <div class="case-block">
+            <div class="case-section-title">Methodology &amp; Finding</div>
+            <ul class="finding-list">
+              <li><strong>Contract Risk Concentration:</strong> Month-to-month contracts churn at 42.7% and account for <strong>72.0% of total revenue-at-risk</strong>.</li>
+              <li><strong>Confounder Discovered:</strong> Fiber-optic customers exhibited elevated churn, but segmentation proved the driver was contract structure, not network quality.</li>
+              <li><strong>Statistical Testing:</strong> Chi-square test (1179.5) and Cramér's V (0.41) confirmed contract tenure is the single primary retention predictor.</li>
+            </ul>
+          </div>
+          <div class="case-block">
+            <div class="case-section-title">Strategic Business Action</div>
+            <p>Reallocated retention subsidies away from broad campaigns and into a targeted 90-day onboarding offer converting month-to-month users into annual agreements.</p>
+          </div>
+        </div>
+        <div class="preview-box">
+          <img src="images/retention-model.png" alt="Customer Churn Analysis Visual" loading="lazy">
+          <div class="preview-caption">Customer Retention &amp; Risk Segmentation Dashboard</div>
+        </div>
+      </div>
+      <div class="project-actions">
+        <a href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/subscription-retention-analytics" class="btn btn-outline" target="_blank" rel="noopener">View Repository &amp; Analysis</a>
       </div>
     </article>
   </div>
 </section>
 
-<!-- ================= ANALYTICAL HIGHLIGHTS ================= -->
-<section id="highlights">
+<!-- ================= REPO BANNER ================= -->
+<section id="copilot" style="padding-top:0;">
   <div class="wrap">
-    <div class="eyebrow">Analytical Highlights</div>
-    <h2 style="font-size:32px; margin-bottom:36px;">The numbers behind the work.</h2>
-    <div class="metrics-grid">
-      <div class="metric"><div class="num">7,991</div><div class="cap">Orders analyzed</div></div>
-      <div class="metric"><div class="num">47</div><div class="cap">SKUs analyzed</div></div>
-      <div class="metric"><div class="num">35K+</div><div class="cap">Ride records analyzed</div></div>
-      <div class="metric"><div class="num">31.2%</div><div class="cap">Demand concentrated in 5–7 PM</div></div>
-      <div class="metric"><div class="num">39.6%</div><div class="cap">Airport trip volume</div></div>
-      <div class="metric"><div class="num">54.8%</div><div class="cap">Airport trip revenue</div></div>
+    <div class="repo-banner">
+      <div>
+        <h2>Interactive Analytics Copilot</h2>
+        <p>
+          Explore all 50,034 records through an interactive Streamlit application with 9 one-click insight chips.
+          Every metric is verified with <strong>18 passing automated regression tests</strong>.
+        </p>
+      </div>
+      <a href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/analytics-intelligence-copilot" class="btn btn-primary" target="_blank" rel="noopener">
+        View Copilot Code &amp; Tests ↗
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ================= CERTIFICATIONS ================= -->
+<!-- ================= CREDENTIALS ================= -->
 <section id="certifications" style="background:var(--paper-2);">
   <div class="wrap">
-    <div class="eyebrow">Certifications</div>
-    <h2 style="font-size:32px; margin-bottom:36px;">Job simulations, completed.</h2>
+    <div class="eyebrow">Verified Credentials</div>
+    <h2 style="font-size:32px; margin-bottom:30px;">Job simulations &amp; training.</h2>
     <div class="cert-list">
       <div class="cert-item">
         <div>
-          <div class="cert-name">Data Analytics Job Simulation</div>
-          <div class="cert-issuer">Deloitte · Forage</div>
+          <div class="cert-name">Tata GenAI Powered Data Analytics Job Simulation</div>
+          <div class="cert-issuer">Tata Insights and Quants · Forage</div>
         </div>
+        <a href="https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_Pn2fgx9uC9r33pJRp_1752581188250_completion_certificate.pdf" class="cert-verify" target="_blank" rel="noopener">Verify Credential ↗</a>
       </div>
       <div class="cert-item">
         <div>
-          <div class="cert-name">GenAI-Powered Data Analytics Job Simulation</div>
-          <div class="cert-issuer">TATA · Forage</div>
+          <div class="cert-name">Deloitte Data Analytics Job Simulation</div>
+          <div class="cert-issuer">Deloitte Australia · Forage</div>
         </div>
+        <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_Pn2fgx9uC9r33pJRp_1750857267981_completion_certificate.pdf" class="cert-verify" target="_blank" rel="noopener">Verify Credential ↗</a>
       </div>
       <div class="cert-item">
         <div>
-          <div class="cert-name">Data Science Job Simulation</div>
+          <div class="cert-name">British Airways Data Science Job Simulation</div>
           <div class="cert-issuer">British Airways · Forage</div>
         </div>
+        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/tMjbs76F526fF5v3G/NjynCWzGSaWXQCxSX_tMjbs76F526fF5v3G_Pn2fgx9uC9r33pJRp_1754161186122_completion_certificate.pdf" class="cert-verify" target="_blank" rel="noopener">Verify Credential ↗</a>
       </div>
-    </div>
-    <p style="font-size:13px; color:var(--ink-soft); margin-top:16px;">
-      Certificate files are available in the project archive linked below.
-    </p>
-  </div>
-</section>
-
-<!-- ================= PROJECT FILES ================= -->
-<section id="files">
-  <div class="wrap">
-    <div class="files-panel">
-      <div>
-        <h2>Project Files</h2>
-        <p>Browse the complete project archive including code, SQL scripts, datasets,
-        notebooks, dashboards, screenshots, documentation, and resume.</p>
-        <div class="github-note">
-          Project source files are currently available through my portfolio file archive
-          while my GitHub account is under GitHub Support review.
-        </div>
-      </div>
-      <a href="https://drive.google.com/drive/folders/1N7W-ZWuNlb0WFUhfyA_O1Pp_qg2wmOvW?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener">View Project Files</a>
     </div>
   </div>
 </section>
@@ -728,36 +724,38 @@
 <!-- ================= CONTACT ================= -->
 <section id="contact">
   <div class="wrap">
-    <div class="eyebrow">Contact</div>
-    <h2 style="font-size:32px; margin-bottom:36px;">Let's talk.</h2>
+    <div class="eyebrow">Contact &amp; Inquiries</div>
+    <h2 style="font-size:32px; margin-bottom:32px;">Get in touch.</h2>
     <div class="contact-grid">
       <div class="contact-card">
-        <h3 style="font-size:20px; margin-bottom:4px;">Ansh Thakur</h3>
-        <p style="color:var(--ink-soft); font-size:14px; margin-bottom:20px;">Entry-Level Data Analyst</p>
+        <h3 style="font-size:22px; margin-bottom:4px;">Ansh Thakur</h3>
+        <p style="color:var(--ink-soft); font-size:14px; margin-bottom:20px;">Data Analyst | Business Intelligence</p>
         <div class="contact-row"><span>Email</span><a href="mailto:ansht1194@gmail.com">ansht1194@gmail.com</a></div>
         <div class="contact-row"><span>LinkedIn</span><a href="https://www.linkedin.com/in/ansh-thakur-5407192b4/" target="_blank" rel="noopener">ansh-thakur-5407192b4</a></div>
-        <div class="contact-row"><span>Portfolio</span><a href="https://ansh-thakur.netlify.app" target="_blank" rel="noopener">ansh-thakur.netlify.app</a></div>
+        <div class="contact-row"><span>GitLab Portfolio</span><a href="https://gitlab.com/ansht_121/data-analytics" target="_blank" rel="noopener">gitlab.com/ansht_121/data-analytics</a></div>
       </div>
       <div class="contact-cta">
-        <p style="font-size:17px; font-family:'Fraunces',serif; margin-bottom:16px;">
-          Open to entry-level Data Analyst, BI, Reporting, and Analytics opportunities.
+        <p style="font-size:17px; font-family:'Fraunces',serif; margin-bottom:16px; line-height:1.4;">
+          Open to entry-level opportunities in Data Analytics, Business Intelligence, and Reporting roles.
         </p>
         <div class="btn-row">
-          <a href="mailto:ansht1194@gmail.com" class="btn btn-primary">Email Me</a>
-          <a href="Ansh_Thakur_Data_Analyst_Resume.pdf" class="btn btn-outline" download>Download Resume</a>
+          <a href="mailto:ansht1194@gmail.com" class="btn btn-primary">Send Email</a>
+          <a href="Analyst_Resume.pdf" class="btn btn-outline" download>Download Resume (PDF)</a>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 </main>
 
 <footer>
   <div class="wrap footer-inner">
-    <div>© <span id="year"></span> Ansh Thakur — Data Analyst | Python | SQL | Power BI | Excel</div>
+    <div>© <span id="year"></span> Ansh Thakur — Data Analyst | SQL · Power BI · Python · Excel</div>
     <div class="footer-links">
+      <a href="https://gitlab.com/ansht_121/data-analytics" target="_blank" rel="noopener">GitLab</a>
       <a href="https://www.linkedin.com/in/ansh-thakur-5407192b4/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://drive.google.com/drive/folders/1N7W-ZWuNlb0WFUhfyA_O1Pp_qg2wmOvW?usp=sharing" target="_blank" rel="noopener">Portfolio Files</a>
+      <a href="Analyst_Resume.pdf" target="_blank">Resume</a>
     </div>
   </div>
 </footer>
