@@ -4,3 +4,5 @@ dist
 .DS_Store
 .netlify
 .token-optimizer/
+# Personal GitHub-appeal notes (contain private email/ticket details) - never publish
+github-escalation-drafts.md
