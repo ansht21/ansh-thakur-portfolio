@@ -37,7 +37,7 @@ As an **entry-level Data Analyst** with a growing **machine learning** toolkit, 
 
 | Domain | What's Inside | Headline |
 | :--- | :--- | :--- |
-| 📊 [**Data Analytics**](https://gitlab.com/ansht_121/data-analytics) | 3 end-to-end projects · 50,023 records · SQL + Python + Power BI | Late delivery proven systemic (0.08% between-warehouse variance) |
+| 📊 [**Data Analytics**](https://gitlab.com/ansht_121/data-analytics) | 3 end-to-end projects · 50,034 records · SQL + Python + Power BI | Late delivery proven systemic (0.08% between-warehouse variance) |
 | 🤖 [**Data Science & ML**](https://gitlab.com/ansht_121/machine-learning-project) | 6 projects · scikit-learn + TensorFlow + NLP | CNN digit recognition at **98.83%** test accuracy |
 
 ---
