@@ -195,10 +195,8 @@ Six end-to-end projects in my [Data Science & ML repository](https://gitlab.com/
 ```bash
 ansh-thakur-portfolio/
 │
-├── images/                     # Dashboard & heatmap screenshots
-├── index.html                  # Portfolio website source
-├── styles.css
-├── script.js
+├── images/                     # Dashboard screenshots (PNG + WebP pairs)
+├── index.html                  # Portfolio website source (self-contained CSS + JS)
 ├── Analyst_Resume.pdf          # Downloadable resume
 └── README.md                   # This portfolio
 ```
