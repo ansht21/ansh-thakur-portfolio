@@ -90,7 +90,7 @@ If an interviewer asks one of these, the query and the number are already in my 
 
 ### 1. 📦 [Supply Chain Performance Analysis](https://gitlab.com/ansht_121/data-analytics/-/tree/main/supply-chain-performance-analysis)
 
-![Supply Chain Dashboard](images/supplychain-dashboard.webp)
+![Supply Chain Dashboard](images/supplychain-dashboard-v2.webp)
 
 ![Supply Chain Heatmap](images/supplychain-heatmap.webp)
 
@@ -125,7 +125,7 @@ If an interviewer asks one of these, the query and the number are already in my 
 
 ### 3. 📊 [Subscription Retention Analytics](https://gitlab.com/ansht_121/data-analytics/-/tree/main/subscription-retention-analytics)
 
-![Churn Dashboard](images/retention-model.png)
+![Churn Dashboard](images/retention-model-v2.png)
 
 *End-to-end churn risk and revenue-at-risk analysis on 7,032 customers, delivered through a custom Python pipeline, SQL cohort analysis, and an interactive Excel dashboard.*
 
