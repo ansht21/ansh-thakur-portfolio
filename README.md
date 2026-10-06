@@ -17,7 +17,7 @@
 [![GitLab](https://img.shields.io/badge/GitLab-Profile-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/ansht_121)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live_Site-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://ansh-thakur-netlify.netlify.app/)
 [![Data Analytics](https://img.shields.io/badge/GitLab-Data_Analytics-6C8CFF?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/ansht_121/data-analytics)
-[![Data Science & ML](https://img.shields.io/badge/GitLab-Data_Science_%26_ML-A97BFF?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/ansht_121/machine-learning-project)
+[![Data Science & ML](https://img.shields.io/badge/GitLab-Data_Science_%26_ML-A97BFF?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/ansht_121/Data-Science-Project)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ansh-thakur-5407192b4/)
 [![Email](https://img.shields.io/badge/Email-ansht1194@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ansht1194@gmail.com)
 
@@ -38,7 +38,7 @@ As an **entry-level Data Analyst** with a growing **machine learning** toolkit, 
 | Domain | What's Inside | Headline |
 | :--- | :--- | :--- |
 | 📊 [**Data Analytics**](https://gitlab.com/ansht_121/data-analytics) | 3 end-to-end projects · 50,034 records · SQL + Python + Power BI | Late delivery proven systemic (0.08% between-warehouse variance) |
-| 🤖 [**Data Science & ML**](https://gitlab.com/ansht_121/machine-learning-project) | 6 projects · scikit-learn + TensorFlow + NLP | CNN digit recognition at **98.83%** test accuracy |
+| 🤖 [**Data Science & ML**](https://gitlab.com/ansht_121/Data-Science-Project) | 6 projects · scikit-learn + TensorFlow + NLP | CNN digit recognition at **98.83%** test accuracy |
 
 ---
 
@@ -141,7 +141,7 @@ If an interviewer asks one of these, the query and the number are already in my 
 
 ## 🤖 Data Science & ML Projects
 
-Six end-to-end projects in my [Data Science & ML repository](https://gitlab.com/ansht_121/machine-learning-project) — each structured as a proper package with modular `src/`, `tests/`, and `params.yaml`, not just a loose notebook.
+Six end-to-end projects in my [Data Science & ML repository](https://gitlab.com/ansht_121/Data-Science-Project) — each structured as a proper package with modular `src/`, `tests/`, and `params.yaml`, not just a loose notebook.
 
 | # | Project | Type | Approach | Result |
 | :-- | :--- | :--- | :--- | :--- |
