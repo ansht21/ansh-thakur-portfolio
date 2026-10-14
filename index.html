@@ -440,7 +440,7 @@
         <span class="num">50,034</span>
       </div>
       <div class="readout-row">
-        <span class="label">Supply Chain Orders ($73M Net Rev)</span>
+        <span class="label">Supply Chain Orders (Rs 7.30 cr Net Rev)</span>
         <span class="num">7,991</span>
       </div>
       <div class="readout-row">
@@ -585,7 +585,7 @@
         <div>
           <div class="case-block">
             <div class="case-section-title">Business Problem &amp; Scope</div>
-            <p>Half of 7,991 orders missed the 5-day delivery target ($36.3M exposed). Management prepared to overhaul warehouse NMK1003 due to its high late-order volume.</p>
+            <p>Half of 7,991 orders missed the 5-day delivery target (₹3.63 cr exposed). Management prepared to overhaul warehouse NMK1003 due to its high late-order volume.</p>
           </div>
           <div class="case-block">
             <div class="case-section-title">Methodology &amp; Finding</div>
@@ -634,7 +634,7 @@
           <div class="case-block">
             <div class="case-section-title">Methodology &amp; Finding</div>
             <ul class="finding-list">
-              <li><strong>Surge Acceleration Identified:</strong> Using `LAG()` window queries, proved demand accelerates at <strong>5 PM (+138%)</strong>, an hour before the 6 PM volume peak.</li>
+              <li><strong>Surge Acceleration Identified:</strong> Using `LAG()` window queries, proved fare revenue accelerates at <strong>5 PM (+138%)</strong> over +75% trip growth, an hour before the 6 PM volume peak.</li>
               <li><strong>Airport Revenue Concentration:</strong> Airport trips comprise 39.6% of volume but generate <strong>54.8% of gross revenue</strong> (₹535.77 vs ₹289.40 avg fare).</li>
               <li><strong>Confounder Caught:</strong> Lower-rated drivers appeared to earn more, but controlling for distance revealed fare/km is flat at ₹22/km (ratings dropped due to trip fatigue).</li>
             </ul>
@@ -658,7 +658,7 @@
     <article class="project-card" id="project-churn">
       <div class="project-head">
         <h3>3. Subscription Retention &amp; Revenue-at-Risk Analytics</h3>
-        <p class="tagline">Analyzed 7,032 subscriber records to isolate contract confounders and target retention budgets directly toward high-exposure customer cohorts.</p>
+        <p class="tagline">Analyzed 7,032 subscriber records (7,043 loaded, 11 blank-TotalCharges rows removed) to isolate contract confounders and target retention budgets directly toward high-exposure customer cohorts.</p>
         <div class="project-tech">
           <span class="chip">Python (Pandas, SciPy)</span>
           <span class="chip">Chi-Square &amp; Cramér's V</span>
@@ -670,12 +670,12 @@
         <div>
           <div class="case-block">
             <div class="case-section-title">Business Problem &amp; Scope</div>
-            <p>A subscription business faced a 26.6% customer churn rate. Retention spend needed prioritization based on dollar revenue at risk rather than raw customer count.</p>
+            <p>A subscription business faced a 26.6% customer churn rate (7,043 loaded, 7,032 analysed after removing 11 blank-`TotalCharges` rows). Retention spend needed prioritization based on dollar revenue at risk (USD — Telco dataset) rather than raw customer count.</p>
           </div>
           <div class="case-block">
             <div class="case-section-title">Methodology &amp; Finding</div>
             <ul class="finding-list">
-              <li><strong>Contract Risk Concentration:</strong> Month-to-month contracts churn at 42.7% and account for <strong>72.0% of total revenue-at-risk</strong>.</li>
+              <li><strong>Contract Risk Concentration:</strong> Month-to-month contracts churn at 42.7%; the month-to-month + fiber segment holds <strong>~72% of total revenue-at-risk</strong>.</li>
               <li><strong>Confounder Discovered:</strong> Fiber-optic customers exhibited elevated churn, but segmentation proved the driver was contract structure, not network quality.</li>
               <li><strong>Statistical Testing:</strong> Chi-square test (1179.5) and Cramér's V (0.41) confirmed contract tenure is the single primary retention predictor.</li>
             </ul>
