@@ -18,7 +18,6 @@
 
 <p align="center">
   <a href="https://gitlab.com/ansht_121"><img src="https://img.shields.io/badge/GitLab-Profile-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab" /></a>
-  <a href="https://github.com/ansht21"><img src="https://img.shields.io/badge/GitHub-Profile-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
   <a href="https://ansh-thakur-netlify.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-Live_Site-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Portfolio" /></a>
   <a href="https://www.linkedin.com/in/ansh-thakur-5407192b4/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:ansht1194@gmail.com"><img src="https://img.shields.io/badge/Email-ansht1194@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
@@ -26,9 +25,7 @@
 
 <p align="center">
   <a href="https://gitlab.com/ansht_121/data-analytics"><img src="https://img.shields.io/badge/GitLab-Data_Analytics-6C8CFF?style=for-the-badge&logo=gitlab&logoColor=white" alt="Data Analytics" /></a>
-  <a href="https://github.com/ansht21/data-analytics"><img src="https://img.shields.io/badge/GitHub-Data_Analytics-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="Data Analytics GitHub" /></a>
   <a href="https://gitlab.com/ansht_121/Data-Science-Project"><img src="https://img.shields.io/badge/GitLab-Data_Science_%26_ML-A97BFF?style=for-the-badge&logo=gitlab&logoColor=white" alt="Data Science and ML" /></a>
-  <a href="https://github.com/ansht21/Data-Science-Project"><img src="https://img.shields.io/badge/GitHub-Data_Science_%26_ML-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="Data Science and ML GitHub" /></a>
 </p>
 
 </div>
