@@ -8,7 +8,7 @@
 
   <!-- Open Graph / Social Metadata -->
   <meta property="og:title" content="Ansh Thakur | Data Analyst & Business Intelligence Portfolio">
-  <meta property="og:description" content="Turning 50,000+ transactional records into reproducible, boardroom-ready business decisions.">
+  <meta property="og:description" content="Turning 179,000+ transactional records into reproducible, boardroom-ready business decisions.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ansh-thakur-netlify.netlify.app/">
   <meta property="og:image" content="https://ansh-thakur-netlify.netlify.app/images/supplychain-dashboard.webp">
@@ -28,6 +28,7 @@
     "url": "https://ansh-thakur-netlify.netlify.app/",
     "sameAs": [
       "https://www.linkedin.com/in/ansh-thakur-5407192b4/",
+      "https://github.com/ansht21/data-analytics",
       "https://gitlab.com/ansht_121/data-analytics"
     ],
     "knowsAbout": ["SQL", "Python", "Power BI", "Excel", "Business Intelligence"]
@@ -433,11 +434,11 @@
     <div class="hero-panel">
       <div class="panel-label">
         <span>Verified Portfolio Scope</span>
-        <span class="badge-pass">18/18 Tests Pass</span>
+        <span class="badge-pass">40+ Tests Pass</span>
       </div>
       <div class="readout-row">
         <span class="label">Total Records Analysed</span>
-        <span class="num">50,034</span>
+        <span class="num">179,010</span>
       </div>
       <div class="readout-row">
         <span class="label">Supply Chain Orders (Rs 7.30 cr Net Rev)</span>
@@ -454,6 +455,10 @@
       <div class="readout-row">
         <span class="label">Month-to-Month Churn Revenue Risk</span>
         <span class="num">72.0%</span>
+      </div>
+      <div class="readout-row">
+        <span class="label">Revenue Engine Clearance (Rs 7.86 cr Audited)</span>
+        <span class="num">23.7%</span>
       </div>
     </div>
   </div>
@@ -567,7 +572,7 @@
 <section id="projects" style="background:var(--paper-2);">
   <div class="wrap">
     <div class="eyebrow">Flagship Case Studies</div>
-    <h2 style="font-size:32px; margin-bottom:34px;">Three end-to-end analytical solutions.</h2>
+    <h2 style="font-size:32px; margin-bottom:34px;">Five end-to-end analytical solutions.</h2>
 
     <!-- PROJECT 1: SUPPLY CHAIN -->
     <article class="project-card" id="project-supply-chain">
@@ -699,6 +704,96 @@
         <a href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/subscription-retention-analytics" class="btn btn-outline" target="_blank" rel="noopener">View Repository &amp; Analysis</a>
       </div>
     </article>
+
+    <!-- PROJECT 4: REVENUE RECONCILIATION ENGINE -->
+    <article class="project-card" id="project-reconciliation">
+      <div class="project-head">
+        <h3>4. Weekly Revenue Reconciliation Engine (Finance Audit)</h3>
+        <p class="tagline">Reconciled Rs 7.86 cr of invoiced Amazon India revenue down to Rs 1.86 cr of realized cash (23.7% clearance) across 128,976 transactions — isolating exactly where the rest leaks.</p>
+        <div class="project-tech">
+          <span class="chip">Python (pandas, pyarrow)</span>
+          <span class="chip">openpyxl Excel Automation</span>
+          <span class="chip">Streamlit Cockpit</span>
+          <span class="chip">ISO Fiscal Calendar</span>
+        </div>
+      </div>
+      <div class="project-body">
+        <div>
+          <div class="case-block">
+            <div class="case-section-title">Business Problem &amp; Scope</div>
+            <p>Finance asks one question every week and rarely answers it honestly: we invoiced Rs 7.86 cr — how much cash did we actually realise? 128,976 order lines (W13–W26 FY22, 2022) sat unclassified across 13 raw order states.</p>
+          </div>
+          <div class="case-block">
+            <div class="case-section-title">Methodology &amp; Finding</div>
+            <ul class="finding-list">
+              <li><strong>Six Financial Buckets:</strong> Deterministic status mapping classified every line as Net Realized, Cancellation, Return, Loss, In-Transit, or Pending — no ML, fully auditable <span class="mono">SUM()</span> math.</li>
+              <li><strong>Settlement Lag, Not Loss:</strong> Rs 5.10 cr sits In-Transit — pending settlement, not leakage. True leakage: <strong>Rs 69.18L cancellations + Rs 13.85L returns</strong>.</li>
+              <li><strong>20 Anomaly Triggers:</strong> Threshold rules flagged CRITICAL clearance (&lt;85%), WARNING cancellation (&gt;15%), and ALERT week-over-week drops (&gt;10%).</li>
+            </ul>
+          </div>
+          <div class="case-block">
+            <div class="case-section-title">Strategic Business Action</div>
+            <p>One command produces a 3-tab executive Excel workbook (live formulas, native charts, 20,450-row exception audit) plus a 4-page Streamlit cockpit — replacing a manual weekly finance ritual.</p>
+          </div>
+        </div>
+        <div class="preview-box">
+          <img src="images/08_gross_to_net_waterfall.png" alt="Gross to Net Revenue Waterfall — Rs 7.86 cr invoiced to Rs 1.86 cr realized" loading="lazy">
+          <div class="preview-caption">Gross → Net Waterfall: Rs 7.86 cr invoiced → Rs 1.86 cr realized (23.7% clearance)</div>
+        </div>
+      </div>
+      <div class="project-actions">
+        <a href="https://gitlab.com/ansht_121/weekly-revenue-reconciliation-engine" class="btn btn-outline" target="_blank" rel="noopener">View Engine Repository &amp; Excel</a>
+      </div>
+    </article>
+
+    <!-- PROJECT 5: PIPELINE CONTRACT AGENT -->
+    <article class="project-card" id="project-contract-agent">
+      <div class="project-head">
+        <h3>5. Pipeline Contract Agent (Data Quality Guard)</h3>
+        <p class="tagline">A contract-first guard that stops corrupted CSV batches before they poison dashboards — clean data passes in one second, dirty data is quarantined with an incident report and a proposed fix.</p>
+        <div class="project-tech">
+          <span class="chip">Python (pandas validator)</span>
+          <span class="chip">FastAPI (200 pass / 422 quarantine)</span>
+          <span class="chip">Streamlit Ops Console</span>
+          <span class="chip">Docker + CI on every push</span>
+        </div>
+      </div>
+      <div class="project-body">
+        <div>
+          <div class="case-block">
+            <div class="case-section-title">Business Problem &amp; Scope</div>
+            <p>Upstream systems change silently: a price arrives as the word "twelve", a customer ID goes blank, a date flips format. The table still loads — but revenue goes NaN and the dashboard lies. The contract defines "correct" before any data moves.</p>
+          </div>
+          <div class="case-block">
+            <div class="case-section-title">Methodology &amp; Finding</div>
+            <ul class="finding-list">
+              <li><strong>Contract = Law:</strong> A sha-pinned YAML (16 fields, 5 business rules incl. R01 date chronology) is the single reviewable source of truth.</li>
+              <li><strong>Deterministic Gate:</strong> Pure-pandas validator — <strong>AI never gates data</strong>. Live demo: 30 clean rows PASS to warehouse; 12 corrupt rows FAIL → quarantined with a 6-file audit bundle (verdict, incident report, <span class="mono">downstream_blocked:true</span> receipt, <span class="mono">fix.patch</span>).</li>
+              <li><strong>Agent Investigates, Humans Approve:</strong> Report maps rule → root cause → pipeline location → business impact → suggested fix; a merge request is proposed, never auto-applied. <strong>22/22 tests green.</strong></li>
+            </ul>
+          </div>
+          <div class="case-block">
+            <div class="case-section-title">Strategic Business Action</div>
+            <p>Every rejection becomes an audit trail instead of a silent error — engineers fix forward with a ready-made patch, and executives trust that reported numbers were gate-checked before load.</p>
+          </div>
+        </div>
+        <div class="preview-box">
+          <div class="mono" style="padding:26px 22px; font-size:13px; line-height:1.9; background:#123F3B; color:#DCE8E4; border-radius:var(--radius);">
+            batch arrives<br>
+            ├── validate <span style="color:#7FD1B9;">PASS (30 rows)</span> → warehouse/orders.db<br>
+            └── validate <span style="color:#F4A79B;">FAIL (2 rules)</span> → quarantine<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;├── validation.json (verdict)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;├── incident_report.md (cause → impact → fix)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;├── manifest.json (downstream_blocked: true)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;└── fix.patch (human approves)
+          </div>
+          <div class="preview-caption">Contract-first gate: PASS flows, FAIL quarantines with full paperwork</div>
+        </div>
+      </div>
+      <div class="project-actions">
+        <a href="https://github.com/ansht21/data-analytics/tree/main/pipeline-contract-agent" class="btn btn-outline" target="_blank" rel="noopener">View Contract Agent &amp; Demo</a>
+      </div>
+    </article>
   </div>
 </section>
 
@@ -762,6 +857,7 @@
         <p style="color:var(--ink-soft); font-size:14px; margin-bottom:20px;">Data Analyst | Business Intelligence</p>
         <div class="contact-row"><span>Email</span><a href="mailto:ansht1194@gmail.com">ansht1194@gmail.com</a></div>
         <div class="contact-row"><span>LinkedIn</span><a href="https://www.linkedin.com/in/ansh-thakur-5407192b4/" target="_blank" rel="noopener">ansh-thakur-5407192b4</a></div>
+        <div class="contact-row"><span>GitHub Flagship</span><a href="https://github.com/ansht21/data-analytics" target="_blank" rel="noopener">github.com/ansht21/data-analytics</a></div>
         <div class="contact-row"><span>GitLab Portfolio</span><a href="https://gitlab.com/ansht_121/data-analytics" target="_blank" rel="noopener">gitlab.com/ansht_121/data-analytics</a></div>
       </div>
       <div class="contact-cta">
@@ -783,6 +879,7 @@
   <div class="wrap footer-inner">
     <div>© <span id="year"></span> Ansh Thakur — Data Analyst | SQL · Power BI · Python · Excel</div>
     <div class="footer-links">
+      <a href="https://github.com/ansht21" target="_blank" rel="noopener">GitHub</a>
       <a href="https://gitlab.com/ansht_121/data-analytics" target="_blank" rel="noopener">GitLab</a>
       <a href="https://www.linkedin.com/in/ansh-thakur-5407192b4/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="Analyst_Resume.pdf" target="_blank">Resume</a>
