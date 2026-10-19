@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1364 656" width="1364" height="656" font-family="Consolas, Menlo, monospace">
+  <rect width="1364" height="656" fill="#0D2137"/>
+  <text x="80" y="72" fill="#7FD1B9" font-size="30" font-weight="bold">Pipeline Contract Agent — the guard at the warehouse door</text>
+  <text x="80" y="118" fill="#8FA3B0" font-size="22">contract/supply_orders.contract.yaml  ·  16 fields · 5 business rules</text>
+
+  <rect x="80" y="170" width="380" height="70" rx="8" fill="#153B52" stroke="#2C5F7A" stroke-width="2"/>
+  <text x="270" y="213" fill="#DCE8E4" font-size="24" text-anchor="middle">batch arrives (CSV)</text>
+
+  <line x1="460" y1="205" x2="560" y2="205" stroke="#8FA3B0" stroke-width="3"/>
+  <polygon points="560,205 548,197 548,213" fill="#8FA3B0"/>
+
+  <rect x="560" y="170" width="330" height="70" rx="8" fill="#153B52" stroke="#7FD1B9" stroke-width="2"/>
+  <text x="725" y="213" fill="#7FD1B9" font-size="24" text-anchor="middle">deterministic pandas gate</text>
+  <text x="725" y="262" fill="#8FA3B0" font-size="18" text-anchor="middle">AI never gates data</text>
+
+  <line x1="890" y1="185" x2="990" y2="130" stroke="#7FD1B9" stroke-width="3"/>
+  <polygon points="990,130 976,130 982,141" fill="#7FD1B9"/>
+  <line x1="890" y1="225" x2="990" y2="300" stroke="#F4A79B" stroke-width="3"/>
+  <polygon points="990,300 980,289 976,301" fill="#F4A79B"/>
+
+  <rect x="990" y="95" width="290" height="70" rx="8" fill="#123F3B" stroke="#7FD1B9" stroke-width="2"/>
+  <text x="1135" y="126" fill="#7FD1B9" font-size="24" text-anchor="middle">PASS — 30 rows</text>
+  <text x="1135" y="152" fill="#B9D4C9" font-size="18" text-anchor="middle">load to warehouse/orders.db</text>
+
+  <rect x="990" y="265" width="290" height="70" rx="8" fill="#3A1F22" stroke="#F4A79B" stroke-width="2"/>
+  <text x="1135" y="296" fill="#F4A79B" font-size="24" text-anchor="middle">FAIL — 2 rules broken</text>
+  <text x="1135" y="322" fill="#E8B9B2" font-size="18" text-anchor="middle">quarantine (exit 1)</text>
+
+  <text x="80" y="330" fill="#F4A79B" font-size="22" font-weight="bold">quarantine bundle — every FAIL leaves paperwork:</text>
+  <g fill="#DCE8E4" font-size="21">
+    <text x="110" y="375">├── validation.json&#160;&#160;&#160;&#160;&#160;&#160; verdict: passed=false (SO-000107, SO-000104)</text>
+    <text x="110" y="412">├── incident_report.md&#160;&#160; rule → root cause → impact → fix</text>
+    <text x="110" y="449">├── manifest.json&#160;&#160;&#160;&#160;&#160;&#160; downstream_blocked: true (clean data untouched)</text>
+    <text x="110" y="486">├── fix.patch&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; guardrail proposal — human must approve</text>
+    <text x="110" y="523">├── mr_body.md&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ready-to-post merge-request text</text>
+    <text x="110" y="560">└── batch__bad_money.csv&#160; sealed evidence (never deleted)</text>
+  </g>
+  <text x="80" y="615" fill="#8FA3B0" font-size="20">22/22 pytest green · FastAPI (200 / 422) · Streamlit ops console · Docker · CI on every push</text>
+</svg>

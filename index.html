@@ -3,21 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ansh Thakur | Data Analyst Portfolio</title>
-  <meta name="description" content="Entry-level Data Analyst portfolio showcasing SQL warehousing, Python pipelines, Power BI, Excel financial modeling, and business-focused diagnostic analytics.">
-
-  <!-- Open Graph / Social Metadata -->
-  <meta property="og:title" content="Ansh Thakur | Data Analyst & Business Intelligence Portfolio">
-  <meta property="og:description" content="Turning 179,000+ transactional records into reproducible, boardroom-ready business decisions.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ansh-thakur-netlify.netlify.app/">
-  <meta property="og:image" content="https://ansh-thakur-netlify.netlify.app/images/supplychain-dashboard.webp">
-  <meta name="twitter:card" content="summary_large_image">
+  <title>Ansh Thakur — Data Analyst | Python · SQL · Power BI · Excel</title>
+  <meta name="description" content="Ansh Thakur is an entry-level Data Analyst skilled in Python, SQL, MySQL, Power BI, and Excel. End-to-end analytics projects in supply-chain performance and Uber trip demand — with negative findings reported honestly.">
+  <meta name="keywords" content="Ansh Thakur, Data Analyst, Business Intelligence, Python, SQL, MySQL, Power BI, Excel, EDA, KPI Reporting, Supply Chain Analysis, Uber Trip Analysis, Data Analytics Portfolio">
   <meta name="author" content="Ansh Thakur">
-  <meta name="theme-color" content="#123F3B">
+  <meta name="theme-color" content="#14345e">
 
-  <link rel="canonical" href="https://ansh-thakur-netlify.netlify.app/">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%23123F3B'/%3E%3Cpath d='M14 32V16l20 16V16' stroke='%23B9822E' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <meta property="og:title" content="Ansh Thakur — Data Analyst | Python · SQL · Power BI · Excel">
+  <meta property="og:description" content="Data Analyst portfolio — 5 end-to-end case studies over 179,010 records: supply-chain performance, Uber demand, churn retention, &#8377;7.86 Cr revenue reconciliation, and a contract-first data-quality guard. Python, SQL, Power BI, Excel.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ansh-thakur.netlify.app/">
+  <meta property="og:image" content="https://ansh-thakur.netlify.app/images/supplychain-dashboard.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://ansh-thakur.netlify.app/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%2314345e'/%3E%3Cpath d='M14 32V16l20 16V16' stroke='%23c8962c' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=30">
 
   <script type="application/ld+json">
   {
@@ -25,881 +30,824 @@
     "@type": "Person",
     "name": "Ansh Thakur",
     "jobTitle": "Data Analyst",
-    "url": "https://ansh-thakur-netlify.netlify.app/",
+    "description": "Entry-level Data Analyst skilled in Python, SQL, MySQL, Power BI, and Excel.",
+    "email": "mailto:ansht1194@gmail.com",
     "sameAs": [
-      "https://www.linkedin.com/in/ansh-thakur-5407192b4/",
-      "https://github.com/ansht21/data-analytics",
-      "https://gitlab.com/ansht_121/data-analytics"
+      "https://gitlab.com/ansht_121",
+      "https://www.linkedin.com/in/ansh-thakur-5407192b4/"
     ],
-    "knowsAbout": ["SQL", "Python", "Power BI", "Excel", "Business Intelligence"]
+    "knowsAbout": ["Python", "SQL", "MySQL", "Power BI", "Excel", "Pandas", "Data Visualization", "Business Intelligence", "KPI Reporting"],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Unified Mentor Pvt. Ltd.",
+      "description": "Data Analytics Intern, Sep 2025 – Dec 2025"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Sardar Patel Mahavidyalaya, Chandrapur"
+    }
   }
   </script>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --paper: #F5F5F0;
-      --paper-2: #EFEEE6;
-      --ink: #14171D;
-      --ink-soft: #4B5058;
-      --line: #DCD9CD;
-      --teal: #1D6C64;
-      --teal-deep: #123F3B;
-      --amber: #B9822E;
-      --white: #FFFFFF;
-      --radius: 4px;
-      --max: 1180px;
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      background: var(--paper);
-      color: var(--ink);
-      font-family: 'Inter', sans-serif;
-      font-size: 16px;
-      line-height: 1.55;
-      -webkit-font-smoothing: antialiased;
-    }
-    h1, h2, h3, h4 {
-      font-family: 'Fraunces', serif;
-      font-weight: 500;
-      line-height: 1.15;
-      margin: 0;
-      letter-spacing: -0.01em;
-    }
-    .mono { font-family: 'IBM Plex Mono', monospace; }
-    a { color: inherit; }
-    img { max-width: 100%; height: auto; display: block; }
-    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
-    section { padding: 90px 0; }
-    @media (max-width: 720px) { section { padding: 60px 0; } }
-
-    .eyebrow {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 12px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--teal-deep);
-      margin-bottom: 14px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .eyebrow::before {
-      content: "";
-      width: 22px; height: 1px;
-      background: var(--amber);
-      display: inline-block;
-    }
-
-    a:focus-visible, button:focus-visible {
-      outline: 2px solid var(--teal);
-      outline-offset: 3px;
-    }
-
-    /* ---------- NAV ---------- */
-    header.site-nav {
-      position: sticky; top: 0; z-index: 100;
-      background: rgba(245, 245, 240, 0.94);
-      -webkit-backdrop-filter: saturate(140%) blur(8px);
-      backdrop-filter: saturate(140%) blur(8px);
-      border-bottom: 1px solid var(--line);
-    }
-    .nav-inner {
-      max-width: var(--max); margin: 0 auto; padding: 0 28px;
-      height: 68px;
-      display: flex; align-items: center; justify-content: space-between;
-    }
-    .brand {
-      font-family: 'Fraunces', serif;
-      font-size: 20px;
-      font-weight: 600;
-      text-decoration: none;
-    }
-    .brand span { color: var(--teal); }
-    nav.links { display: flex; gap: 28px; align-items: center; }
-    nav.links a {
-      font-size: 14px; text-decoration: none; color: var(--ink-soft);
-      padding: 4px 0;
-    }
-    nav.links a:hover { color: var(--ink); }
-    nav.links a.cta-btn {
-      background: var(--ink); color: var(--paper);
-      padding: 8px 16px; border-radius: var(--radius);
-      font-weight: 500;
-    }
-    nav.links a.cta-btn:hover { background: var(--teal-deep); }
-    .hamburger {
-      display: none; flex-direction: column; gap: 5px;
-      background: none; border: none; cursor: pointer; padding: 8px;
-    }
-    .hamburger span { width: 24px; height: 2px; background: var(--ink); display: block; }
-    .mobile-menu {
-      display: none; flex-direction: column;
-      padding: 12px 28px 24px;
-      border-bottom: 1px solid var(--line);
-      background: var(--paper);
-    }
-    .mobile-menu a {
-      padding: 12px 0; text-decoration: none; color: var(--ink);
-      border-bottom: 1px solid var(--line);
-      font-size: 15px;
-    }
-    .mobile-menu a:last-child { border-bottom: none; }
-    .mobile-menu.open { display: flex; }
-
-    @media (max-width: 860px) {
-      nav.links { display: none; }
-      .hamburger { display: flex; }
-    }
-
-    /* ---------- HERO ---------- */
-    .hero { padding: 80px 0 70px; }
-    .hero-grid {
-      display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 48px; align-items: center;
-    }
-    @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } }
-
-    .hero h1 {
-      font-size: clamp(38px, 5.2vw, 56px);
-      margin-bottom: 6px;
-    }
-    .hero .role {
-      font-family: 'IBM Plex Mono', monospace;
-      color: var(--teal-deep);
-      font-size: 15px;
-      margin: 12px 0 20px;
-    }
-    .hero p.lead {
-      font-size: 17px; color: var(--ink-soft); max-width: 52ch; margin-bottom: 16px;
-    }
-    .hero p.sub-lead {
-      font-size: 15px; color: var(--ink-soft); max-width: 52ch; margin-bottom: 28px; line-height: 1.6;
-    }
-    .btn-row { display: flex; flex-wrap: wrap; gap: 12px; }
-    .btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 12px 20px;
-      border-radius: var(--radius);
-      font-size: 14px; font-weight: 500;
-      text-decoration: none;
-      border: 1px solid transparent;
-      cursor: pointer;
-      transition: all .15s ease;
-    }
-    .btn:hover { transform: translateY(-1px); }
-    .btn-primary { background: var(--ink); color: var(--paper); }
-    .btn-primary:hover { background: var(--teal-deep); }
-    .btn-outline { border-color: var(--ink); color: var(--ink); background: transparent; }
-    .btn-outline:hover { border-color: var(--teal-deep); color: var(--teal-deep); }
-    .btn-gitlab { border-color: #E24329; color: #E24329; background: #FFF5F2; }
-    .btn-gitlab:hover { background: #E24329; color: #FFFFFF; }
-
-    /* Hero Readout Panel */
-    .hero-panel {
-      background: var(--white);
-      border: 1px solid var(--line);
-      border-radius: 6px;
-      padding: 26px 26px 22px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-    }
-    .hero-panel .panel-label {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--ink-soft); margin-bottom: 16px; display: flex; justify-content: space-between;
-    }
-    .readout-row {
-      display: flex; justify-content: space-between; align-items: baseline;
-      padding: 11px 0; border-bottom: 1px solid var(--paper-2);
-    }
-    .readout-row:last-child { border-bottom: none; }
-    .readout-row .num {
-      font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 20px; color: var(--teal-deep);
-    }
-    .readout-row .label { font-size: 13.5px; color: var(--ink-soft); }
-    .badge-pass {
-      background: #E8F5E9; color: #2E7D32; font-family: 'IBM Plex Mono', monospace;
-      font-size: 11px; padding: 2px 7px; border-radius: 4px; font-weight: 600;
-    }
-
-    /* ---------- ABOUT ---------- */
-    .about-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 50px;
-    }
-    @media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; gap: 32px; } }
-    .about-grid p { color: var(--ink-soft); margin-bottom: 16px; font-size: 15.5px; line-height: 1.65; }
-    .fact-list { list-style: none; margin: 0; padding: 0; }
-    .fact-list li {
-      display: flex; justify-content: space-between; gap: 16px;
-      padding: 13px 0; border-bottom: 1px solid var(--line);
-      font-size: 14px;
-    }
-    .fact-list li span:first-child { color: var(--ink-soft); }
-    .fact-list li span:last-child { font-family: 'IBM Plex Mono', monospace; text-align: right; }
-
-    /* ---------- SKILLS ---------- */
-    .skills-grid {
-      display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
-      background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden;
-    }
-    @media (max-width: 960px) { .skills-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 520px) { .skills-grid { grid-template-columns: 1fr; } }
-    .skill-col { background: var(--white); padding: 26px 22px; }
-    .skill-col h3 {
-      font-size: 13px; font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.06em;
-      text-transform: uppercase; color: var(--teal-deep); margin-bottom: 16px;
-    }
-    .skill-col ul { list-style: none; margin: 0; padding: 0; }
-    .skill-col li { font-size: 14px; color: var(--ink-soft); padding: 5px 0; border-bottom: 1px dotted var(--paper-2); }
-    .skill-col li:last-child { border-bottom: none; }
-
-    /* ---------- EXPERIENCE ---------- */
-    .exp-card {
-      background: var(--white); border: 1px solid var(--line); border-radius: 6px;
-      padding: 32px;
-    }
-    .exp-top { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 16px; }
-    .exp-top h3 { font-size: 22px; }
-    .exp-top .exp-org { color: var(--teal-deep); font-size: 15px; margin-top: 4px; font-weight: 500; }
-    .exp-top .exp-date {
-      font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; color: var(--ink-soft);
-      border: 1px solid var(--line); padding: 5px 12px; border-radius: 20px; white-space: nowrap;
-    }
-    .exp-card ul { margin: 0; padding-left: 20px; color: var(--ink-soft); }
-    .exp-card li { margin-bottom: 10px; font-size: 14.5px; line-height: 1.6; }
-
-    /* ---------- PROJECTS ---------- */
-    .project-card {
-      background: var(--white); border: 1px solid var(--line); border-radius: 6px;
-      margin-bottom: 40px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.02);
-    }
-    .project-head {
-      padding: 32px 34px 20px; border-bottom: 1px solid var(--paper-2);
-    }
-    .project-head h3 { font-size: 26px; margin-bottom: 10px; }
-    .project-head .tagline { color: var(--ink-soft); font-size: 15px; max-width: 65ch; line-height: 1.5; }
-    .project-tech { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 14px; }
-    .chip {
-      font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 4px 10px;
-      border: 1px solid var(--line); border-radius: 20px; color: var(--ink-soft); background: var(--paper);
-    }
-    .project-body {
-      padding: 28px 34px 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: start;
-    }
-    @media (max-width: 900px) { .project-body { grid-template-columns: 1fr; } }
-
-    .case-section-title {
-      font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; text-transform: uppercase;
-      letter-spacing: .08em; color: var(--teal-deep); margin-bottom: 8px; font-weight: 600;
-    }
-    .case-block { margin-bottom: 20px; }
-    .case-block p { margin: 0; font-size: 14.5px; color: var(--ink-soft); line-height: 1.55; }
-
-    .finding-list { list-style: none; margin: 0; padding: 0; }
-    .finding-list li {
-      display: flex; gap: 10px; font-size: 14px; color: var(--ink-soft);
-      padding: 8px 0; border-bottom: 1px solid var(--paper-2); line-height: 1.5;
-    }
-    .finding-list li:last-child { border-bottom: none; }
-    .finding-list li::before { content: "—"; color: var(--amber); flex-shrink: 0; font-weight: bold; }
-
-    .preview-box {
-      border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: var(--paper);
-    }
-    .preview-caption {
-      font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--ink-soft);
-      text-transform: uppercase; letter-spacing: .06em; padding: 10px; text-align: center;
-      background: var(--paper-2); border-top: 1px solid var(--line);
-    }
-    .project-actions {
-      display: flex; gap: 12px; flex-wrap: wrap; padding: 0 34px 28px;
-    }
-
-    /* ---------- HIGHLIGHTS ---------- */
-    .metrics-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
-      background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden;
-    }
-    @media (max-width: 760px) { .metrics-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 480px) { .metrics-grid { grid-template-columns: 1fr; } }
-    .metric { background: var(--white); padding: 28px 24px; }
-    .metric .num {
-      font-family: 'IBM Plex Mono', monospace; font-weight: 600;
-      font-size: 32px; color: var(--teal-deep);
-    }
-    .metric .cap { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
-
-    /* ---------- CERTIFICATIONS ---------- */
-    .cert-list {
-      display: flex; flex-direction: column; gap: 1px;
-      background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden;
-    }
-    .cert-item {
-      background: var(--white); padding: 18px 24px;
-      display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;
-    }
-    .cert-item .cert-name { font-size: 15px; font-weight: 500; }
-    .cert-item .cert-issuer { font-size: 13px; color: var(--ink-soft); font-family: 'IBM Plex Mono', monospace; margin-top: 3px; }
-    .cert-verify { font-size: 13px; color: var(--teal); font-weight: 500; text-decoration: underline; }
-
-    /* ---------- REPO BANNER ---------- */
-    .repo-banner {
-      background: var(--teal-deep); color: var(--paper); border-radius: 6px;
-      padding: 40px; display: flex; justify-content: space-between; align-items: center;
-      gap: 24px; flex-wrap: wrap;
-    }
-    .repo-banner h2 { color: var(--white); font-size: 26px; margin-bottom: 8px; }
-    .repo-banner p { color: #C9DAD8; max-width: 55ch; font-size: 14.5px; margin: 0; line-height: 1.5; }
-
-    /* ---------- CONTACT ---------- */
-    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
-    @media (max-width: 760px) { .contact-grid { grid-template-columns: 1fr; } }
-    .contact-card {
-      background: var(--white); border: 1px solid var(--line); border-radius: 6px; padding: 32px;
-    }
-    .contact-row {
-      display: flex; justify-content: space-between; padding: 13px 0; border-bottom: 1px solid var(--paper-2); font-size: 14.5px;
-    }
-    .contact-row:last-child { border-bottom: none; }
-    .contact-row a { text-decoration: underline; text-decoration-color: var(--line); }
-    .contact-cta {
-      background: var(--paper-2); border-radius: 6px; padding: 32px;
-      display: flex; flex-direction: column; justify-content: center;
-    }
-
-    footer { border-top: 1px solid var(--line); padding: 32px 0; margin-top: 20px; font-size: 13px; color: var(--ink-soft); }
-    .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; }
-    .footer-links { display: flex; gap: 20px; }
-    .footer-links a { text-decoration: none; }
-    .footer-links a:hover { color: var(--teal-deep); }
-  </style>
 </head>
 <body>
 
-<header class="site-nav">
-  <div class="nav-inner">
-    <a href="#home" class="brand">Ansh<span>.</span>Thakur</a>
-    <nav class="links" aria-label="Primary">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#certifications">Credentials</a>
-      <a href="#contact">Contact</a>
-      <a href="Analyst_Resume.pdf" class="cta-btn" target="_blank">View Resume</a>
-    </nav>
-    <button class="hamburger" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#certifications">Credentials</a>
-    <a href="#contact">Contact</a>
-    <a href="Analyst_Resume.pdf" target="_blank">View Resume (PDF)</a>
-  </div>
-</header>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<main id="main">
-
-<!-- ================= HERO ================= -->
-<section class="hero" id="home">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="eyebrow">Data Analyst · BI &amp; Applied Analytics</div>
-      <h1>Ansh Thakur</h1>
-      <div class="role mono">SQL · Power BI · Python · Advanced Excel</div>
-      <p class="lead">
-        I answer business questions with data — including the ones where the answer is "don't do it."
-      </p>
-      <p class="sub-lead">
-        B.Sc. IT graduate and Data Analytics Intern who turns transactional records into reproducible,
-        actionable insights. Specialized in volume normalization, margin protection, and executive KPI dashboards.
-      </p>
-      <div class="btn-row">
-        <a href="#projects" class="btn btn-primary">Explore Projects</a>
-        <a href="Analyst_Resume.pdf" class="btn btn-outline" download>Download Resume (PDF)</a>
-        <a href="https://gitlab.com/ansht_121/data-analytics" class="btn btn-gitlab" target="_blank" rel="noopener">GitLab Portfolio ↗</a>
-      </div>
-    </div>
-    <div class="hero-panel">
-      <div class="panel-label">
-        <span>Verified Portfolio Scope</span>
-        <span class="badge-pass">40+ Tests Pass</span>
-      </div>
-      <div class="readout-row">
-        <span class="label">Total Records Analysed</span>
-        <span class="num">179,010</span>
-      </div>
-      <div class="readout-row">
-        <span class="label">Supply Chain Orders (Rs 7.30 cr Net Rev)</span>
-        <span class="num">7,991</span>
-      </div>
-      <div class="readout-row">
-        <span class="label">Inter-Warehouse Delay Variance</span>
-        <span class="num">0.08%</span>
-      </div>
-      <div class="readout-row">
-        <span class="label">5–7 PM Ride Demand Surge</span>
-        <span class="num">31.2%</span>
-      </div>
-      <div class="readout-row">
-        <span class="label">Month-to-Month Churn Revenue Risk</span>
-        <span class="num">72.0%</span>
-      </div>
-      <div class="readout-row">
-        <span class="label">Revenue Engine Clearance (Rs 7.86 cr Audited)</span>
-        <span class="num">23.7%</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= ABOUT ================= -->
-<section id="about">
-  <div class="wrap about-grid">
-    <div>
-      <div class="eyebrow">Professional Profile</div>
-      <h2 style="font-size:32px; margin-bottom:18px;">Business-focused, reproducible analysis.</h2>
-      <p>
-        I am an entry-level Data Analyst with an Information Technology degree (CGPA 7.26) and hands-on internship experience at Unified Mentor Pvt. Ltd.
-      </p>
-      <p>
-        My work focuses on the full analytics lifecycle: ingesting and cleaning raw operational data, writing structured SQL to answer strategic questions, designing interactive dashboards in Power BI and Excel, and presenting findings that protect business capital.
-      </p>
-      <p>
-        I prioritize diagnostic rigor over superficial charts — identifying volume illusions, testing for confounders, and ensuring every quoted headline figure is traceable to committed code.
-      </p>
-    </div>
-    <ul class="fact-list">
-      <li><span>Degree</span><span>B.Sc. IT — Gondwana University (2022–2025)</span></li>
-      <li><span>Academic Merit</span><span>7.26 / 10 CGPA</span></li>
-      <li><span>Practical Experience</span><span>Data Analytics Intern — Unified Mentor Pvt. Ltd.</span></li>
-      <li><span>Technical Training</span><span>Data Analytics — Digital Edify</span></li>
-      <li><span>Location</span><span>Maharashtra, India</span></li>
-      <li><span>Core Competencies</span><span>SQL · Power BI · Excel VBA · Python (Pandas)</span></li>
-    </ul>
-  </div>
-</section>
-
-<!-- ================= SKILLS ================= -->
-<section id="skills" style="background:var(--paper-2);">
-  <div class="wrap">
-    <div class="eyebrow">Technical Competencies</div>
-    <h2 style="font-size:32px; margin-bottom:34px;">Structured tools &amp; capabilities.</h2>
-    <div class="skills-grid">
-      <div class="skill-col">
-        <h3>SQL &amp; Warehousing</h3>
-        <ul>
-          <li>MySQL &amp; PostgreSQL</li>
-          <li>CTEs &amp; Subqueries</li>
-          <li>Window Functions (`LAG`, `RANK`)</li>
-          <li>`ROW_NUMBER()` Deduplication</li>
-          <li>Relational Schema Design</li>
-          <li>Running Totals &amp; Pareto Analysis</li>
-        </ul>
-      </div>
-      <div class="skill-col">
-        <h3>BI &amp; Visualization</h3>
-        <ul>
-          <li>Microsoft Power BI</li>
-          <li>DAX Calculated Measures</li>
-          <li>Power Query Data Models</li>
-          <li>Advanced Excel &amp; Pivot Tables</li>
-          <li>VBA / Macro Automation</li>
-          <li>Executive KPI Dashboards</li>
-        </ul>
-      </div>
-      <div class="skill-col">
-        <h3>Python Analytics</h3>
-        <ul>
-          <li>Pandas &amp; NumPy</li>
-          <li>Exploratory Data Analysis (EDA)</li>
-          <li>SciPy Statistical Hypothesis Testing</li>
-          <li>ANOVA Variance Decomposition</li>
-          <li>Matplotlib &amp; Seaborn</li>
-          <li>Streamlit Interactive Apps</li>
-        </ul>
-      </div>
-      <div class="skill-col">
-        <h3>Business Analytics</h3>
-        <ul>
-          <li>P&amp;L Margin &amp; Discount Analysis</li>
-          <li>ABC Inventory Classification</li>
-          <li>Cohort Retention Analysis</li>
-          <li>Demand Surge Scheduling</li>
-          <li>Root Cause &amp; Trap Auditing</li>
-          <li>GitLab Version Control &amp; Tests</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= EXPERIENCE ================= -->
-<section id="experience">
-  <div class="wrap">
-    <div class="eyebrow">Experience</div>
-    <h2 style="font-size:32px; margin-bottom:32px;">Practical industry background.</h2>
-    <div class="exp-card">
-      <div class="exp-top">
-        <div>
-          <h3>Data Analytics Intern</h3>
-          <div class="exp-org">Unified Mentor Pvt. Ltd.</div>
-        </div>
-        <div class="exp-date">Sep 2025 – Dec 2025</div>
-      </div>
-      <ul>
-        <li>Cleaned, standardized, and validated transactional datasets across multiple business domains using Python (Pandas) and SQL.</li>
-        <li>Automated recurring monthly KPI reporting routines in Microsoft Excel using formulas and VBA macros, cutting manual reporting overhead.</li>
-        <li>Built interactive Power BI dashboards using custom DAX measures to surface revenue trends, operational bottlenecks, and customer cohorts.</li>
-        <li>Documented data cleaning rules and analytical methodologies to ensure full auditability across reporting deliverables.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ================= PROJECTS ================= -->
-<section id="projects" style="background:var(--paper-2);">
-  <div class="wrap">
-    <div class="eyebrow">Flagship Case Studies</div>
-    <h2 style="font-size:32px; margin-bottom:34px;">Five end-to-end analytical solutions.</h2>
-
-    <!-- PROJECT 1: SUPPLY CHAIN -->
-    <article class="project-card" id="project-supply-chain">
-      <div class="project-head">
-        <h3>1. Supply Chain Inventory &amp; Performance Optimization</h3>
-        <p class="tagline">Disproved a multi-million-dollar warehouse overhaul by proving late deliveries were systemic, and identified an executive pricing floor to prevent discount margin erosion.</p>
-        <div class="project-tech">
-          <span class="chip">Python (Pandas, openpyxl)</span>
-          <span class="chip">MySQL (CTEs, STDDEV)</span>
-          <span class="chip">ANOVA Principles</span>
-          <span class="chip">Excel VBA Dashboard</span>
-        </div>
-      </div>
-      <div class="project-body">
-        <div>
-          <div class="case-block">
-            <div class="case-section-title">Business Problem &amp; Scope</div>
-            <p>Half of 7,991 orders missed the 5-day delivery target (₹3.63 cr exposed). Management prepared to overhaul warehouse NMK1003 due to its high late-order volume.</p>
-          </div>
-          <div class="case-block">
-            <div class="case-section-title">Methodology &amp; Finding</div>
-            <ul class="finding-list">
-              <li><strong>Volume Illusion Caught:</strong> NMK1003 generated 31.9% of late orders simply because it handled 31.4% of total order volume.</li>
-              <li><strong>ANOVA Variance Decomposition:</strong> Revealed that <strong>only 0.08%</strong> of delivery-time variance was between facilities; all six sites share an identical 2.82–2.88 day spread.</li>
-              <li><strong>Discount Cliff:</strong> Orders with $\ge 20\%$ discount collapsed net margin to <strong>4.64%</strong> (vs. 31.02% at 5–10% discount).</li>
-            </ul>
-          </div>
-          <div class="case-block">
-            <div class="case-section-title">Strategic Business Action</div>
-            <p>Halted planned physical facility renovations, redirecting investment to upstream 3PL carrier dispatch SLAs. Established an executive 15% discount approval limit.</p>
-          </div>
-        </div>
-        <div class="preview-box">
-          <picture>
-            <source srcset="images/supplychain-dashboard.webp" type="image/webp">
-            <img src="images/supplychain-dashboard.png" alt="Supply Chain Analytics Dashboard Screenshot" loading="lazy" width="2040" height="1200">
-          </picture>
-          <img src="images/supplychain-heatmap.webp" alt="Supply Chain Correlation Matrix — revenue, profit and delivery drivers" loading="lazy" width="827" height="693" style="border-top:1px solid var(--line);">
-          <div class="preview-caption">Interactive Excel &amp; VBA Operational Dashboard + Python Correlation Analysis</div>
-        </div>
-      </div>
-      <div class="project-actions">
-        <a href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/supply-chain-performance-analysis" class="btn btn-outline" target="_blank" rel="noopener">View Repository &amp; SQL</a>
-      </div>
-    </article>
-
-    <!-- PROJECT 2: UBER RIDE OPS -->
-    <article class="project-card" id="project-ride-ops">
-      <div class="project-head">
-        <h3>2. Ride Demand Acceleration &amp; Dynamic Revenue Analytics</h3>
-        <p class="tagline">Separated peak volume from demand acceleration to optimize fleet mobilization, and uncovered confounding variables behind driver rating metrics.</p>
-        <div class="project-tech">
-          <span class="chip">MySQL (`LAG()`, `ROW_NUMBER`)</span>
-          <span class="chip">Python (EDA)</span>
-          <span class="chip">Power BI (.pbix)</span>
-          <span class="chip">DAX Modeling</span>
-        </div>
-      </div>
-      <div class="project-body">
-        <div>
-          <div class="case-block">
-            <div class="case-section-title">Business Problem &amp; Scope</div>
-            <p>Analyzed 35,000 ride-sharing records across 5 metropolitan zones to determine optimal surge pricing timing and fleet tier deployment.</p>
-          </div>
-          <div class="case-block">
-            <div class="case-section-title">Methodology &amp; Finding</div>
-            <ul class="finding-list">
-              <li><strong>Surge Acceleration Identified:</strong> Using `LAG()` window queries, proved fare revenue accelerates at <strong>5 PM (+138%)</strong> over +75% trip growth, an hour before the 6 PM volume peak.</li>
-              <li><strong>Airport Revenue Concentration:</strong> Airport trips comprise 39.6% of volume but generate <strong>54.8% of gross revenue</strong> (₹535.77 vs ₹289.40 avg fare).</li>
-              <li><strong>Confounder Caught:</strong> Lower-rated drivers appeared to earn more, but controlling for distance revealed fare/km is flat at ₹22/km (ratings dropped due to trip fatigue).</li>
-            </ul>
-          </div>
-          <div class="case-block">
-            <div class="case-section-title">Strategic Business Action</div>
-            <p>Shifted driver surge incentives to 4:30 PM to mobilize fleet supply ahead of demand. Disproved rating-based driver penalties on long trips.</p>
-          </div>
-        </div>
-        <div class="preview-box">
-          <img src="images/uber-dashboard.webp" alt="Uber Trip Power BI Dashboard Preview" loading="lazy" width="1129" height="783">
-          <img src="images/uber-heatmap.webp" alt="Uber Trip Correlation Heatmap — distance, duration, fare and rating drivers" loading="lazy" width="1046" height="816" style="border-top:1px solid var(--line);">
-          <div class="preview-caption">Executive Power BI Hourly Demand &amp; Fare Dashboard + Python Correlation Analysis</div>
-        </div>
-      </div>
-      <div class="project-actions">
-        <a href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/uber-trip-demand-analysis" class="btn btn-outline" target="_blank" rel="noopener">View Repository &amp; Power BI</a>
-      </div>
-    </article>
-
-    <!-- PROJECT 3: CHURN & RETENTION -->
-    <article class="project-card" id="project-churn">
-      <div class="project-head">
-        <h3>3. Subscription Retention &amp; Revenue-at-Risk Analytics</h3>
-        <p class="tagline">Analyzed 7,032 subscriber records (7,043 loaded, 11 blank-TotalCharges rows removed) to isolate contract confounders and target retention budgets directly toward high-exposure customer cohorts.</p>
-        <div class="project-tech">
-          <span class="chip">Python (Pandas, SciPy)</span>
-          <span class="chip">Chi-Square &amp; Cramér's V</span>
-          <span class="chip">MySQL</span>
-          <span class="chip">Excel Dashboard</span>
-        </div>
-      </div>
-      <div class="project-body">
-        <div>
-          <div class="case-block">
-            <div class="case-section-title">Business Problem &amp; Scope</div>
-            <p>A subscription business faced a 26.6% customer churn rate (7,043 loaded, 7,032 analysed after removing 11 blank-`TotalCharges` rows). Retention spend needed prioritization based on dollar revenue at risk (USD — Telco dataset) rather than raw customer count.</p>
-          </div>
-          <div class="case-block">
-            <div class="case-section-title">Methodology &amp; Finding</div>
-            <ul class="finding-list">
-              <li><strong>Contract Risk Concentration:</strong> Month-to-month contracts churn at 42.7%; the month-to-month + fiber segment holds <strong>~72% of total revenue-at-risk</strong>.</li>
-              <li><strong>Confounder Discovered:</strong> Fiber-optic customers exhibited elevated churn, but segmentation proved the driver was contract structure, not network quality.</li>
-              <li><strong>Statistical Testing:</strong> Chi-square test (1179.5) and Cramér's V (0.41) confirmed contract tenure is the single primary retention predictor.</li>
-            </ul>
-          </div>
-          <div class="case-block">
-            <div class="case-section-title">Strategic Business Action</div>
-            <p>Reallocated retention subsidies away from broad campaigns and into a targeted 90-day onboarding offer converting month-to-month users into annual agreements.</p>
-          </div>
-        </div>
-        <div class="preview-box">
-          <picture>
-            <source srcset="images/retention-model.webp" type="image/webp">
-            <img src="images/retention-model.png" alt="Customer Churn Analysis Visual" loading="lazy" width="2040" height="1200">
-          </picture>
-          <div class="preview-caption">Customer Retention &amp; Risk Segmentation Dashboard</div>
-        </div>
-      </div>
-      <div class="project-actions">
-        <a href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/subscription-retention-analytics" class="btn btn-outline" target="_blank" rel="noopener">View Repository &amp; Analysis</a>
-      </div>
-    </article>
-
-    <!-- PROJECT 4: REVENUE RECONCILIATION ENGINE -->
-    <article class="project-card" id="project-reconciliation">
-      <div class="project-head">
-        <h3>4. Weekly Revenue Reconciliation Engine (Finance Audit)</h3>
-        <p class="tagline">Reconciled Rs 7.86 cr of invoiced Amazon India revenue down to Rs 1.86 cr of realized cash (23.7% clearance) across 128,976 transactions — isolating exactly where the rest leaks.</p>
-        <div class="project-tech">
-          <span class="chip">Python (pandas, pyarrow)</span>
-          <span class="chip">openpyxl Excel Automation</span>
-          <span class="chip">Streamlit Cockpit</span>
-          <span class="chip">ISO Fiscal Calendar</span>
-        </div>
-      </div>
-      <div class="project-body">
-        <div>
-          <div class="case-block">
-            <div class="case-section-title">Business Problem &amp; Scope</div>
-            <p>Finance asks one question every week and rarely answers it honestly: we invoiced Rs 7.86 cr — how much cash did we actually realise? 128,976 order lines (W13–W26 FY22, 2022) sat unclassified across 13 raw order states.</p>
-          </div>
-          <div class="case-block">
-            <div class="case-section-title">Methodology &amp; Finding</div>
-            <ul class="finding-list">
-              <li><strong>Six Financial Buckets:</strong> Deterministic status mapping classified every line as Net Realized, Cancellation, Return, Loss, In-Transit, or Pending — no ML, fully auditable <span class="mono">SUM()</span> math.</li>
-              <li><strong>Settlement Lag, Not Loss:</strong> Rs 5.10 cr sits In-Transit — pending settlement, not leakage. True leakage: <strong>Rs 69.18L cancellations + Rs 13.85L returns</strong>.</li>
-              <li><strong>20 Anomaly Triggers:</strong> Threshold rules flagged CRITICAL clearance (&lt;85%), WARNING cancellation (&gt;15%), and ALERT week-over-week drops (&gt;10%).</li>
-            </ul>
-          </div>
-          <div class="case-block">
-            <div class="case-section-title">Strategic Business Action</div>
-            <p>One command produces a 3-tab executive Excel workbook (live formulas, native charts, 20,450-row exception audit) plus a 4-page Streamlit cockpit — replacing a manual weekly finance ritual.</p>
-          </div>
-        </div>
-        <div class="preview-box">
-          <img src="images/08_gross_to_net_waterfall.png" alt="Gross to Net Revenue Waterfall — Rs 7.86 cr invoiced to Rs 1.86 cr realized" loading="lazy">
-          <div class="preview-caption">Gross → Net Waterfall: Rs 7.86 cr invoiced → Rs 1.86 cr realized (23.7% clearance)</div>
-        </div>
-      </div>
-      <div class="project-actions">
-        <a href="https://gitlab.com/ansht_121/weekly-revenue-reconciliation-engine" class="btn btn-outline" target="_blank" rel="noopener">View Engine Repository &amp; Excel</a>
-      </div>
-    </article>
-
-    <!-- PROJECT 5: PIPELINE CONTRACT AGENT -->
-    <article class="project-card" id="project-contract-agent">
-      <div class="project-head">
-        <h3>5. Pipeline Contract Agent (Data Quality Guard)</h3>
-        <p class="tagline">A contract-first guard that stops corrupted CSV batches before they poison dashboards — clean data passes in one second, dirty data is quarantined with an incident report and a proposed fix.</p>
-        <div class="project-tech">
-          <span class="chip">Python (pandas validator)</span>
-          <span class="chip">FastAPI (200 pass / 422 quarantine)</span>
-          <span class="chip">Streamlit Ops Console</span>
-          <span class="chip">Docker + CI on every push</span>
-        </div>
-      </div>
-      <div class="project-body">
-        <div>
-          <div class="case-block">
-            <div class="case-section-title">Business Problem &amp; Scope</div>
-            <p>Upstream systems change silently: a price arrives as the word "twelve", a customer ID goes blank, a date flips format. The table still loads — but revenue goes NaN and the dashboard lies. The contract defines "correct" before any data moves.</p>
-          </div>
-          <div class="case-block">
-            <div class="case-section-title">Methodology &amp; Finding</div>
-            <ul class="finding-list">
-              <li><strong>Contract = Law:</strong> A sha-pinned YAML (16 fields, 5 business rules incl. R01 date chronology) is the single reviewable source of truth.</li>
-              <li><strong>Deterministic Gate:</strong> Pure-pandas validator — <strong>AI never gates data</strong>. Live demo: 30 clean rows PASS to warehouse; 12 corrupt rows FAIL → quarantined with a 6-file audit bundle (verdict, incident report, <span class="mono">downstream_blocked:true</span> receipt, <span class="mono">fix.patch</span>).</li>
-              <li><strong>Agent Investigates, Humans Approve:</strong> Report maps rule → root cause → pipeline location → business impact → suggested fix; a merge request is proposed, never auto-applied. <strong>22/22 tests green.</strong></li>
-            </ul>
-          </div>
-          <div class="case-block">
-            <div class="case-section-title">Strategic Business Action</div>
-            <p>Every rejection becomes an audit trail instead of a silent error — engineers fix forward with a ready-made patch, and executives trust that reported numbers were gate-checked before load.</p>
-          </div>
-        </div>
-        <div class="preview-box">
-          <div class="mono" style="padding:26px 22px; font-size:13px; line-height:1.9; background:#123F3B; color:#DCE8E4; border-radius:var(--radius);">
-            batch arrives<br>
-            ├── validate <span style="color:#7FD1B9;">PASS (30 rows)</span> → warehouse/orders.db<br>
-            └── validate <span style="color:#F4A79B;">FAIL (2 rules)</span> → quarantine<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;├── validation.json (verdict)<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;├── incident_report.md (cause → impact → fix)<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;├── manifest.json (downstream_blocked: true)<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;└── fix.patch (human approves)
-          </div>
-          <div class="preview-caption">Contract-first gate: PASS flows, FAIL quarantines with full paperwork</div>
-        </div>
-      </div>
-      <div class="project-actions">
-        <a href="https://github.com/ansht21/data-analytics/tree/main/pipeline-contract-agent" class="btn btn-outline" target="_blank" rel="noopener">View Contract Agent &amp; Demo</a>
-      </div>
-    </article>
-  </div>
-</section>
-
-<!-- ================= REPO BANNER ================= -->
-<section id="copilot" style="padding-top:0;">
-  <div class="wrap">
-    <div class="repo-banner">
-      <div>
-        <h2>Interactive Analytics Copilot</h2>
-        <p>
-          Explore all 50,034 records through an interactive Streamlit application with 9 one-click insight chips.
-          Every metric is verified with <strong>18 passing automated regression tests</strong>.
-        </p>
-      </div>
-      <a href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/analytics-intelligence-copilot" class="btn btn-primary" target="_blank" rel="noopener">
-        View Copilot Code &amp; Tests ↗
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-content">
+      <a href="#hero" class="logo" aria-label="Ansh Thakur — back to top">
+        <span class="logo-mark" aria-hidden="true">AT</span>
+        <span class="logo-text">Ansh Thakur</span>
       </a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= CREDENTIALS ================= -->
-<section id="certifications" style="background:var(--paper-2);">
-  <div class="wrap">
-    <div class="eyebrow">Verified Credentials</div>
-    <h2 style="font-size:32px; margin-bottom:30px;">Job simulations &amp; training.</h2>
-    <div class="cert-list">
-      <div class="cert-item">
-        <div>
-          <div class="cert-name">Tata GenAI Powered Data Analytics Job Simulation</div>
-          <div class="cert-issuer">Tata Insights and Quants · Forage</div>
-        </div>
-        <a href="https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_Pn2fgx9uC9r33pJRp_1752581188250_completion_certificate.pdf" class="cert-verify" target="_blank" rel="noopener">Verify Credential ↗</a>
-      </div>
-      <div class="cert-item">
-        <div>
-          <div class="cert-name">Deloitte Data Analytics Job Simulation</div>
-          <div class="cert-issuer">Deloitte Australia · Forage</div>
-        </div>
-        <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_Pn2fgx9uC9r33pJRp_1750857267981_completion_certificate.pdf" class="cert-verify" target="_blank" rel="noopener">Verify Credential ↗</a>
-      </div>
-      <div class="cert-item">
-        <div>
-          <div class="cert-name">British Airways Data Science Job Simulation</div>
-          <div class="cert-issuer">British Airways · Forage</div>
-        </div>
-        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/tMjbs76F526fF5v3G/NjynCWzGSaWXQCxSX_tMjbs76F526fF5v3G_Pn2fgx9uC9r33pJRp_1754161186122_completion_certificate.pdf" class="cert-verify" target="_blank" rel="noopener">Verify Credential ↗</a>
+      <ul class="nav-links" id="nav-menu" role="list">
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#training">Training</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#workflow">Workflow</a></li>
+        <li><a href="#strengths">Strengths</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#repository">Repository</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+        <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
       </div>
     </div>
-  </div>
-</section>
+  </nav>
 
-<!-- ================= CONTACT ================= -->
-<section id="contact">
-  <div class="wrap">
-    <div class="eyebrow">Contact &amp; Inquiries</div>
-    <h2 style="font-size:32px; margin-bottom:32px;">Get in touch.</h2>
-    <div class="contact-grid">
-      <div class="contact-card">
-        <h3 style="font-size:22px; margin-bottom:4px;">Ansh Thakur</h3>
-        <p style="color:var(--ink-soft); font-size:14px; margin-bottom:20px;">Data Analyst | Business Intelligence</p>
-        <div class="contact-row"><span>Email</span><a href="mailto:ansht1194@gmail.com">ansht1194@gmail.com</a></div>
-        <div class="contact-row"><span>LinkedIn</span><a href="https://www.linkedin.com/in/ansh-thakur-5407192b4/" target="_blank" rel="noopener">ansh-thakur-5407192b4</a></div>
-        <div class="contact-row"><span>GitHub Flagship</span><a href="https://github.com/ansht21/data-analytics" target="_blank" rel="noopener">github.com/ansht21/data-analytics</a></div>
-        <div class="contact-row"><span>GitLab Portfolio</span><a href="https://gitlab.com/ansht_121/data-analytics" target="_blank" rel="noopener">gitlab.com/ansht_121/data-analytics</a></div>
-      </div>
-      <div class="contact-cta">
-        <p style="font-size:17px; font-family:'Fraunces',serif; margin-bottom:16px; line-height:1.4;">
-          Open to entry-level opportunities in Data Analytics, Business Intelligence, and Reporting roles.
+  <main id="main">
+
+    <!-- Hero -->
+    <header id="hero" class="hero">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="hero-eyebrow">Data Analytics &amp; Business Intelligence</p>
+        <h1 class="hero-name">Ansh Thakur</h1>
+        <p class="hero-role">Data Analyst <span class="hero-sep">/</span> Python <span class="hero-sep">/</span> SQL <span class="hero-sep">/</span> Power BI <span class="hero-sep">/</span> Excel</p>
+        <p class="hero-position">Data Analytics &amp; Business Intelligence</p>
+
+        <p class="hero-quote">
+          &ldquo;I answer business questions with data — including the ones where the answer is <span class="accent">don&rsquo;t do it.</span>&rdquo;
         </p>
-        <div class="btn-row">
-          <a href="mailto:ansht1194@gmail.com" class="btn btn-primary">Send Email</a>
-          <a href="Analyst_Resume.pdf" class="btn btn-outline" download>Download Resume (PDF)</a>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="https://gitlab.com/ansht_121/ansh-thakur-portfolio/-/raw/main/Analyst_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Download Resume</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+
+        <div class="hero-social" aria-label="Professional links">
+          <a href="https://gitlab.com/ansht_121" target="_blank" rel="noopener noreferrer" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 01-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 014.82 2a.43.43 0 01.58 0 .42.42 0 01.11.18l2.44 7.49h8.1l2.44-7.51a.42.42 0 01.58-.17.43.43 0 01.17.17l2.44 7.51L23 13.45a.84.84 0 01-.35.94z"/></svg> GitLab
+          </a>
+          <a href="https://www.linkedin.com/in/ansh-thakur-5407192b4/" target="_blank" rel="noopener noreferrer" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg> LinkedIn
+          </a>
+          <a href="mailto:ansht1194@gmail.com" class="social-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg> Email
+          </a>
+        </div>
+
+        <div class="status-pill" role="status">
+          <span class="dot" aria-hidden="true"></span>
+          Open to Data Analyst &amp; Business Intelligence roles
+        </div>
+
+        <div class="hero-stats" aria-label="Portfolio at a glance">
+          <div class="stat"><div class="stat-num">7,991<span class="unit"> orders</span></div><div class="stat-lbl">Supply chain analysed</div></div>
+          <div class="stat"><div class="stat-num">35,000<span class="unit"> trips</span></div><div class="stat-lbl">Uber demand analysed</div></div>
+          <div class="stat"><div class="stat-num">&#8377;7.86<span class="unit"> Cr</span></div><div class="stat-lbl">Revenue reconciled</div></div>
+          <div class="stat"><div class="stat-num">5<span class="unit"> case studies</span></div><div class="stat-lbl">End-to-end projects</div></div>
         </div>
       </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section id="summary" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">01 · Positioning</span>
+          <h2 class="section-title">Professional Summary</h2>
+          <span class="rule" aria-hidden="true"></span>
+        </div>
+        <div class="summary-grid">
+          <div class="summary-copy">
+            <p>Entry-level Data Analyst with hands-on experience in <strong>Python, SQL, MySQL, Power BI, and Excel</strong> through a Data Analytics internship and end-to-end analytics projects. Skilled in data cleaning, validation, exploratory data analysis, KPI reporting, and business intelligence, with a focus on translating analytical findings into clear business recommendations.</p>
+            <p>My work begins with the business question, then lets the data answer it honestly. Both portfolio projects include results that tell the business <span class="dont">not</span> to act — because knowing where not to spend money is the part that actually <span class="accent">saves</span> budget.</p>
+            <p>I treat every figure as reproducible: committed SQL and Python regenerate each number from the raw data, and dashboards are designed so a non-technical stakeholder can read them without an analyst in the room.</p>
+          </div>
+          <aside class="key-points" aria-label="How I work">
+            <h3>How I work</h3>
+            <ul>
+              <li>Begin with the business problem, never with the dataset</li>
+              <li>Report negative findings alongside positive ones</li>
+              <li>Default to reproducible SQL &amp; Python over ad-hoc Excel</li>
+              <li>Build dashboards a stakeholder can read solo</li>
+              <li>Translate findings into concrete recommendations</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Skills -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">02 · Capabilities</span>
+          <h2 class="section-title">Core Skills</h2>
+          <span class="rule" aria-hidden="true"></span>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-card skill-card-span">
+            <div class="skill-card-head">
+              <span class="skill-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m7 14 3-4 3 3 5-6"/></svg></span>
+              <h3>Data Analysis</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tag">Data Cleaning</span>
+              <span class="tag">Data Validation</span>
+              <span class="tag">Data Preprocessing</span>
+              <span class="tag">Data Wrangling</span>
+              <span class="tag">EDA</span>
+              <span class="tag">Statistical Analysis</span>
+              <span class="tag">KPI Reporting</span>
+              <span class="tag">Business Intelligence</span>
+              <span class="tag">Data Visualization</span>
+              <span class="tag">Business Understanding</span>
+              <span class="tag">Problem Solving</span>
+              <span class="tag">Root Cause Analysis</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-head">
+              <span class="skill-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+              <h3>Programming</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-head">
+              <span class="skill-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></span>
+              <h3>Database</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tag">MySQL</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-head">
+              <span class="skill-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg></span>
+              <h3>Python Libraries</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tag">Pandas</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">Matplotlib</span>
+              <span class="tag">Seaborn</span>
+              <span class="tag">Plotly</span>
+              <span class="tag">Scikit-learn</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-head">
+              <span class="skill-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="12" width="4" height="9" rx="1"/><rect x="10" y="7" width="4" height="14" rx="1"/><rect x="17" y="3" width="4" height="18" rx="1"/></svg></span>
+              <h3>Business Intelligence</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tag">Power BI</span>
+              <span class="tag">Microsoft Excel</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-head">
+              <span class="skill-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span>
+              <h3>Tools</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tag">Jupyter Notebook</span>
+              <span class="tag">Google Colab</span>
+              <span class="tag">VS Code</span>
+              <span class="tag">Git</span>
+              <span class="tag">GitLab</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-head">
+              <span class="skill-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+              <h3>Supporting</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+
+        </div>
+        <p class="skills-footnote">Supporting web stack (HTML · CSS · JavaScript) is the build this portfolio is written in.</p>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">03 · Work</span>
+          <h2 class="section-title">Experience</h2>
+          <span class="rule" aria-hidden="true"></span>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-rail" aria-hidden="true"></div>
+          <div class="exp-head">
+            <div>
+              <h3 class="exp-role">Data Analytics Intern</h3>
+              <p class="exp-meta">Unified Mentor Pvt. Ltd.</p>
+            </div>
+            <p class="exp-date">Sep 2025 – Dec 2025</p>
+          </div>
+          <ul class="exp-points">
+            <li>Engineered automated data pipelines for cleaning, transformation, and validation of large-scale datasets using Python (Pandas) and Excel, improving data reliability.</li>
+            <li>Designed and deployed automated reporting workflows and interactive KPI dashboards, enabling stakeholders to track key metrics in real-time.</li>
+            <li>Authored complex SQL queries utilizing window functions, CTEs, and subqueries to extract and aggregate data efficiently from relational databases.</li>
+            <li>Architected executive-level Power BI dashboards using DAX measures for dynamic, drill-down reporting.</li>
+            <li>Partnered with cross-functional teams to translate business requirements into analytical solutions and document standard operating procedures.</li>
+          </ul>
+          <div class="tech-row">
+            <span class="tech-row-lbl">Tech</span>
+            <div class="tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">Excel</span>
+              <span class="tech-tag">EDA</span>
+              <span class="tech-tag">KPI Reporting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">04 · Case Studies</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-sub">Five end-to-end analytics case studies covering 179,010 records. Business problem → data → analysis → findings → recommendation. Every figure reproduces from the committed SQL and Python.</p>
+          <span class="rule" aria-hidden="true"></span>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Supply Chain -->
+          <article class="project" aria-label="Supply Chain Performance Analysis case study">
+            <div class="project-top">
+              <div class="project-img">
+                <img src="images/supplychain-dashboard.webp" alt="Excel supply chain analytics dashboard showing KPI cards, revenue by channel, and delivery-days distribution" loading="lazy" decoding="async" width="1364" height="656">
+              </div>
+              <div class="project-heading">
+                <span class="proj-tag">Case Study 01</span>
+                <h3 class="project-title">Supply Chain Performance Analysis</h3>
+                <div class="proj-meta-row">
+                  <div class="meta"><div class="meta-num">7,991</div><div class="meta-lbl">orders</div></div>
+                  <div class="meta"><div class="meta-num">47</div><div class="meta-lbl">SKUs</div></div>
+                  <div class="meta"><div class="meta-num">$82.7M</div><div class="meta-lbl">gross revenue</div></div>
+                  <div class="meta"><div class="meta-num">$30.9M</div><div class="meta-lbl">net profit</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">1</span> Business Problem</p>
+                <p>Half of all orders miss the 5-day delivery target, with $41M of revenue exposed. The leadership asks: is one bad warehouse causing this — or is the lateness network-wide? A misdirected per-site improvement project would burn budget on the wrong fix.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">2</span> Data</p>
+                <p>7,991 transactional orders across 2018–2020, 47 SKUs, six warehouses. Raw CSV cleaned in Python; engineered metrics: <strong>delivery_days</strong>, <strong>order-to-ship_days</strong>, and <strong>profit_margin</strong>. Loaded into a typed MySQL schema for analytical querying.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">3</span> Analysis</p>
+                <p>Ranked warehouses by late-order count, then decomposed delivery-time variance between sites vs. within sites. Ran ABC classification across the 47-SKU catalogue and a 32-month revenue / margin stability audit.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">4</span> Key Findings</p>
+                <div class="findings">
+                  <div class="finding"><div class="finding-val">0.08%</div><div class="finding-lbl">delivery-time variance <em>between</em> warehouses</div></div>
+                  <div class="finding"><div class="finding-val">37.4%</div><div class="finding-lbl">avg. profit margin, all SKUs</div></div>
+                  <div class="finding"><div class="finding-val">78.7%</div><div class="finding-lbl">revenue from A-tier SKUs (ABC)</div></div>
+                  <div class="finding"><div class="finding-val">₹0</div><div class="finding-lbl">loss-making orders (pricing floors hold)</div></div>
+                  <div class="finding"><div class="finding-val">+1.0%</div><div class="finding-lbl">2020 YoY growth stall (flagged)</div></div>
+                </div>
+                <p>The largest warehouse tops raw late-order count because it handles 31.4% of all volume — <strong>not</strong> because it is slow. All six warehouses show an equivalent 2.82–2.88 day spread. A per-site project would have fixed nothing.</p>
+              </div>
+              <div class="case dont">
+                <p class="case-lbl"><span class="case-n">5</span> Business Recommendation</p>
+                <p><strong>Do not</strong> run a per-warehouse improvement programme — lateness is systemic and upstream (scheduling / dispatch), not localisable to one site. Instead, investigate the upstream order-to-ship process. Separately, the discount policy needs no cap (margin is stable at ~37% across discount bands) and a 2020 growth stall worth escalation.</p>
+              </div>
+              <div class="project-foot">
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Pandas</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">SQL</span>
+                  <span class="tech-tag">Window Functions</span>
+                  <span class="tech-tag">Excel VBA</span>
+                  <span class="tech-tag">openpyxl</span>
+                </div>
+                <a href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/supply-chain-performance-analysis" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View on GitLab →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Uber -->
+          <article class="project" aria-label="Uber Trip Demand Analysis case study">
+            <div class="project-top">
+              <div class="project-img">
+                <img src="images/uber-dashboard.webp" alt="Power BI dashboard showing Uber trip demand by hour, vehicle category revenue, and airport trip share" loading="lazy" decoding="async" width="1129" height="549">
+              </div>
+              <div class="project-heading">
+                <span class="proj-tag">Case Study 02</span>
+                <h3 class="project-title">Uber Trip Demand Analysis</h3>
+                <div class="proj-meta-row">
+                  <div class="meta"><div class="meta-num">35,000</div><div class="meta-lbl">trip records</div></div>
+                  <div class="meta"><div class="meta-num">31.2%</div><div class="meta-lbl">demand in 5–7 PM</div></div>
+                  <div class="meta"><div class="meta-num">39.6%</div><div class="meta-lbl">volume from airport trips</div></div>
+                  <div class="meta"><div class="meta-num">54.8%</div><div class="meta-lbl">revenue from airport trips</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">1</span> Business Problem</p>
+                <p>When should a ride-hailing operator surge-price, where should premium vehicles be positioned, and which fleet tier deserves growth investment — across 35,000 real trip records.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">2</span> Data</p>
+                <p>35,000 trip records with fares, distances, vehicle categories, pickup zones, and timestamps. Built a two-stage MySQL cleaning pipeline: <code>DISTINCT</code> for exact duplicates then <code>ROW_NUMBER()</code> partitioned by <code>Trip_ID</code> for logic-based deduplication, plus a null integrity audit.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">3</span> Analysis</p>
+                <p>Used <code>LAG()</code> to separate peak <em>volume</em> from peak <em>growth</em>. Decomposed revenue per kilometre across vehicle categories and pickup zones. Quantified the airport vs. city-trip fare premium.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">4</span> Key Findings</p>
+                <div class="findings">
+                  <div class="finding"><div class="finding-val">31.2%</div><div class="finding-lbl">demand in 5–7 PM (3 of 24 hrs)</div></div>
+                  <div class="finding"><div class="finding-val">5 PM</div><div class="finding-lbl">demand accelerates, +138% over 4 PM</div></div>
+                  <div class="finding"><div class="finding-val">54.8%</div><div class="finding-lbl">airport revenue from 39.6% of trips</div></div>
+                  <div class="finding"><div class="finding-val">2.8&times;</div><div class="finding-lbl">Uber Black vs Pool per km</div></div>
+                </div>
+                <p>Three of the eight findings marked <strong>&ldquo;don&rsquo;t act&rdquo;</strong>: no weekend fare effect (0.9% gap), no seasonal cycle (11% month variance), and no valid &ldquo;top zones&rdquo; strategy — 4 of 5 zones are needed to reach 80% of revenue.</p>
+              </div>
+              <div class="case dont">
+                <p class="case-lbl"><span class="case-n">5</span> Business Recommendation</p>
+                <p><strong>Do</strong> launch surge and driver incentives for 5–7 PM by 4:30 PM (an hour ahead of the 5 PM growth start), protect airport supply (54.8% of revenue from 39.6% of trips), and grow premium vehicles that earn 2.8&times; more per km. <strong>Do not</strong> spend on weekend fare tweaks, seasonality campaigns, or zone concentration — three levers the data shows are ineffective.</p>
+              </div>
+              <div class="project-foot">
+                <div class="tech-tags">
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">SQL</span>
+                  <span class="tech-tag">CTEs</span>
+                  <span class="tech-tag">LAG()</span>
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Excel</span>
+                  <span class="tech-tag">Power BI</span>
+                </div>
+                <a href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/uber-trip-demand-analysis" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View on GitLab →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Subscription Retention -->
+          <article class="project" aria-label="Subscription Retention Analytics case study">
+            <div class="project-top">
+              <div class="project-img">
+                <img src="images/retention-model.webp" alt="Customer churn segmentation dashboard showing revenue at risk by contract type" loading="lazy" decoding="async" width="2040" height="1200">
+              </div>
+              <div class="project-heading">
+                <span class="proj-tag">Case Study 03</span>
+                <h3 class="project-title">Subscription Retention &amp; Churn Analytics</h3>
+                <div class="proj-meta-row">
+                  <div class="meta"><div class="meta-num">7,032</div><div class="meta-lbl">customers analysed</div></div>
+                  <div class="meta"><div class="meta-num">26.6%</div><div class="meta-lbl">churn rate</div></div>
+                  <div class="meta"><div class="meta-num">72%</div><div class="meta-lbl">revenue at risk</div></div>
+                  <div class="meta"><div class="meta-num">1179.5</div><div class="meta-lbl">chi-square statistic</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">1</span> Business Problem</p>
+                <p>A subscription business was losing ~26% of customers. Which customers leave, why, and where should retention spend actually go — ranked by revenue at risk, not raw headcount?</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">2</span> Data</p>
+                <p>IBM Telco churn dataset: 7,043 customers loaded, 7,032 analysed after removing 11 blank <code>TotalCharges</code> rows. MySQL cleaning pipeline + Python EDA notebook, Excel dashboard with live filters.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">3</span> Analysis</p>
+                <p>Chi-square test of independence and Cramér's V across contract, service, and payment segments — including a confounder check that separated the fiber-optic effect from contract mix.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">4</span> Key Findings</p>
+                <div class="findings">
+                  <div class="finding"><div class="finding-val">42.7%</div><div class="finding-lbl">month-to-month churn vs 2.8% two-year</div></div>
+                  <div class="finding"><div class="finding-val">72%</div><div class="finding-lbl">revenue-at-risk in M2M + fiber</div></div>
+                  <div class="finding"><div class="finding-val">45.3%</div><div class="finding-lbl">churn among e-check payers</div></div>
+                  <div class="finding"><div class="finding-val">53.3%</div><div class="finding-lbl">churn in first 0–6 months</div></div>
+                </div>
+                <p>The confounder check matters: fiber looked like the villain, but contract structure drove the effect — targeting fiber alone would waste the retention budget.</p>
+              </div>
+              <div class="case dont">
+                <p class="case-lbl"><span class="case-n">5</span> Business Recommendation</p>
+                <p><strong>Do</strong> front-load 90-day contract-conversion offers in the first 12 months (the danger window) and incentivise auto-pay. <strong>Do not</strong> spend on service-quality campaigns aimed at fiber users — the data exonerates the network.</p>
+              </div>
+              <div class="project-foot">
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Pandas</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">Chi-Square</span>
+                  <span class="tech-tag">Excel</span>
+                  <span class="tech-tag">Statistics</span>
+                </div>
+                <a href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/subscription-retention-analytics" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View on GitLab →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Revenue Reconciliation Engine -->
+          <article class="project" aria-label="Weekly Revenue Reconciliation Engine case study">
+            <div class="project-top">
+              <div class="project-img">
+                <img src="images/08_gross_to_net_waterfall.png" alt="Gross to Net revenue waterfall chart showing 7.86 crore invoiced reconciled to 1.86 crore realized" loading="lazy" decoding="async" width="1950" height="975">
+              </div>
+              <div class="project-heading">
+                <span class="proj-tag">Case Study 04</span>
+                <h3 class="project-title">Weekly Revenue Reconciliation Engine</h3>
+                <div class="proj-meta-row">
+                  <div class="meta"><div class="meta-num">128,976</div><div class="meta-lbl">transaction rows</div></div>
+                  <div class="meta"><div class="meta-num">&#8377;7.86 Cr</div><div class="meta-lbl">gross invoiced</div></div>
+                  <div class="meta"><div class="meta-num">23.7%</div><div class="meta-lbl">clearance to cash</div></div>
+                  <div class="meta"><div class="meta-num">14</div><div class="meta-lbl">fiscal weeks (W13–W26)</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">1</span> Business Problem</p>
+                <p>Finance asks weekly: we invoiced &#8377;7.86 Cr — how much cash did we actually realise, where did the rest leak, and which weeks are drifting? Manual spreadsheets answered late and inconsistently.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">2</span> Data</p>
+                <p>Amazon India marketplace export: 128,976 order lines × 21 columns (31-Mar → 29-Jun-2022). An 11-step cleaning pipeline (mixed date parsing, null fills, fiscal ISO tagging) produces a validated parquet — deterministic rules, no ML.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">3</span> Analysis</p>
+                <p>Every status line mapped into six financial buckets (Net Realized / Cancellation / Return / Loss / In-Transit / Pending), aggregated per fiscal week with week-over-week variance and three threshold anomaly rules.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">4</span> Key Findings</p>
+                <div class="findings">
+                  <div class="finding"><div class="finding-val">23.7%</div><div class="finding-lbl">clearance: &#8377;1.86 Cr of &#8377;7.86 Cr realised</div></div>
+                  <div class="finding"><div class="finding-val">&#8377;5.10 Cr</div><div class="finding-lbl">in-transit — settlement lag, not loss</div></div>
+                  <div class="finding"><div class="finding-val">&#8377;69.18L</div><div class="finding-lbl">cancellations — largest true leakage</div></div>
+                  <div class="finding"><div class="finding-val">20</div><div class="finding-lbl">anomaly triggers across 14 weeks</div></div>
+                </div>
+                <p>Separating settlement lag from true leakage is the headline: reporting &ldquo;76% missing&rdquo; would panic leadership; the engine shows most of it is timing, and names the &#8377;83L+ that genuinely leaked.</p>
+              </div>
+              <div class="case dont">
+                <p class="case-lbl"><span class="case-n">5</span> Business Recommendation</p>
+                <p><strong>Do</strong> run <code>python run_pipeline.py</code> as a Monday finance ritual — one command emits the 3-tab executive Excel (live formulas, native charts, 20,450-row exception audit) plus the 4-page Streamlit cockpit. <strong>Do not</strong> chase the in-transit balance as if it were lost money.</p>
+              </div>
+              <div class="project-foot">
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Pandas</span>
+                  <span class="tech-tag">PyArrow</span>
+                  <span class="tech-tag">openpyxl</span>
+                  <span class="tech-tag">Streamlit</span>
+                  <span class="tech-tag">Fiscal Calendar</span>
+                </div>
+                <a href="https://gitlab.com/ansht_121/weekly-revenue-reconciliation-engine" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View Engine on GitLab →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Pipeline Contract Agent -->
+          <article class="project" aria-label="Pipeline Contract Agent case study">
+            <div class="project-top">
+              <div class="project-img">
+                <img src="images/contract-agent-flow.svg" alt="Diagram: batch arrives, deterministic pandas gate passes clean rows to warehouse and quarantines corrupt rows with a six-file audit bundle" loading="lazy" decoding="async" width="1364" height="656">
+              </div>
+              <div class="project-heading">
+                <span class="proj-tag">Case Study 05</span>
+                <h3 class="project-title">Pipeline Contract Agent (Data Quality Guard)</h3>
+                <div class="proj-meta-row">
+                  <div class="meta"><div class="meta-num">16</div><div class="meta-lbl">contract fields</div></div>
+                  <div class="meta"><div class="meta-num">5</div><div class="meta-lbl">business rules</div></div>
+                  <div class="meta"><div class="meta-num">22/22</div><div class="meta-lbl">tests green</div></div>
+                  <div class="meta"><div class="meta-num">6</div><div class="meta-lbl">files per quarantine</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">1</span> Business Problem</p>
+                <p>Upstream systems change silently: a price arrives as the word &ldquo;twelve&rdquo;, a customer ID goes blank, a date flips format. The table still loads — but revenue computes as NaN and the dashboard lies for weeks.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">2</span> Data</p>
+                <p>The supply-chain order log as daily batches: one clean fixture plus four sabotaged batches (null IDs, ISO dates, free-text money, broken chronology) that reproduce real upstream drift on demand.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">3</span> Analysis</p>
+                <p>A sha-pinned YAML contract (16 fields, 5 business rules incl. date chronology) is enforced by a pure-pandas validator — <strong>AI never gates data</strong>. On failure the batch is quarantined and an agent investigates code, commits, and warehouse impact before writing the report.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">4</span> Key Findings</p>
+                <div class="findings">
+                  <div class="finding"><div class="finding-val">30 &rarr; 0</div><div class="finding-lbl">clean rows pass straight to warehouse</div></div>
+                  <div class="finding"><div class="finding-val">422</div><div class="finding-lbl">API rejects corrupt batch (vs 200 pass)</div></div>
+                  <div class="finding"><div class="finding-val">0</div><div class="finding-lbl">clean rows ever overwritten</div></div>
+                  <div class="finding"><div class="finding-val">100%</div><div class="finding-lbl">of failures leave a full audit trail</div></div>
+                </div>
+                <p>Live demo verified 19-Oct-2026: good batch passed in one second; <code>bad_money.csv</code> failed 2 rules, was quarantined, and produced verdict + root-cause report + fix patch — named the exact offending orders.</p>
+              </div>
+              <div class="case dont">
+                <p class="case-lbl"><span class="case-n">5</span> Business Recommendation</p>
+                <p><strong>Do</strong> gate every ingestion through the contract and let agents propose fixes as merge requests for human approval. <strong>Do not</strong> let an LLM decide what &ldquo;valid&rdquo; means — deterministic rules enforce, AI explains.</p>
+              </div>
+              <div class="project-foot">
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Pandas</span>
+                  <span class="tech-tag">FastAPI</span>
+                  <span class="tech-tag">Streamlit</span>
+                  <span class="tech-tag">Docker</span>
+                  <span class="tech-tag">CI/CD</span>
+                  <span class="tech-tag">pytest</span>
+                </div>
+                <a href="https://github.com/ansht21/data-analytics/tree/main/pipeline-contract-agent" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View Agent on GitHub →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="projects-repo-cta">
+          <a href="https://gitlab.com/ansht_121/data-analytics" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Browse the full Data Analytics Repository →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">05 · Foundation</span>
+          <h2 class="section-title">Education</h2>
+          <span class="rule" aria-hidden="true"></span>
+        </div>
+        <div class="edu-grid">
+          <div class="edu-card">
+            <div class="edu-ico blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 2.5 3 6 3s6-2 6-3v-5"/></svg></div>
+            <div>
+              <h3>Bachelor of Science in Information Technology (B.Sc. IT)</h3>
+              <p class="edu-org">Sardar Patel Mahavidyalaya, Chandrapur</p>
+              <p class="edu-meta">Gondwana University, Maharashtra · 2022 – 2025</p>
+              <span class="edu-cgpa">CGPA 7.26 / 10</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Training -->
+    <section id="training" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">06 · Upskilling</span>
+          <h2 class="section-title">Professional Training</h2>
+          <span class="rule" aria-hidden="true"></span>
+        </div>
+        <div class="edu-grid">
+          <div class="edu-card">
+            <div class="edu-ico teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 7v6c0 1 4.5 4 10 4s10-3 10-4V7"/></svg></div>
+            <div>
+              <h3>Data Science &amp; Analytics</h3>
+              <p class="edu-org">Digital Edify Institute, Hyderabad, Telangana</p>
+              <p class="edu-meta">Jun 2025 – Nov 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">07 · Verified</span>
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-sub">Job simulations completed through Forage — project-based assessments from hiring companies. Each link opens a verifiable completion certificate.</p>
+          <span class="rule" aria-hidden="true"></span>
+        </div>
+        <div class="cert-grid">
+          <a class="cert-card" href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_Pn2fgx9uC9r33pJRp_1750857267981_completion_certificate.pdf" target="_blank" rel="noopener noreferrer">
+            <div class="cert-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg></div>
+            <p class="cert-org">Forage</p>
+            <h3>Deloitte Data Analytics Job Simulation</h3>
+            <p class="cert-date">Completed Jun 2025</p>
+            <span class="cert-verify">Verify certificate →</span>
+          </a>
+          <a class="cert-card" href="https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_Pn2fgx9uC9r33pJRp_1752581188250_completion_certificate.pdf" target="_blank" rel="noopener noreferrer">
+            <div class="cert-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg></div>
+            <p class="cert-org">Forage</p>
+            <h3>Tata GenAI Powered Data Analytics Job Simulation</h3>
+            <p class="cert-date">Completed Jul 2025</p>
+            <span class="cert-verify">Verify certificate →</span>
+          </a>
+          <a class="cert-card" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/tMjbs76F526fF5v3G/NjynCWzGSaWXQCxSX_tMjbs76F526fF5v3G_Pn2fgx9uC9r33pJRp_1754161186122_completion_certificate.pdf" target="_blank" rel="noopener noreferrer">
+            <div class="cert-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg></div>
+            <p class="cert-org">Forage</p>
+            <h3>British Airways Data Science Job Simulation</h3>
+            <p class="cert-date">Completed Aug 2025</p>
+            <span class="cert-verify">Verify certificate →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Analytics Workflow -->
+    <section id="workflow" class="section section-alt workflow">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">08 · Process</span>
+          <h2 class="section-title">Analytics Workflow</h2>
+          <p class="section-sub">The seven-step process behind every project on this page.</p>
+          <span class="rule" aria-hidden="true"></span>
+        </div>
+        <ol class="workflow-track" aria-label="Analytics workflow">
+          <li class="wf-step done"><div class="wf-n">1</div><div class="wf-body"><h3>Business Problem</h3><p>Define the specific question the business needs answered. Never start with the dataset.</p></div></li>
+          <li class="wf-step done"><div class="wf-n">2</div><div class="wf-body"><h3>Data Inspection</h3><p>Load raw data, audit nulls, check data types, understand what each field actually means.</p></div></li>
+          <li class="wf-step done"><div class="wf-n">3</div><div class="wf-body"><h3>Cleaning &amp; Validation</h3><p>Remove duplicates, handle missing values, standardise formats, run data-quality checks.</p></div></li>
+          <li class="wf-step done"><div class="wf-n">4</div><div class="wf-body"><h3>SQL / Python Analysis</h3><p>Aggregations, window functions, CTEs, and Python EDA to surface patterns and exceptions.</p></div></li>
+          <li class="wf-step done"><div class="wf-n">5</div><div class="wf-body"><h3>Visualization</h3><p>Power BI or Excel dashboards that communicate findings to non-technical stakeholders.</p></div></li>
+          <li class="wf-step done"><div class="wf-n">6</div><div class="wf-body"><h3>KPI Interpretation</h3><p>Distinguish reliable findings from noise — and report negative results honestly.</p></div></li>
+          <li class="wf-step done"><div class="wf-n">7</div><div class="wf-body"><h3>Business Recommendation</h3><p>Deliver clear, evidence-backed actions — including where the data says not to act.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Professional Strengths -->
+    <section id="strengths" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">09 · How I Add Value</span>
+          <h2 class="section-title">Professional Strengths</h2>
+          <span class="rule" aria-hidden="true"></span>
+        </div>
+        <div class="strengths-grid">
+          <div class="strength"><div class="strength-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></div><h3>Analytical Problem Solving</h3><p>Frame the business question first, then choose the metric — not the reverse. Comfortable with ambiguity and competing hypotheses.</p></div>
+          <div class="strength"><div class="strength-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11H5a2 2 0 00-2 2v7a2 2 0 002 2h14a2 2 0 002-2v-7a2 2 0 00-2-2h-4M9 11V7a3 3 0 016 0"/><path d="M12 15v2"/></svg></div><h3>Data Quality</h3><p>Deduplication, null audits, type validation, and format standardisation built into the pipeline — not bolted on at the end.</p></div>
+          <div class="strength"><div class="strength-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="2" x2="12" y2="22"/><polyline points="17 5 9 5 17 5"/><polyline points="19 12 5 12 19 12"/></svg></div><h3>Business Thinking</h3><p>Translate a stakeholder&rsquo;s worry into a measurable question — and a measurable answer back into a concrete recommendation.</p></div>
+          <div class="strength"><div class="strength-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg></div><h3>Reproducible Analysis</h3><p>Committed Python and SQL regenerate every quoted number from the raw data. No spreadsheets that only I can re-run.</p></div>
+          <div class="strength"><div class="strength-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg></div><h3>Documentation</h3><p>READMEs, technical walkthroughs, and inline query comments — so a reviewer (or future me) can follow every step.</p></div>
+          <div class="strength"><div class="strength-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg></div><h3>Insight Communication</h3><p>Dashboards and summaries written for executives, not analysts. Headlines, not caveats buried in footnotes.</p></div>
+          <div class="strength"><div class="strength-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg></div><h3>End-to-End Analytics</h3><p>From raw CSV through SQL warehouse to a stakeholder dashboard — the full chain handled by one reproducible pipeline.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">10 · One Page</span>
+          <h2 class="section-title">Resume</h2>
+          <p class="section-sub">My one-page ATS-friendly resume — concise, recruiter-focused, and consistent with everything on this page.</p>
+          <span class="rule" aria-hidden="true"></span>
+        </div>
+        <div class="resume-card">
+          <div class="resume-doc-mock">
+            <span class="file-ico" aria-hidden="true">PDF</span>
+            <span>Ansh_Thakur_Data_Analyst_Resume.pdf · hosted on the GitLab portfolio repository</span>
+          </div>
+          <div class="resume-actions">
+            <a href="https://gitlab.com/ansht_121/ansh-thakur-portfolio/-/raw/main/Analyst_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Resume</a>
+            <a href="https://gitlab.com/ansht_121/ansh-thakur-portfolio/-/raw/main/Analyst_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Data Analytics Repository -->
+    <section id="repository" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">11 · Source Code</span>
+          <h2 class="section-title">Data Analytics Repository</h2>
+          <p class="section-sub">The technical evidence behind every number on this page — committed SQL, Python, and dashboards.</p>
+          <span class="rule" aria-hidden="true"></span>
+        </div>
+        <div class="repo-card">
+          <div class="repo-info">
+            <h3>gitlab.com/ansht_121/data-analytics</h3>
+            <p class="repo-stars">Two self-contained project directories · fully reproducible</p>
+            <p>Every quoted metric on this site regenerates from the committed code. Each project directory bundles its own SQL scripts, Python notebooks, raw / cleaned datasets, Excel / Power BI dashboards, screenshots, and a detailed README.</p>
+            <a href="https://gitlab.com/ansht_121/data-analytics" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Open Repository →</a>
+          </div>
+          <div class="repo-contents">
+            <h4>Contents</h4>
+            <ul>
+              <li><span class="dir">supply-chain-performance-analysis/</span><br>Python pipeline · MySQL schema · SQL queries · Excel/VBA dashboard · Power BI guide · notebook · README</li>
+              <li><span class="dir">uber-trip-demand-analysis/</span><br>MySQL cleaning pipeline · SQL analytics · Python EDA · Power BI report · Excel summaries · notebook · README</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">12 · Reach Out</span>
+          <h2 class="section-title">Contact</h2>
+          <p class="section-sub">Open to Data Analyst and Business Intelligence Analyst opportunities. Reach out by email or connect on LinkedIn.</p>
+          <span class="rule" aria-hidden="true"></span>
+        </div>
+        <div class="contact-grid">
+          <a href="mailto:ansht1194@gmail.com" class="contact-card" aria-label="Email Ansh Thakur">
+            <span class="contact-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg></span>
+            <span><strong>Email</strong><small>ansht1194@gmail.com</small></span>
+          </a>
+          <a href="tel:+919665895546" class="contact-card" aria-label="Call Ansh Thakur">
+            <span class="contact-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+            <span><strong>Phone</strong><small>+91 96658 95546</small></span>
+          </a>
+          <a href="https://www.linkedin.com/in/ansh-thakur-5407192b4/" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Ansh Thakur on LinkedIn">
+            <span class="contact-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></span>
+            <span><strong>LinkedIn</strong><small>in/ansh-thakur-5407192b4</small></span>
+          </a>
+          <a href="https://gitlab.com/ansht_121" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Ansh Thakur on GitLab">
+            <span class="contact-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 01-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 014.82 2a.43.43 0 01.58 0 .42.42 0 01.11.18l2.44 7.49h8.1l2.44-7.51a.42.42 0 01.58-.17.43.43 0 01.17.17l2.44 7.51L23 13.45a.84.84 0 01-.35.94z"/></svg></span>
+            <span><strong>GitLab</strong><small>gitlab.com/ansht_121</small></span>
+          </a>
+          <a href="https://gitlab.com/ansht_121/ansh-thakur-portfolio/-/raw/main/Analyst_Resume.pdf" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Download resume PDF">
+            <span class="contact-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="11" x2="12" y2="17"/><polyline points="9 14 12 17 15 14"/></svg></span>
+            <span><strong>Resume</strong><small>Download PDF</small></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <button class="back-top" id="backToTop" aria-label="Back to top" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-brand"><span class="logo-mark" aria-hidden="true">AT</span> Ansh Thakur</span>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://gitlab.com/ansht_121" target="_blank" rel="noopener noreferrer">GitLab</a>
+        <a href="https://gitlab.com/ansht_121/data-analytics" target="_blank" rel="noopener noreferrer">Data Analytics</a>
+        <a href="https://gitlab.com/ansht_121/ansh-thakur-portfolio" target="_blank" rel="noopener noreferrer">Portfolio Repository</a>
+        <a href="https://www.linkedin.com/in/ansh-thakur-5407192b4/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:ansht1194@gmail.com">Email</a>
+      </nav>
+      <p class="footer-meta">Data Analyst · Python · SQL · Power BI · Excel · © 2026 Ansh Thakur</p>
     </div>
-  </div>
-</section>
+  </footer>
 
-</main>
-
-<footer>
-  <div class="wrap footer-inner">
-    <div>© <span id="year"></span> Ansh Thakur — Data Analyst | SQL · Power BI · Python · Excel</div>
-    <div class="footer-links">
-      <a href="https://github.com/ansht21" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://gitlab.com/ansht_121/data-analytics" target="_blank" rel="noopener">GitLab</a>
-      <a href="https://www.linkedin.com/in/ansh-thakur-5407192b4/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="Analyst_Resume.pdf" target="_blank">Resume</a>
-    </div>
-  </div>
-</footer>
-
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-  const toggle = document.getElementById('menuToggle');
-  const menu = document.getElementById('mobileMenu');
-  toggle.addEventListener('click', () => {
-    const open = menu.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
-  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    menu.classList.remove('open');
-    toggle.setAttribute('aria-expanded', 'false');
-  }));
-</script>
-
+  <script src="script.js?v=30" defer></script>
 </body>
 </html>
