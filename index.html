@@ -10,7 +10,7 @@
   <meta name="theme-color" content="#14345e">
 
   <meta property="og:title" content="Ansh Thakur — Data Analyst | Python · SQL · Power BI · Excel">
-  <meta property="og:description" content="Entry-level Data Analyst skilled in Python, SQL, MySQL, Power BI, and Excel. Data cleaning, validation, EDA, KPI reporting, and business intelligence — with end-to-end analytics projects in supply-chain performance and Uber trip demand.">
+  <meta property="og:description" content="Data Analyst portfolio — 5 end-to-end case studies over 179,010 records: supply-chain performance, Uber demand, churn retention, &#8377;7.86 Cr revenue reconciliation, and a contract-first data-quality guard. Python, SQL, Power BI, Excel.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ansh-thakur.netlify.app/">
   <meta property="og:image" content="https://ansh-thakur.netlify.app/images/supplychain-dashboard.png">
@@ -127,8 +127,8 @@
         <div class="hero-stats" aria-label="Portfolio at a glance">
           <div class="stat"><div class="stat-num">7,991<span class="unit"> orders</span></div><div class="stat-lbl">Supply chain analysed</div></div>
           <div class="stat"><div class="stat-num">35,000<span class="unit"> trips</span></div><div class="stat-lbl">Uber demand analysed</div></div>
-          <div class="stat"><div class="stat-num">$82.7<span class="unit">M</span></div><div class="stat-lbl">Revenue audited</div></div>
-          <div class="stat"><div class="stat-num">2<span class="unit"> case studies</span></div><div class="stat-lbl">End-to-end projects</div></div>
+          <div class="stat"><div class="stat-num">&#8377;7.86<span class="unit"> Cr</span></div><div class="stat-lbl">Revenue reconciled</div></div>
+          <div class="stat"><div class="stat-num">5<span class="unit"> case studies</span></div><div class="stat-lbl">End-to-end projects</div></div>
         </div>
       </div>
     </header>
@@ -318,7 +318,7 @@
         <div class="section-head">
           <span class="section-kicker">04 · Case Studies</span>
           <h2 class="section-title">Projects</h2>
-          <p class="section-sub">Two end-to-end analytics case studies. Business problem → data → analysis → findings → recommendation. Every figure reproduces from the committed SQL and Python.</p>
+          <p class="section-sub">Five end-to-end analytics case studies covering 179,010 records. Business problem → data → analysis → findings → recommendation. Every figure reproduces from the committed SQL and Python.</p>
           <span class="rule" aria-hidden="true"></span>
         </div>
 
@@ -439,6 +439,181 @@
                   <span class="tech-tag">Power BI</span>
                 </div>
                 <a href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/uber-trip-demand-analysis" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View on GitLab →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Subscription Retention -->
+          <article class="project" aria-label="Subscription Retention Analytics case study">
+            <div class="project-top">
+              <div class="project-img">
+                <img src="images/retention-model.webp" alt="Customer churn segmentation dashboard showing revenue at risk by contract type" loading="lazy" decoding="async" width="2040" height="1200">
+              </div>
+              <div class="project-heading">
+                <span class="proj-tag">Case Study 03</span>
+                <h3 class="project-title">Subscription Retention &amp; Churn Analytics</h3>
+                <div class="proj-meta-row">
+                  <div class="meta"><div class="meta-num">7,032</div><div class="meta-lbl">customers analysed</div></div>
+                  <div class="meta"><div class="meta-num">26.6%</div><div class="meta-lbl">churn rate</div></div>
+                  <div class="meta"><div class="meta-num">72%</div><div class="meta-lbl">revenue at risk</div></div>
+                  <div class="meta"><div class="meta-num">1179.5</div><div class="meta-lbl">chi-square statistic</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">1</span> Business Problem</p>
+                <p>A subscription business was losing ~26% of customers. Which customers leave, why, and where should retention spend actually go — ranked by revenue at risk, not raw headcount?</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">2</span> Data</p>
+                <p>IBM Telco churn dataset: 7,043 customers loaded, 7,032 analysed after removing 11 blank <code>TotalCharges</code> rows. MySQL cleaning pipeline + Python EDA notebook, Excel dashboard with live filters.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">3</span> Analysis</p>
+                <p>Chi-square test of independence and Cramér's V across contract, service, and payment segments — including a confounder check that separated the fiber-optic effect from contract mix.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">4</span> Key Findings</p>
+                <div class="findings">
+                  <div class="finding"><div class="finding-val">42.7%</div><div class="finding-lbl">month-to-month churn vs 2.8% two-year</div></div>
+                  <div class="finding"><div class="finding-val">72%</div><div class="finding-lbl">revenue-at-risk in M2M + fiber</div></div>
+                  <div class="finding"><div class="finding-val">45.3%</div><div class="finding-lbl">churn among e-check payers</div></div>
+                  <div class="finding"><div class="finding-val">53.3%</div><div class="finding-lbl">churn in first 0–6 months</div></div>
+                </div>
+                <p>The confounder check matters: fiber looked like the villain, but contract structure drove the effect — targeting fiber alone would waste the retention budget.</p>
+              </div>
+              <div class="case dont">
+                <p class="case-lbl"><span class="case-n">5</span> Business Recommendation</p>
+                <p><strong>Do</strong> front-load 90-day contract-conversion offers in the first 12 months (the danger window) and incentivise auto-pay. <strong>Do not</strong> spend on service-quality campaigns aimed at fiber users — the data exonerates the network.</p>
+              </div>
+              <div class="project-foot">
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Pandas</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">Chi-Square</span>
+                  <span class="tech-tag">Excel</span>
+                  <span class="tech-tag">Statistics</span>
+                </div>
+                <a href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/subscription-retention-analytics" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View on GitLab →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Revenue Reconciliation Engine -->
+          <article class="project" aria-label="Weekly Revenue Reconciliation Engine case study">
+            <div class="project-top">
+              <div class="project-img">
+                <img src="images/08_gross_to_net_waterfall.png" alt="Gross to Net revenue waterfall chart showing 7.86 crore invoiced reconciled to 1.86 crore realized" loading="lazy" decoding="async" width="1950" height="975">
+              </div>
+              <div class="project-heading">
+                <span class="proj-tag">Case Study 04</span>
+                <h3 class="project-title">Weekly Revenue Reconciliation Engine</h3>
+                <div class="proj-meta-row">
+                  <div class="meta"><div class="meta-num">128,976</div><div class="meta-lbl">transaction rows</div></div>
+                  <div class="meta"><div class="meta-num">&#8377;7.86 Cr</div><div class="meta-lbl">gross invoiced</div></div>
+                  <div class="meta"><div class="meta-num">23.7%</div><div class="meta-lbl">clearance to cash</div></div>
+                  <div class="meta"><div class="meta-num">14</div><div class="meta-lbl">fiscal weeks (W13–W26)</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">1</span> Business Problem</p>
+                <p>Finance asks weekly: we invoiced &#8377;7.86 Cr — how much cash did we actually realise, where did the rest leak, and which weeks are drifting? Manual spreadsheets answered late and inconsistently.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">2</span> Data</p>
+                <p>Amazon India marketplace export: 128,976 order lines × 21 columns (31-Mar → 29-Jun-2022). An 11-step cleaning pipeline (mixed date parsing, null fills, fiscal ISO tagging) produces a validated parquet — deterministic rules, no ML.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">3</span> Analysis</p>
+                <p>Every status line mapped into six financial buckets (Net Realized / Cancellation / Return / Loss / In-Transit / Pending), aggregated per fiscal week with week-over-week variance and three threshold anomaly rules.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">4</span> Key Findings</p>
+                <div class="findings">
+                  <div class="finding"><div class="finding-val">23.7%</div><div class="finding-lbl">clearance: &#8377;1.86 Cr of &#8377;7.86 Cr realised</div></div>
+                  <div class="finding"><div class="finding-val">&#8377;5.10 Cr</div><div class="finding-lbl">in-transit — settlement lag, not loss</div></div>
+                  <div class="finding"><div class="finding-val">&#8377;69.18L</div><div class="finding-lbl">cancellations — largest true leakage</div></div>
+                  <div class="finding"><div class="finding-val">20</div><div class="finding-lbl">anomaly triggers across 14 weeks</div></div>
+                </div>
+                <p>Separating settlement lag from true leakage is the headline: reporting &ldquo;76% missing&rdquo; would panic leadership; the engine shows most of it is timing, and names the &#8377;83L+ that genuinely leaked.</p>
+              </div>
+              <div class="case dont">
+                <p class="case-lbl"><span class="case-n">5</span> Business Recommendation</p>
+                <p><strong>Do</strong> run <code>python run_pipeline.py</code> as a Monday finance ritual — one command emits the 3-tab executive Excel (live formulas, native charts, 20,450-row exception audit) plus the 4-page Streamlit cockpit. <strong>Do not</strong> chase the in-transit balance as if it were lost money.</p>
+              </div>
+              <div class="project-foot">
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Pandas</span>
+                  <span class="tech-tag">PyArrow</span>
+                  <span class="tech-tag">openpyxl</span>
+                  <span class="tech-tag">Streamlit</span>
+                  <span class="tech-tag">Fiscal Calendar</span>
+                </div>
+                <a href="https://gitlab.com/ansht_121/weekly-revenue-reconciliation-engine" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View Engine on GitLab →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Pipeline Contract Agent -->
+          <article class="project" aria-label="Pipeline Contract Agent case study">
+            <div class="project-top">
+              <div class="project-img">
+                <img src="images/contract-agent-flow.svg" alt="Diagram: batch arrives, deterministic pandas gate passes clean rows to warehouse and quarantines corrupt rows with a six-file audit bundle" loading="lazy" decoding="async" width="1364" height="656">
+              </div>
+              <div class="project-heading">
+                <span class="proj-tag">Case Study 05</span>
+                <h3 class="project-title">Pipeline Contract Agent (Data Quality Guard)</h3>
+                <div class="proj-meta-row">
+                  <div class="meta"><div class="meta-num">16</div><div class="meta-lbl">contract fields</div></div>
+                  <div class="meta"><div class="meta-num">5</div><div class="meta-lbl">business rules</div></div>
+                  <div class="meta"><div class="meta-num">22/22</div><div class="meta-lbl">tests green</div></div>
+                  <div class="meta"><div class="meta-num">6</div><div class="meta-lbl">files per quarantine</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">1</span> Business Problem</p>
+                <p>Upstream systems change silently: a price arrives as the word &ldquo;twelve&rdquo;, a customer ID goes blank, a date flips format. The table still loads — but revenue computes as NaN and the dashboard lies for weeks.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">2</span> Data</p>
+                <p>The supply-chain order log as daily batches: one clean fixture plus four sabotaged batches (null IDs, ISO dates, free-text money, broken chronology) that reproduce real upstream drift on demand.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">3</span> Analysis</p>
+                <p>A sha-pinned YAML contract (16 fields, 5 business rules incl. date chronology) is enforced by a pure-pandas validator — <strong>AI never gates data</strong>. On failure the batch is quarantined and an agent investigates code, commits, and warehouse impact before writing the report.</p>
+              </div>
+              <div class="case">
+                <p class="case-lbl"><span class="case-n">4</span> Key Findings</p>
+                <div class="findings">
+                  <div class="finding"><div class="finding-val">30 &rarr; 0</div><div class="finding-lbl">clean rows pass straight to warehouse</div></div>
+                  <div class="finding"><div class="finding-val">422</div><div class="finding-lbl">API rejects corrupt batch (vs 200 pass)</div></div>
+                  <div class="finding"><div class="finding-val">0</div><div class="finding-lbl">clean rows ever overwritten</div></div>
+                  <div class="finding"><div class="finding-val">100%</div><div class="finding-lbl">of failures leave a full audit trail</div></div>
+                </div>
+                <p>Live demo verified 19-Oct-2026: good batch passed in one second; <code>bad_money.csv</code> failed 2 rules, was quarantined, and produced verdict + root-cause report + fix patch — named the exact offending orders.</p>
+              </div>
+              <div class="case dont">
+                <p class="case-lbl"><span class="case-n">5</span> Business Recommendation</p>
+                <p><strong>Do</strong> gate every ingestion through the contract and let agents propose fixes as merge requests for human approval. <strong>Do not</strong> let an LLM decide what &ldquo;valid&rdquo; means — deterministic rules enforce, AI explains.</p>
+              </div>
+              <div class="project-foot">
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Pandas</span>
+                  <span class="tech-tag">FastAPI</span>
+                  <span class="tech-tag">Streamlit</span>
+                  <span class="tech-tag">Docker</span>
+                  <span class="tech-tag">CI/CD</span>
+                  <span class="tech-tag">pytest</span>
+                </div>
+                <a href="https://github.com/ansht21/data-analytics/tree/main/pipeline-contract-agent" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View Agent on GitHub →</a>
               </div>
             </div>
           </article>
