@@ -44,7 +44,7 @@ As an **entry-level Data Analyst** with a growing **machine learning** toolkit, 
 
 | Domain | What's Inside | Headline |
 | :--- | :--- | :--- |
-| 📊 [**Data Analytics**](https://gitlab.com/ansht_121/data-analytics) | 3 end-to-end projects · 50,034 records · SQL + Python + Power BI | Late delivery proven systemic (0.08% between-warehouse variance) |
+| 📊 [**Data Analytics**](https://gitlab.com/ansht_121/data-analytics) | 3 end-to-end projects · 50,034 records · SQL + Python + Power BI | Revenue stall root-caused: **flat revenue, −4.09% profit** — it's *price*, not demand (0.08% between-warehouse variance) |
 | 🤖 [**Data Science & ML**](https://gitlab.com/ansht_121/Data-Science-Project) | 6 projects · scikit-learn + TensorFlow + NLP | CNN digit recognition at **98.83%** test accuracy |
 
 ---
@@ -82,6 +82,8 @@ If an interviewer asks one of these, the query and the number are already in my 
 
 | Business Question | Finding | Decision It Drives |
 |:--|:--|:--|
+| **Sales have been flat for the last 6 months — why?** | **Revenue is flat, not down — but profit fell 4.09%.** Net revenue **+0.50%** (₹1.41 cr) while profit dropped **₹1.69 lakh** and margin fell **134 bps** (29.44% → 28.10%). Orders **+4.94%**, units **+4.84%** — demand *grew*. The gap is **price**: ASP fell **4.14%**, and splitting it shows **−3.97 pp is gross price**, only **−0.18 pp** is discount. | **Don't launch a demand campaign** — it treats a symptom that doesn't exist. Fix price realisation: review Distributor (−4.17 pp margin) and Online (−1.67 pp) first |
+| Is deep discounting the real cause — and was late delivery to blame? | **Discounting is a real but partial cause; delivery is not.** Revenue in the 20%+ band grew **13.03% → 16.79%** of net revenue; reverting the mix would have held margin at **28.62%** instead of 28.10% — the shift alone cost **52 bps ≈ ₹73,617**. Meanwhile on-time delivery went **49.4% → 52.3% → 48.5%** and late-revenue exposure stayed flat at ~50%. | Set a **product-level profit floor**, not a blanket discount cap (the 5–10% band is healthy at ~33% margin). Keep delivery on a **separate workstream** |
 | Half our orders are late — which warehouse is at fault? | **None.** Only **0.08%** of delivery-time variance is between warehouses; all six have 2.82–2.88 day spread. | Fix upstream scheduling, not a facility — a per-site project would fix nothing |
 | Isn't our biggest warehouse the worst offender? | **No — a volume illusion.** It causes 31.9% of late orders but handles 31.4% of all orders. | Always normalise counts by volume before ranking anything |
 | Are discounts eating our margin? Should we cap them? | **Yes — at high levels.** Orders at 20%+ discount return only **4.64%** margin versus 31.02% in the 5–10% band, with 373 orders unprofitable. | Set product-level profit floors and review the 20%+ discount band |
@@ -89,7 +91,7 @@ If an interviewer asks one of these, the query and the number are already in my 
 | Do higher-rated drivers earn more per trip? | **No, and the obvious read is backwards.** Low-rated drivers show higher fares — but only because they drive longer trips. Fare-per-km is flat at ₹22.06–22.41. | Investigate long-trip rider experience; don't penalise drivers |
 | Can we focus on just our top revenue zones? | **No.** It takes **4 of 5 zones** to reach 80% of revenue. | Keep coverage city-wide — the 80/20 assumption fails here |
 
-**Six of these; four say "don't act."** Knowing where *not* to spend is the part that saves budget.
+**Eight of these; six say "don't act."** Knowing where *not* to spend is the part that saves budget.
 
 ---
 
@@ -103,13 +105,14 @@ If an interviewer asks one of these, the query and the number are already in my 
 
 *An end-to-end operational analytics project featuring a Python data cleaning pipeline, custom SQL metrics, and an automated, fully interactive 10-chart Excel dashboard.*
 
-* **Business Challenge:** Half of all orders miss the 5-day delivery target, with $41.0M of revenue exposed — and leadership needs to know whether to invest in a specific warehouse or the network.
-* **Tech Stack:** Python (Pandas, openpyxl), SQL (MySQL — CTEs, `STDDEV`, `LAG`, window functions), Microsoft Excel (VBA, Macros, Pivot Tables).
+* **Business Challenge:** Half of all orders miss the 5-day delivery target, with ₹3.63 cr of net revenue exposed — and leadership needs to know whether to invest in a specific warehouse or the network.
+* **Tech Stack:** Python (Pandas, openpyxl), SQL (MySQL — CTEs, `STDDEV`, `LAG`, window functions), Statistical Variance Decomposition (ANOVA principles), Microsoft Excel (VBA, Macros, Pivot Tables).
 * **Key Achievements:**
   * **Disproved the obvious answer.** Ranking warehouses by late-order count blames the largest site; variance decomposition shows only **0.08%** of delivery-time variance is between warehouses. Prevented a misdirected improvement programme.
-  * Cleaned and processed raw transactional data, generating dynamic metrics like **Delivery Days**, **Order-to-Ship Days**, and **Profit Margins** ($82.7M gross revenue / $30.9M profit across 7,991 orders).
+  * **Root-caused a revenue stall.** A volume/price/mix decomposition showed revenue is **flat (+0.50%)**, not down, while profit fell **4.09%** — orders grew **4.94%** but ASP fell **4.14%**. A SKU-level reconciliation proved **price**, not volume or assortment, caused the plateau, and a discount-band counterfactual priced the mix shift at **52 bps ≈ ₹73,617**.
+  * Cleaned and processed raw transactional data, generating dynamic metrics like **Delivery Days**, **Order-to-Ship Days**, and **Profit Margins** (₹7.30 cr net revenue / ₹2.12 cr profit across 7,991 orders).
   * Implemented an automated Excel workbook generator using `openpyxl` with dynamic dropdown selectors, date-range inputs, and custom formula-driven pivot tables.
-  * Used **ABC Classification** to segment the 47-SKU catalogue by revenue contribution (A-items = 78.7% of revenue) — with an honest read that this catalogue shows only moderate, not textbook 80/20, concentration.
+  * Used **ABC Classification** to segment the 47-SKU catalogue by net-revenue contribution (A-items = 80.6% of net revenue) — with an honest read that this catalogue shows only moderate, not textbook 80/20, concentration.
   * Shipped a reproducible Python pipeline so every quoted figure regenerates from the raw data.
 
 ### 2. 🚖 [Uber Trip Demand Analysis](https://gitlab.com/ansht_121/data-analytics/-/tree/main/uber-trip-demand-analysis)
