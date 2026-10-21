@@ -9,7 +9,18 @@
 #  this script republishes the current repo: 5 case studies + the
 #  revenue engine cockpit.
 #
-#  First run asks you to approve a login in the browser (one time only).
+#  Two ways to authenticate - the token path needs no browser:
+#
+#    A) Token (recommended, scriptable):
+#       $env:NETLIFY_AUTH_TOKEN = "your-netlify-token"
+#       powershell -ExecutionPolicy Bypass -File deploy-netlify.ps1
+#
+#    B) Browser (one time):
+#       powershell -ExecutionPolicy Bypass -File deploy-netlify.ps1
+#       -> opens a Netlify authorize page, approve it once
+#
+#  Get a token at: Netlify -> User settings -> Personal access tokens
+#  -> Generate new token (Full access). Long opaque string.
 # ============================================================
 
 $repo = "C:\Users\ansht\ansh-thakur-portfolio"
@@ -23,6 +34,14 @@ Write-Host "=== Portfolio -> Netlify (production) ===" -ForegroundColor Cyan
 Write-Host ""
 
 # --- Step 0: make sure the CLI is authenticated -------------------------
+# A NETLIFY_AUTH_TOKEN in the environment is used as-is: no browser, no
+# link file. Otherwise fall back to the interactive browser login.
+$useToken = $false
+if ($env:NETLIFY_AUTH_TOKEN -and $env:NETLIFY_AUTH_TOKEN.Trim().Length -gt 0) {
+    $useToken = $true
+    Write-Host "[0/4] Using NETLIFY_AUTH_TOKEN from the environment." -ForegroundColor Yellow
+}
+
 $configPath = Join-Path $env:APPDATA "netlify\Config\config.json"
 $hasToken = $false
 if (Test-Path $configPath) {
@@ -32,7 +51,7 @@ if (Test-Path $configPath) {
     } catch { $hasToken = $false }
 }
 
-if (-not $hasToken) {
+if (-not $hasToken -and -not $useToken) {
     Write-Host "[0/4] Not logged in yet - opening a browser to approve..." -ForegroundColor Yellow
     Write-Host "      (approve the request in the browser window that opens)" -ForegroundColor DarkGray
     npx --yes netlify-cli@17 login 2>&1 | ForEach-Object { Write-Host "      $_" }
@@ -41,7 +60,9 @@ if (-not $hasToken) {
 
 # --- Step 1: link to the site ------------------------------------------
 $statePath = Join-Path $repo ".netlify\state.json"
-if (-not (Test-Path $statePath)) {
+if ($useToken) {
+    Write-Host "[1/4] Targeting site '$site'..." -ForegroundColor Yellow
+} elseif (-not (Test-Path $statePath)) {
     Write-Host "[1/4] Linking to the '$site' site..." -ForegroundColor Yellow
     npx --yes netlify-cli@17 link --site=$site 2>&1 | ForEach-Object { Write-Host "      $_" }
     Write-Host ""
@@ -92,7 +113,10 @@ Write-Host "    OK   no private files in the publish set" -ForegroundColor DarkG
 
 # --- Step 4: publish ----------------------------------------------------
 Write-Host "[4/4] Publishing to Netlify production..." -ForegroundColor Yellow
-$deploy = npx --yes netlify-cli@17 deploy --prod --dir=$stage --message "Portfolio refresh: 5 case studies + revenue engine cockpit" 2>&1
+$deployArgs = @("--yes", "netlify-cli@17", "deploy", "--prod", "--dir=$stage",
+                "--message", "Portfolio refresh: 5 case studies + revenue engine cockpit")
+if ($useToken) { $deployArgs += @("--site=$site") }
+$deploy = & npx @deployArgs 2>&1
 $deploy | ForEach-Object { Write-Host "    $_" }
 
 if ($LASTEXITCODE -eq 0) {
