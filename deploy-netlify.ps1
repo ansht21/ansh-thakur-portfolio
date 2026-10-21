@@ -18,11 +18,32 @@ Write-Host ""
 Write-Host "=== Portfolio -> Netlify (production) ===" -ForegroundColor Cyan
 Write-Host ""
 
-Write-Host "[1/2] Publishing the current repo..." -ForegroundColor Yellow
-$output = git ls-files -z | ForEach-Object { $_ } | Out-Null   # sanity: repo is a git repo
+Write-Host "[1/3] Staging the tracked files..." -ForegroundColor Yellow
 
-# Deploy the working tree as the site root (netlify.toml sets publish = ".")
-$deploy = npx --yes netlify-cli@17 deploy --prod --dir=. --message "Portfolio refresh: 5 case studies + revenue engine cockpit" 2>&1
+# Publish ONLY the files that are tracked in git. Deploying the folder
+# directly (--dir=.) would also publish untracked files that are on disk
+# but deliberately git-ignored - e.g. github-escalation-drafts.md, which
+# contains private email and support-ticket details.
+$stage = Join-Path $env:TEMP "ansh-thakur-portfolio-publish"
+Remove-Item $stage -Recurse -Force -ErrorAction SilentlyContinue
+New-Item -ItemType Directory -Path $stage -Force | Out-Null
+
+$copied = 0
+git ls-files | ForEach-Object {
+    $rel = $_
+    $src = Join-Path $repo $rel
+    if (Test-Path $src) {
+        $dst = Join-Path $stage $rel
+        $parent = Split-Path $dst -Parent
+        if (-not (Test-Path $parent)) { New-Item -ItemType Directory -Path $parent -Force | Out-Null }
+        Copy-Item $src $dst -Force
+        $copied++
+    }
+}
+Write-Host "    staged $copied tracked files (untracked/ignored files excluded)" -ForegroundColor DarkGray
+
+Write-Host "[2/3] Publishing to Netlify production..." -ForegroundColor Yellow
+$deploy = npx --yes netlify-cli@17 deploy --prod --dir=$stage --message "Portfolio refresh: 5 case studies + revenue engine cockpit" 2>&1
 $deploy | ForEach-Object { Write-Host "    $_" }
 
 if ($LASTEXITCODE -eq 0) {
@@ -30,6 +51,7 @@ if ($LASTEXITCODE -eq 0) {
     Write-Host "[OK] Deployed. Your portfolio is live at:" -ForegroundColor Green
     Write-Host "     https://ansh-thakur-netlify.netlify.app/" -ForegroundColor Green
     Write-Host ""
+    Remove-Item $stage -Recurse -Force -ErrorAction SilentlyContinue
     exit 0
 }
 
