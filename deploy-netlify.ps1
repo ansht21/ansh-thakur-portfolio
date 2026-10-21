@@ -113,10 +113,17 @@ Write-Host "    OK   no private files in the publish set" -ForegroundColor DarkG
 
 # --- Step 4: publish ----------------------------------------------------
 Write-Host "[4/4] Publishing to Netlify production..." -ForegroundColor Yellow
-$deployArgs = @("--yes", "netlify-cli@17", "deploy", "--prod", "--dir=$stage",
-                "--message", "Portfolio refresh: 5 case studies + revenue engine cockpit")
-if ($useToken) { $deployArgs += @("--site=$site") }
-$deploy = & npx @deployArgs 2>&1
+# With a token, deploy through the REST API directly (scripts/deploy_netlify.py).
+# That path avoids npx/node, which intermittently failed with
+# "getaddrinfo ENOTFOUND api.netlify.com", and needs no browser.
+if ($useToken) {
+    $deploy = & python (Join-Path $repo "scripts\deploy_netlify.py") 2>&1
+} else {
+    $deployArgs = @("--yes", "netlify-cli@17", "deploy", "--prod", "--dir=$stage",
+                    "--message", "Portfolio refresh: 5 case studies + revenue engine cockpit")
+    if ($useToken) { $deployArgs += @("--site=$site") }
+    $deploy = & npx @deployArgs 2>&1
+}
 $deploy | ForEach-Object { Write-Host "    $_" }
 
 if ($LASTEXITCODE -eq 0) {
