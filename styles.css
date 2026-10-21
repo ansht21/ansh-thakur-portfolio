@@ -603,3 +603,20 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-2);
   .hero-quote .accent { white-space: normal; }
   .contact-grid { grid-template-columns: 1fr; }
 }
+
+/* ---- Full-width dashboard showcase (revenue engine cockpit) ---- */
+.shot { margin: 22px 0 4px; }
+.shot picture { display: block; }
+.shot img {
+  display: block; width: 100%; height: auto;
+  border: 1px solid var(--line-soft);
+  border-radius: 6px;
+  background: #131316;
+}
+.shot figcaption {
+  margin-top: 10px;
+  font-size: .82rem;
+  line-height: 1.55;
+  color: var(--ink-3);
+}
+[data-theme="dark"] .shot img { border-color: var(--line); }
