@@ -56,6 +56,8 @@ As an **entry-level Data Analyst** with a growing **machine learning** toolkit, 
 | **Languages** | Python, SQL (MySQL), JavaScript, Java, HTML/CSS | Exploratory Data Analysis, Statistical Analysis |
 | **Data & ML Libraries** | Pandas, NumPy, scikit-learn, TensorFlow/Keras, NLTK, Matplotlib, Seaborn | Data Cleaning, Feature Engineering, Model Training |
 | **Machine Learning** | CNNs, Linear/Logistic Regression, Random Forest, TF-IDF NLP, recommenders | Classification, Regression, NLP, Model Evaluation |
+| **GenAI / LLM Engineering** | LangChain, ChromaDB (vector DB), sentence-transformers, Groq/OpenAI-compatible LLM APIs, Pydantic | RAG (grounded generation), strict-JSON structured outputs, prompt engineering, cost-gated LLM triggers, hallucination containment |
+| **Deployment & DevOps** | **Hugging Face Spaces** (Gradio SDK), Docker (multi-stage + compose), FastAPI, Streamlit, Git LFS | Containerized cloud deployment, GitOps (git push → build → live), managed secrets, pytest |
 | **BI & Visualization** | Power BI (DAX), Advanced Microsoft Excel (VBA, Power Query, Pivots) | Interactive Dashboards, Executive KPI Reporting |
 | **AI-Assisted Analytics** | AI pair-programming, prompt engineering, AI-assisted EDA & documentation | Co-Pilot Workflows, Human Validation Gates, Data Storytelling |
 | **SQL Techniques** | CTEs, `LAG()`, `RANK()`, `ROW_NUMBER()`, running `SUM() OVER`, `STDDEV_SAMP` | Variance Decomposition, Pareto Analysis, Trend Detection |
@@ -154,6 +156,19 @@ If an interviewer asks one of these, the query and the number are already in my 
   * Built a 5-KPI, 6-chart executive Excel dashboard with a left-side Filters panel matching the supply-chain reference style — native, filterable, formula-driven from the ChartData sheet.
   * Caught a confounder: fiber-optic customers churn more, but a large part of the effect is the contract mix, not the service itself — the dashboard splits the two.
   * **Corrected three claims with stronger evidence.** Seniors are *not* immaterial (41.68% vs 23.65%, surviving contract and paperless controls), partner/dependents effects survive the contract control (dependents churn *less*: 15.53% vs 31.28%), and paperless billing *is* an independent driver — it survives a contract × tenure × payment-method triple control (31 of 38 cells, +8.30 pp). The old "negative findings" were under-tested; the new analysis tests each against its confounders.
+
+---
+
+## 🤖 Live GenAI / LLM Deployments
+
+Two ML + GenAI systems **deployed live on Hugging Face Spaces** (free-tier, containerized, managed secrets):
+
+| Demo | Pattern | Stack |
+|:---|:---|:---|
+| **[AI Retention Gateway](https://ansht11-retention-gateway-api.hf.space)** | RAG-grounded offer generation — RF classifier (ROC-AUC 0.839) triggers a RAG + LLM stage only for Medium/High risk; offers cite retrieved historical cases, never invented | scikit-learn · ChromaDB · sentence-transformers · LangChain · Groq `gpt-oss-120b` · FastAPI · Docker · pytest |
+| **[Forecast Guard Ops](https://ansht11-forecast-guard-ops.hf.space)** | Statistical-gate anomaly response — the SARIMA 95% confidence interval decides when the LLM writes a tactical ops brief (surge / vehicle tiers / fleet) | statsmodels SARIMA (MAPE 8.3%) · LangChain · Groq LLM · Gradio · matplotlib |
+
+Both demonstrate the same principle: **the model decides *when*, the LLM answers *what to do* — grounded in evidence, gated by cost.**
 
 ---
 
