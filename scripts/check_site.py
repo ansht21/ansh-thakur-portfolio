@@ -8,7 +8,8 @@ safe:
   3. the og:image actually exists and is a real 1200x630 raster
   4. no private notes are tracked by git (they are gitignored, but the repo
      is public, so this is asserted rather than assumed)
-  5. the number of published case studies is the expected 5
+  5. the number of published case-study articles is the expected 6
+     (5 analytics/agent case studies + 1 DS/GenAI reconciliation engine)
 
 Exit code 0 = all good, 1 = at least one failure.
 """
@@ -20,7 +21,7 @@ import sys
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE_HOST = "ansh-thakur-netlify.netlify.app"
-EXPECTED_CASE_STUDIES = 5
+EXPECTED_CASE_STUDIES = 6
 
 # Files that must never be committed to this public repository.
 FORBIDDEN = [
@@ -147,11 +148,22 @@ leaked = [f for f in tracked if os.path.basename(f) in FORBIDDEN or f in FORBIDD
 check("no private/forbidden files are tracked", not leaked, ", ".join(leaked))
 
 # ------------------------------------------------------------- content ----
-articles = len(re.findall(r"<article\b", html))
+def section(html, sid):
+    m = re.search(rf'<section id="{sid}".*?</section>', html, re.S)
+    return m.group(0) if m else ""
+
+projects_html = section(html, "projects")
+genai_html = section(html, "genai")
+articles = len(re.findall(r'<article class="project"', projects_html))
 check(
-    f"{EXPECTED_CASE_STUDIES} case studies published",
+    f"{EXPECTED_CASE_STUDIES} case-study articles published",
     articles == EXPECTED_CASE_STUDIES,
     f"found {articles}",
+)
+check(
+    "dedicated AI/GenAI section present with 2 entries",
+    'id="genai"' in html and len(re.findall(r'<article class="project"', genai_html)) == 2,
+    "missing #genai section or wrong entry count",
 )
 
 # --------------------------------------------------------------- report ----
