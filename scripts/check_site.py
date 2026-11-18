@@ -21,7 +21,7 @@ import sys
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE_HOST = "ansh-thakur-netlify.netlify.app"
-EXPECTED_CASE_STUDIES = 6
+EXPECTED_CASE_STUDIES = 5
 
 # Files that must never be committed to this public repository.
 FORBIDDEN = [
