@@ -1,564 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ansh Thakur — Data Science, Applied AI & Analytics Portfolio</title>
-  <meta name="description" content="Portfolio of Ansh Thakur — Junior/Associate Data Scientist & Applied AI Engineer. Featuring real-world projects in machine learning, revenue reconciliation, time-series forecasting, GenAI copilots, and BI dashboards.">
-  <meta name="keywords" content="Ansh Thakur, Data Scientist, Applied AI Engineer, Machine Learning, Python, SQL, Power BI, FastAPI, LangChain, SARIMA, Time Series Forecasting, Portfolio">
-  <meta name="author" content="Ansh Thakur">
-  <meta name="theme-color" content="#080c14">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Ansh Thakur — Data Science, Applied AI & Analytics Portfolio">
-  <meta property="og:description" content="Production-ready machine learning pipelines, revenue audit engines, time-series forecasting, and interactive BI cockpits built with Python, SQL, and Power BI.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ansh-thakur-netlify.netlify.app/">
-  <meta property="og:image" content="images/og-cover.jpg">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%23080c14'/%3E%3Cpath d='M14 32V16l20 16V16' stroke='%2338bdf8' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="styles.css?v=40">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Ansh Thakur",
-    "jobTitle": "Data Scientist & Applied AI Engineer",
-    "url": "https://ansh-thakur-netlify.netlify.app/",
-    "email": "mailto:ansht1194@gmail.com",
-    "sameAs": [
-      "https://gitlab.com/ansht_121",
-      "https://www.linkedin.com/in/ansh-thakur-5407192b4/"
-    ],
-    "knowsAbout": ["Python", "SQL", "Power BI", "FastAPI", "Docker", "Machine Learning", "Generative AI", "LangChain"]
-  }
-  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ansh Thakur — Data Science & Applied AI Portfolio</title>
+  <meta name="description" content="Portfolio of Ansh Thakur: Junior Data Scientist & Applied AI Engineer. Featuring SARIMA ride forecasting, ₹7.86 Cr revenue reconciliation engine, Power BI dashboards, and GenAI copilots.">
+  <link rel="stylesheet" href="styles.css?v=50">
 </head>
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar" role="navigation" aria-label="Main navigation">
-    <div class="container nav-content">
-      <a href="#hero" class="logo" aria-label="Ansh Thakur Home">
-        <span class="logo-mark" aria-hidden="true">AT</span>
-        <span>Ansh Thakur</span>
-        <span class="logo-tag">Data & AI</span>
-      </a>
-      
-      <ul class="nav-links" id="nav-menu" role="list">
-        <li><a href="#hero" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
+  <header class="nav">
+    <div class="wrap">
+      <div class="logo-box">
+        <div class="logo-badge">AT</div>
+        <a class="logo-text" href="#top">Ansh Thakur</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
       <div class="nav-actions">
-        <button class="btn-icon theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
-          <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-          <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-        </button>
-        <a href="Analyst_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.85rem;">Resume ↗</a>
-        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
-          <span></span><span></span><span></span>
-        </button>
+        <a class="btn cyan sm" href="Analyst_Resume.pdf" target="_blank">Resume ↗</a>
       </div>
     </div>
-  </nav>
+  </header>
 
-  <main id="main">
+  <main id="top">
 
-    <!-- Hero Section -->
-    <header id="hero" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-intro">
-          <div class="hero-badge-live">
-            <span class="pulse-dot"></span>
-            <span>Available for Junior Data Science & AI Roles</span>
+    <!-- Hero Section (Reference layout with glowing orbs and profile visual card) -->
+    <section class="hero">
+      <div class="orb o1"></div>
+      <div class="orb o2"></div>
+      <div class="orb o3"></div>
+      <div class="orb o4"></div>
+      
+      <div class="wrap">
+        <!-- Visual Profile Card -->
+        <div class="profile-visual">
+          <div class="profile-status">
+            <span class="pulse"></span>
+            <span>Available for Data Science & AI Roles</span>
           </div>
-          <h1 class="hero-title">
-            Transforming Complex Data into <span class="highlight">Predictive Intelligence</span> & Measurable Impact
-          </h1>
-          <p class="hero-sub">
-            Hi, I’m <strong>Ansh Thakur</strong>. I design statistical forecasting engines, machine learning pipelines, and GenAI copilots backed by rigorous unit testing, FastAPI microservices, and interactive business cockpits.
+
+          <div style="margin: 20px 0;">
+            <div class="profile-avatar-initials">AT</div>
+            <div style="font-size: 1.15rem; font-weight: 700; color: #fff; margin-top: 8px;">Ansh Thakur</div>
+            <div style="color: var(--text-muted); font-size: 0.88rem;">MCA Final Year | Data Science & Applied AI</div>
+          </div>
+
+          <div class="profile-metrics-list">
+            <div class="p-metric">
+              <b>160K+</b>
+              <span>Audited Records</span>
+            </div>
+            <div class="p-metric">
+              <b>₹7.86 Cr</b>
+              <span>Reconciled GMV</span>
+            </div>
+            <div class="p-metric">
+              <b>8.3% MAPE</b>
+              <span>SARIMA Forecast</span>
+            </div>
+            <div class="p-metric">
+              <b>0.9235</b>
+              <span>Leakage ROC-AUC</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Text -->
+        <div>
+          <h1>My<br>Portfolio</h1>
+          <p class="hero-subtitle">
+            I turn complex, high-volume data into predictive intelligence and executive clarity. Specializing in time-series forecasting, automated financial reconciliation pipelines, GenAI copilots, and interactive BI dashboards.
           </p>
-          <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">Explore Featured Projects ↓</a>
-            <a href="https://gitlab.com/ansht_121" target="_blank" rel="noopener noreferrer" class="btn btn-gitlab">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m23.6 9.58-1.54-4.75a.8.8 0 0 0-.3-.41.83.83 0 0 0-.52-.16.85.85 0 0 0-.52.17.8.8 0 0 0-.3.4l-2.07 6.39H5.15L3.08 4.83a.8.8 0 0 0-.3-.4.85.85 0 0 0-.52-.17.83.83 0 0 0-.52.16.8.8 0 0 0-.3.41L.4 9.58a1.64 1.64 0 0 0 .6 1.83l10.5 7.63a.87.87 0 0 0 1 0l10.5-7.63a1.64 1.64 0 0 0 .6-1.83"/></svg>
-              GitLab Repositories
-            </a>
-            <a href="https://www.linkedin.com/in/ansh-thakur-5407192b4/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.53 1.53 0 0 0 0-3.06 1.53 1.53 0 0 0 0 3.06m1.39 9.74v-8.37H5.07v8.37h2.78z"/></svg>
-              LinkedIn
-            </a>
-          </div>
-
-          <div class="hero-stats">
-            <div class="stat-item">
-              <h3>160K+</h3>
-              <p>Audited Records</p>
-            </div>
-            <div class="stat-item">
-              <h3>₹7.86 Cr</h3>
-              <p>Reconciled GMV</p>
-            </div>
-            <div class="stat-item">
-              <h3>8.3% MAPE</h3>
-              <p>SARIMA Accuracy</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="hero-terminal-card">
-            <div class="terminal-header">
-              <div class="terminal-dots">
-                <span class="dot-red"></span>
-                <span class="dot-yellow"></span>
-                <span class="dot-green"></span>
-              </div>
-              <div class="terminal-title">ansh_pipeline_guard.py — test suite</div>
-            </div>
-            <div class="code-block">
-              <div class="code-line"><span class="code-dim">$</span> <span class="code-cyan">pytest</span> tests/ -v --disable-warnings</div>
-              <div class="code-line"><span class="code-green">PASSED</span> tests/test_sarima_forecaster.py::test_mape_band [<span class="code-green">8.3% MAPE</span>]</div>
-              <div class="code-line"><span class="code-green">PASSED</span> tests/test_leakage_classifier.py::test_auc_score [<span class="code-cyan">0.9235 AUC</span>]</div>
-              <div class="code-line"><span class="code-green">PASSED</span> tests/test_isolation_forest.py::test_anomaly_cut [<span class="code-amber">2,215 flagged</span>]</div>
-              <div class="code-line"><span class="code-green">PASSED</span> tests/test_groq_rag_brief.py::test_confidence_gate [<span class="code-purple">95% CI active</span>]</div>
-              <div class="code-line"><span class="code-dim">====================== 10 passed in 1.42s ======================</span></div>
-            </div>
-
-            <div class="terminal-metrics-grid">
-              <div class="metric-pill">
-                <span class="metric-label">Operational Up-Time</span>
-                <span class="metric-val">FastAPI Microservice</span>
-              </div>
-              <div class="metric-pill">
-                <span class="metric-label">Pipeline Reliability</span>
-                <span class="metric-val">100% Seed-Fixed Pytest</span>
-              </div>
-            </div>
+          <div class="btns">
+            <a class="btn ghost" href="#about">About me</a>
+            <a class="btn cyan" href="#projects">See my projects ↓</a>
+            <a class="btn dark" href="https://gitlab.com/ansht_121" target="_blank" rel="noopener">GitLab Repos ↗</a>
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <!-- About Section -->
-    <section id="about" class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-badge">Background & Philosophy</span>
-          <h2 class="section-title">Bridging Statistical Rigor & Engineering</h2>
-          <p class="section-subtitle">A data professional committed to reproducible numbers, production deployments, and actionable business insights.</p>
+    <!-- About & Skills Section (Reference Structure: Bio on left, Skills Cards on right) -->
+    <section class="about" id="about">
+      <div class="wrap">
+        <div>
+          <h2>About me</h2>
+          <p>
+            I am an Information Technology graduate (B.Sc. IT, CGPA 7.26) and current <strong>Master of Computer Applications (MCA)</strong> student with dedicated experience in Data Science, Machine Learning, and Applied Generative AI.
+          </p>
+          <p>
+            Through real-world project builds, training at Digital Edify, and analytics at Unified Mentor, I engineer end-to-end data systems: cleaning messy transactional datasets, running statistical models (SARIMA, Isolation Forest, Gradient Boosting), and serving them via FastAPI microservices, Streamlit cockpits, and interactive Power BI dashboards.
+          </p>
+          <p>
+            I believe in reproducible data science—rigorous unit testing with seed-fixed metrics, automated CI/CD checks, and deploying AI only when statistical anomaly conditions are satisfied.
+          </p>
+          <div style="margin-top: 28px;">
+            <a class="btn dark" href="#projects">Explore Featured Case Studies</a>
+          </div>
         </div>
 
-        <div class="about-grid">
-          <div class="about-text">
-            <p>
-              I am an Information Technology graduate and current <strong>Master of Computer Applications (MCA)</strong> student with dedicated hands-on experience in <strong>Data Science, Machine Learning, and Applied GenAI</strong>.
-            </p>
-            <p>
-              My workflow centers on building reproducible data systems: writing clean, modular Python pipelines, extracting deep insights through SQL window functions, applying statistically sound models (SARIMA, Isolation Forest, Gradient Boosting), and wrapping them into live FastAPI endpoints, interactive Power BI dashboards, and Excel financial cockpits.
-            </p>
-            <p>
-              I believe in honest data reporting—separating true business revenue leakage from in-transit capital, ensuring unit tests validate every data transformation, and deploying AI only where confidence intervals confirm statistical anomalies.
-            </p>
-            <div class="about-badges">
-              <div class="about-badge">🎓 MCA (Exp. 2027)</div>
-              <div class="about-badge">📍 Maharashtra, India</div>
-              <div class="about-badge">⚡ Strong Python & SQL</div>
-              <div class="about-badge">📊 Power BI & Excel Certified Work</div>
+        <div id="skills">
+          <h3>Core Technical Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-box">
+              <h4>Python & ML</h4>
+              <hr>
+              <span>Pandas, NumPy, Scikit-learn, SARIMA, Isolation Forest, pytest</span>
             </div>
-          </div>
-
-          <div class="about-cards-col">
-            <div class="info-card">
-              <div class="info-icon">🎯</div>
-              <div>
-                <h4 class="info-title">Flagship-First Engineering</h4>
-                <p class="info-desc">Every major project features reproducible datasets, strict CI/CD pipelines, and seed-fixed unit tests rather than superficial notebook toy demos.</p>
-              </div>
+            <div class="skill-box">
+              <h4>SQL & Databases</h4>
+              <hr>
+              <span>MySQL, PostgreSQL, CTEs, Window Functions, Complex Joins</span>
             </div>
-            <div class="info-card">
-              <div class="info-icon">🧠</div>
-              <div>
-                <h4 class="info-title">Responsible GenAI</h4>
-                <p class="info-desc">Building practical RAG copilots using LangChain, ChromaDB, and Groq LLMs that run only when statistical anomaly conditions are satisfied.</p>
-              </div>
+            <div class="skill-box">
+              <h4>Generative AI</h4>
+              <hr>
+              <span>LangChain, RAG Copilots, ChromaDB, Groq LLM API, Confidence Bands</span>
             </div>
-            <div class="info-card">
-              <div class="info-icon">📈</div>
-              <div>
-                <h4 class="info-title">Executive Communication</h4>
-                <p class="info-desc">Translating intricate loss figures and algorithmic predictions into formula-driven executive dashboards that finance and ops teams can immediately steer with.</p>
-              </div>
+            <div class="skill-box">
+              <h4>BI & Production</h4>
+              <hr>
+              <span>Power BI (DAX), Excel Cockpits, FastAPI, Docker, Streamlit, GitLab CI</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-badge">Technical Stack</span>
-          <h2 class="section-title">Core Competencies & Tooling</h2>
-          <p class="section-subtitle">Verified proficiencies honed across training, industry simulations, and live projects.</p>
-        </div>
-
-        <div class="skills-grid">
-          <!-- Programming & Databases -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-              </div>
-              <h3 class="skill-cat-title">Languages & DBs</h3>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-pill">Python (Pandas, NumPy)</span>
-              <span class="skill-pill">Scikit-learn</span>
-              <span class="skill-pill">SQL (MySQL, PostgreSQL)</span>
-              <span class="skill-pill">Advanced CTEs & Joins</span>
-              <span class="skill-pill">Window Functions</span>
-              <span class="skill-pill">pytest</span>
-            </div>
+    <!-- Projects Section (Reference carousel track with arrow controls) -->
+    <section class="projects" id="projects">
+      <div class="wrap">
+        <div class="proj-head">
+          <div>
+            <h2>Featured Projects</h2>
+            <p>Swipe or use the arrows to browse my production pipelines & case studies.</p>
           </div>
-
-          <!-- Machine Learning & Stats -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
-              </div>
-              <h3 class="skill-cat-title">Machine Learning & Stats</h3>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-pill">Time-Series (SARIMA)</span>
-              <span class="skill-pill">Isolation Forest</span>
-              <span class="skill-pill">Gradient Boosting</span>
-              <span class="skill-pill">Clustering & Churn</span>
-              <span class="skill-pill">Hypothesis Testing / ANOVA</span>
-              <span class="skill-pill">ROC-AUC / MAPE / RMSE</span>
-            </div>
-          </div>
-
-          <!-- Generative AI -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 12 2.1 10.4"/><path d="M12 12l4.6 8.7"/></svg>
-              </div>
-              <h3 class="skill-cat-title">Generative AI & LLMs</h3>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-pill">LangChain</span>
-              <span class="skill-pill">RAG Copilots</span>
-              <span class="skill-pill">ChromaDB Vector Store</span>
-              <span class="skill-pill">Groq LLM API</span>
-              <span class="skill-pill">Prompt Engineering</span>
-              <span class="skill-pill">Confidence-Gated AI</span>
-            </div>
-          </div>
-
-          <!-- BI & Production -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
-              </div>
-              <h3 class="skill-cat-title">BI & Deployment</h3>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-pill">Power BI (DAX, Modeling)</span>
-              <span class="skill-pill">Microsoft Excel (Advanced)</span>
-              <span class="skill-pill">FastAPI Endpoints</span>
-              <span class="skill-pill">Docker Containerization</span>
-              <span class="skill-pill">Streamlit Cockpits</span>
-              <span class="skill-pill">GitLab CI/CD Automation</span>
-            </div>
+          <div class="arrows">
+            <button class="arrow" id="prev" aria-label="Previous">←</button>
+            <button class="arrow" id="next" aria-label="Next">→</button>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-badge">Portfolio Work</span>
-          <h2 class="section-title">Featured Projects</h2>
-          <p class="section-subtitle">Real-world case studies demonstrating statistical rigor, production engineering, and clean financial impact.</p>
-        </div>
-
-        <div class="project-filters">
-          <button class="filter-btn active" data-filter="all">All Projects</button>
-          <button class="filter-btn" data-filter="ml">Machine Learning & Forecast</button>
-          <button class="filter-btn" data-filter="finance">Audit & Financial</button>
-          <button class="filter-btn" data-filter="bi">BI & Analytics</button>
-        </div>
-
-        <div class="projects-stack">
+        <div class="track" id="track">
 
           <!-- PROJECT 1: FORECAST GUARD (FLAGSHIP) -->
-          <article class="project-card" data-category="ml">
-            <div class="project-flagship-badge">★ Flagship Project</div>
-            <div class="project-info">
-              <div class="project-meta-top">
-                <span class="project-number">PROJECT 01</span>
-                <span class="project-role-tag">Time-Series & GenAI Operations</span>
-              </div>
-              <h3 class="project-title">Forecast Guard: AI-Powered Ride Demand Forecasting & Operations</h3>
-              <p class="project-desc">
-                High-precision urban mobility demand forecaster analyzing 35,000+ ride transactions. Replaces static gut-feel driver allocation with a 14-day SARIMA statistical engine, surge-pricing simulator, and confidence-band gated LLM operations copilot.
-              </p>
-              <ul class="project-highlights">
-                <li><strong>Demand Concentration:</strong> Isolated that the evening rush (5–7 PM) captures <strong>31.2%</strong> of daily demand, and airport trips drive <strong>54.8% of total revenue</strong> from only 39.6% of trips.</li>
-                <li><strong>Statistical Forecaster:</strong> Developed a 14-day SARIMA demand forecast reaching <strong>8.3% MAPE</strong> (~20% improvement over baseline linear models).</li>
-                <li><strong>Dynamic Surge Simulator:</strong> Modeled demand-elastic price multipliers projected to deliver <strong>+53% gross-margin uplift</strong> at peak periods, deployed as an operational FastAPI microservice.</li>
-                <li><strong>Gated GenAI Copilot:</strong> Deployed on Hugging Face Spaces where the SARIMA 95% confidence interval acts as a gate—Groq LLM automatically generates executive action briefs strictly on confirmed statistical anomalies.</li>
-              </ul>
-              <div class="project-tags">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">SARIMA</span>
-                <span class="tech-tag">FastAPI</span>
-                <span class="tech-tag">Groq LLM</span>
-                <span class="tech-tag">Hugging Face</span>
-                <span class="tech-tag">SQL</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/01_ride-demand-and-revenue-forecasting" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View on GitLab ↗</a>
-                <a href="https://gitlab.com/ansht_121" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Documentation & Code</a>
-              </div>
+          <article class="card">
+            <span class="card-badge">★ Flagship</span>
+            <div class="thumb">
+              <img src="images/uber-dashboard.webp" alt="Forecast Guard SARIMA Dashboard" loading="lazy">
             </div>
-
-            <div class="project-media">
-              <div class="project-preview-frame">
-                <img src="images/uber-dashboard.webp" alt="Forecast Guard Dashboard Preview" loading="lazy">
-              </div>
-              <div class="project-kpi-grid">
-                <div class="kpi-tile">
-                  <span class="kpi-tile-val">8.3%</span>
-                  <span class="kpi-tile-label">SARIMA Forecast MAPE</span>
-                </div>
-                <div class="kpi-tile">
-                  <span class="kpi-tile-val">+53%</span>
-                  <span class="kpi-tile-label">Projected Margin Surge</span>
-                </div>
-                <div class="kpi-tile">
-                  <span class="kpi-tile-val">35,000+</span>
-                  <span class="kpi-tile-label">Ride Records Analyzed</span>
-                </div>
-                <div class="kpi-tile">
-                  <span class="kpi-tile-val">95% CI</span>
-                  <span class="kpi-tile-label">Anomaly Gate Threshold</span>
-                </div>
-              </div>
+            <span class="tag">Mobility & Time-Series</span>
+            <h3>Forecast Guard: Ride Demand Forecasting</h3>
+            <p>
+              High-precision urban mobility forecaster analyzing 35,000+ ride transactions. Combines a 14-day SARIMA demand model with a dynamic surge-pricing simulator (+53% margin uplift) and a Groq LLM operations copilot gated by a 95% confidence band.
+            </p>
+            <div class="card-stats">
+              <div class="c-stat"><b>8.3%</b><span>SARIMA MAPE</span></div>
+              <div class="c-stat"><b>35,000+</b><span>Records</span></div>
+              <div class="c-stat"><b>+53%</b><span>Margin Surge</span></div>
+            </div>
+            <div class="tools">Python · SARIMA · FastAPI · Groq LLM · Hugging Face</div>
+            <div class="card-foot">
+              <a class="view-link" href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/01_ride-demand-and-revenue-forecasting" target="_blank" rel="noopener">View GitLab Repo →</a>
             </div>
           </article>
 
-          <!-- PROJECT 2: REVENUE RECONCILIATION ENGINE (FLAGSHIP) -->
-          <article class="project-card" data-category="finance">
-            <div class="project-flagship-badge">★ Flagship Project</div>
-            <div class="project-info">
-              <div class="project-meta-top">
-                <span class="project-number">PROJECT 02</span>
-                <span class="project-role-tag">Financial Audit & Anomaly Detection</span>
-              </div>
-              <h3 class="project-title">E-Commerce Revenue Reconciliation & Leakage Audit Engine</h3>
-              <p class="project-desc">
-                Enterprise forensic audit pipeline processing 128,976 Amazon marketplace orders (₹7.86 Cr gross GMV). Employs an 11-step cleaning architecture, Isolation Forest anomaly detection, and a policy RAG dispute copilot.
-              </p>
-              <ul class="project-highlights">
-                <li><strong>True Leakage Separation:</strong> Segregated verified revenue loss (<strong>₹83.07 Lakhs</strong>, 83.3% driven by 18,334 cancellations) from <strong>₹5.10 Crore</strong> capital actively in transit, rectifying an erroneous 23.7% gross coverage claim.</li>
-                <li><strong>Dual Cockpit Delivery:</strong> Built a formula-driven Microsoft Excel 6-KPI dashboard with 5 dynamic slicers alongside an interactive Streamlit application equipped with a live ML risk radar.</li>
-                <li><strong>ML Anomaly & Claim Engine:</strong> Deployed an Isolation Forest detecting <strong>2,215 irregular fee/settlement records</strong> and a Gradient-Boosting classifier achieving <strong>0.9235 ROC-AUC</strong>, coupled with a RAG copilot drafting Amazon Seller Support dispute tickets citing exact policy clauses.</li>
-                <li><strong>Verified Quality:</strong> Fully validated through <strong>10 passing pytest unit tests</strong> with seed-fixed reproducibility, Ruff linting, and automated GitLab CI/CD pipelines.</li>
-              </ul>
-              <div class="project-tags">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Isolation Forest</span>
-                <span class="tech-tag">Gradient Boosting</span>
-                <span class="tech-tag">RAG / LangChain</span>
-                <span class="tech-tag">Streamlit</span>
-                <span class="tech-tag">Excel Dashboard</span>
-                <span class="tech-tag">GitLab CI</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/10_ecommerce-reconciliation-engine" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View on GitLab ↗</a>
-                <a href="https://gitlab.com/ansht_121" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Audit Methodology</a>
-              </div>
+          <!-- PROJECT 2: RECONCILIATION ENGINE (FLAGSHIP) -->
+          <article class="card">
+            <span class="card-badge">★ Flagship</span>
+            <div class="thumb">
+              <img src="images/revenue-cockpit.webp" alt="Revenue Reconciliation Dashboard" loading="lazy">
             </div>
-
-            <div class="project-media">
-              <div class="project-preview-frame">
-                <img src="images/revenue-cockpit.webp" alt="Revenue Reconciliation Cockpit Preview" loading="lazy">
-              </div>
-              <div class="project-kpi-grid">
-                <div class="kpi-tile">
-                  <span class="kpi-tile-val">₹7.86 Cr</span>
-                  <span class="kpi-tile-label">Audited Gross GMV</span>
-                </div>
-                <div class="kpi-tile">
-                  <span class="kpi-tile-val">0.9235</span>
-                  <span class="kpi-tile-label">Leakage Classifier ROC-AUC</span>
-                </div>
-                <div class="kpi-tile">
-                  <span class="kpi-tile-val">2,215</span>
-                  <span class="kpi-tile-label">Anomalies Detected</span>
-                </div>
-                <div class="kpi-tile">
-                  <span class="kpi-tile-val">10 / 10</span>
-                  <span class="kpi-tile-label">Passing Unit Tests</span>
-                </div>
-              </div>
+            <span class="tag">Finance Audit & ML</span>
+            <h3>E-Commerce Revenue Reconciliation Engine</h3>
+            <p>
+              Forensic audit engine processing 128,976 Amazon orders (₹7.86 Cr gross). Separates true leakage (₹83.07 L) from in-transit capital, deploys Isolation Forest (2,215 anomalies), and runs a policy RAG copilot drafting dispute claims.
+            </p>
+            <div class="card-stats">
+              <div class="c-stat"><b>₹7.86 Cr</b><span>Reconciled</span></div>
+              <div class="c-stat"><b>0.9235</b><span>Leakage AUC</span></div>
+              <div class="c-stat"><b>10 / 10</b><span>Pytest Passed</span></div>
+            </div>
+            <div class="tools">Python · Isolation Forest · RAG · Streamlit · Excel · GitLab CI</div>
+            <div class="card-foot">
+              <a class="view-link" href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/10_ecommerce-reconciliation-engine" target="_blank" rel="noopener">View GitLab Repo →</a>
             </div>
           </article>
 
           <!-- PROJECT 3: CUSTOMER CHURN & RETENTION -->
-          <article class="project-card" data-category="ml">
-            <div class="project-info">
-              <div class="project-meta-top">
-                <span class="project-number">PROJECT 03</span>
-                <span class="project-role-tag">Customer Lifecycle & Predictive Analytics</span>
-              </div>
-              <h3 class="project-title">Subscription Retention Analytics & Churn Risk Engine</h3>
-              <p class="project-desc">
-                Customer lifecycle churn mitigation model on 7,043 subscriber records. Uncovers tenure decay thresholds, evaluates fiber optic service friction, and models proactive retention incentives to protect recurring monthly revenue.
-              </p>
-              <ul class="project-highlights">
-                <li><strong>Tenure Risk Point:</strong> Identified that customer churn peaks significantly during the initial 6 months (41.8% attrition rate), transitioning into steady retention after month 24.</li>
-                <li><strong>Predictive Classification:</strong> Engineered a Random Forest and Logistic Regression ensemble reaching <strong>0.84 ROC-AUC</strong>, quantifying high-risk contract cohorts.</li>
-                <li><strong>Executive Decision Cockpit:</strong> Delivered a scenario calculator quantifying the net revenue ROI of offering targeted contract discounts vs incurring full customer churn.</li>
-              </ul>
-              <div class="project-tags">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Scikit-learn</span>
-                <span class="tech-tag">Power BI</span>
-                <span class="tech-tag">EDA</span>
-                <span class="tech-tag">ROC-AUC</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/03_telecom-churn-retention" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View on GitLab ↗</a>
-              </div>
+          <article class="card">
+            <div class="thumb">
+              <img src="images/retention-model.webp" alt="Subscription Retention Cockpit" loading="lazy">
             </div>
-
-            <div class="project-media">
-              <div class="project-preview-frame">
-                <img src="images/retention-model.webp" alt="Subscription Retention Cockpit" loading="lazy">
-              </div>
-              <div class="project-kpi-grid">
-                <div class="kpi-tile">
-                  <span class="kpi-tile-val">7,043</span>
-                  <span class="kpi-tile-label">Customer Profiles</span>
-                </div>
-                <div class="kpi-tile">
-                  <span class="kpi-tile-val">0.84</span>
-                  <span class="kpi-tile-label">Classification ROC-AUC</span>
-                </div>
-              </div>
+            <span class="tag">Customer Analytics</span>
+            <h3>Subscription Retention & Churn Analytics</h3>
+            <p>
+              Predictive churn classification engine over 7,043 subscriber accounts. Uncovers tenure decay points (peak risk at 6 months), isolates fiber optic service friction, and models revenue impact of targeted contract renewals.
+            </p>
+            <div class="card-stats">
+              <div class="c-stat"><b>0.84</b><span>ROC-AUC</span></div>
+              <div class="c-stat"><b>7,043</b><span>Subscribers</span></div>
+              <div class="c-stat"><b>26.6%</b><span>Base Churn</span></div>
+            </div>
+            <div class="tools">Python · Scikit-learn · Power BI · EDA · ROC-AUC</div>
+            <div class="card-foot">
+              <a class="view-link" href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/03_telecom-churn-retention" target="_blank" rel="noopener">View GitLab Repo →</a>
             </div>
           </article>
 
-          <!-- PROJECT 4: SUPPLY CHAIN & LOGISTICS INTELLIGENCE -->
-          <article class="project-card" data-category="bi">
-            <div class="project-info">
-              <div class="project-meta-top">
-                <span class="project-number">PROJECT 04</span>
-                <span class="project-role-tag">Supply Chain BI & Operations</span>
-              </div>
-              <h3 class="project-title">Supply Chain Logistics & Fulfillment Performance Intelligence</h3>
-              <p class="project-desc">
-                Comprehensive logistics operational analysis across multi-regional distribution networks. Evaluates order cycle latency, carrier SLA compliance, and inventory turnover efficiency.
-              </p>
-              <ul class="project-highlights">
-                <li><strong>Bottleneck Identification:</strong> Pinpointed regional distribution centers suffering 34% delivery delays due to freight provider mismatch and dispatch backlogs.</li>
-                <li><strong>Interactive Power BI Suite:</strong> Constructed an operational cockpit using complex DAX measures (MTD/YTD delivery rates, fulfillment velocity, freight cost per unit).</li>
-                <li><strong>Cost Optimization:</strong> Delivered routing reallocation recommendations projecting an 11.4% reduction in expedited shipping penalties.</li>
-              </ul>
-              <div class="project-tags">
-                <span class="tech-tag">Power BI</span>
-                <span class="tech-tag">DAX</span>
-                <span class="tech-tag">SQL</span>
-                <span class="tech-tag">Data Modeling</span>
-                <span class="tech-tag">Logistics KPIs</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/02_supply-chain-performance" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View on GitLab ↗</a>
-              </div>
+          <!-- PROJECT 4: SUPPLY CHAIN PERFORMANCE -->
+          <article class="card">
+            <div class="thumb">
+              <img src="images/supplychain-dashboard.webp" alt="Supply Chain Performance Dashboard" loading="lazy">
             </div>
-
-            <div class="project-media">
-              <div class="project-preview-frame">
-                <img src="images/supplychain-dashboard.webp" alt="Supply Chain Intelligence Dashboard" loading="lazy">
-              </div>
-              <div class="project-kpi-grid">
-                <div class="kpi-tile">
-                  <span class="kpi-tile-val">11.4%</span>
-                  <span class="kpi-tile-label">Projected Freight Savings</span>
-                </div>
-                <div class="kpi-tile">
-                  <span class="kpi-tile-val">15+</span>
-                  <span class="kpi-tile-label">Custom DAX Metrics</span>
-                </div>
-              </div>
+            <span class="tag">Supply Chain BI</span>
+            <h3>Supply Chain & Logistics KPI Intelligence</h3>
+            <p>
+              Distribution and fulfillment intelligence suite analyzing multi-regional operations. Pinpoints 34% delivery delays in specific regional corridors, identifies vendor lead-time bottlenecks, and models freight savings.
+            </p>
+            <div class="card-stats">
+              <div class="c-stat"><b>7,991</b><span>Orders</span></div>
+              <div class="c-stat"><b>47</b><span>SKUs Tracked</span></div>
+              <div class="c-stat"><b>11.4%</b><span>Freight Savings</span></div>
+            </div>
+            <div class="tools">Power BI · DAX · SQL · Excel Data Modeling</div>
+            <div class="card-foot">
+              <a class="view-link" href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/02_supply-chain-performance" target="_blank" rel="noopener">View GitLab Repo →</a>
             </div>
           </article>
 
-          <!-- PROJECT 5: DATA QUALITY CONTRACT AGENT -->
-          <article class="project-card" data-category="ml">
-            <div class="project-info">
-              <div class="project-meta-top">
-                <span class="project-number">PROJECT 05</span>
-                <span class="project-role-tag">Data Engineering & Quality Assurance</span>
-              </div>
-              <h3 class="project-title">Pipeline Contract & Schema Integrity Agent</h3>
-              <p class="project-desc">
-                Automated continuous testing harness for data ingest pipelines. Prevents corrupted data, schema drifting, and distribution shifts from polluting production downstream analytical tables.
-              </p>
-              <ul class="project-highlights">
-                <li><strong>Pre-Ingest Quality Gate:</strong> Enforces declarative data contracts validating schema types, null boundaries, and business integrity rules prior to database loading.</li>
-                <li><strong>Statistical Anomaly Sentinel:</strong> Uses statistical divergence checks (Kolmogorov-Smirnov & Z-scores) to halt silent drift in incoming batches.</li>
-                <li><strong>Automated CI Integration:</strong> Runs as a pre-commit hook and GitLab CI step, generating clean summary logs and incident notifications.</li>
-              </ul>
-              <div class="project-tags">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">pytest</span>
-                <span class="tech-tag">GitLab CI/CD</span>
-                <span class="tech-tag">Data Quality</span>
-                <span class="tech-tag">Docker</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/pipeline-contract-agent" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View on GitLab ↗</a>
-              </div>
+          <!-- PROJECT 5: DATA CONTRACT AGENT -->
+          <article class="card">
+            <div class="thumb">
+              <img src="images/contract-agent-flow.svg" alt="Pipeline Contract Agent Flow" loading="lazy" style="padding: 16px;">
             </div>
-
-            <div class="project-media">
-              <div class="project-preview-frame">
-                <img src="images/contract-agent-flow.svg" alt="Contract Agent Pipeline Flow" loading="lazy" style="padding: 24px;">
-              </div>
-              <div class="project-kpi-grid">
-                <div class="kpi-tile">
-                  <span class="kpi-tile-val">Zero</span>
-                  <span class="kpi-tile-label">Silent Schema Drift</span>
-                </div>
-                <div class="kpi-tile">
-                  <span class="kpi-tile-val">100%</span>
-                  <span class="kpi-tile-label">Automated CI Pass Gate</span>
-                </div>
-              </div>
+            <span class="tag">Data Quality & CI/CD</span>
+            <h3>Pipeline Contract & Data-Quality Agent</h3>
+            <p>
+              Automated continuous quality-assurance guard. Enforces schema contracts (16 fields, 5 business rules) using pure-pandas validation and statistical divergence checks before batch loads enter the production warehouse.
+            </p>
+            <div class="card-stats">
+              <div class="c-stat"><b>Zero</b><span>Schema Drift</span></div>
+              <div class="c-stat"><b>16</b><span>Contract Fields</span></div>
+              <div class="c-stat"><b>100%</b><span>Automated Gate</span></div>
+            </div>
+            <div class="tools">Python · pytest · GitLab CI/CD · Docker</div>
+            <div class="card-foot">
+              <a class="view-link" href="https://gitlab.com/ansht_121/data-analytics/-/tree/main/pipeline-contract-agent" target="_blank" rel="noopener">View GitLab Repo →</a>
             </div>
           </article>
 
@@ -566,171 +263,93 @@
       </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-badge">Career Journey</span>
-          <h2 class="section-title">Work Experience & Training</h2>
-          <p class="section-subtitle">Real-world analytics, statistical validation, and production development experience.</p>
-        </div>
+    <!-- Experience & Education (Two-Column Balanced Section) -->
+    <section class="experience-edu" id="experience">
+      <div class="wrap grid-2col">
+        <!-- Experience Column -->
+        <div>
+          <h3 class="col-header">Work Experience & Training</h3>
 
-        <div class="timeline">
-          <!-- Digital Edify -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role">Data Science & AI Trainee</h3>
-                  <div class="timeline-company">Digital Edify Pvt. Ltd. · Hyderabad, India</div>
-                </div>
-                <span class="timeline-date">Jun 2025 – Nov 2025</span>
-              </div>
-              <ul class="timeline-bullets">
-                <li>Built and validated predictive machine learning and NLP models using Python and Scikit-learn following thorough exploratory data analysis.</li>
-                <li>Queried MySQL and PostgreSQL databases leveraging advanced joins, CTEs, and window functions to extract mission-critical business metrics.</li>
-                <li>Gained practical hands-on exposure across the modern AI stack, covering statistics, data processing, and Generative AI fundamentals.</li>
-              </ul>
+          <div class="timeline-card">
+            <div class="timeline-top">
+              <div class="timeline-role">Data Science & AI Trainee</div>
+              <span class="timeline-date">Jun 2025 – Nov 2025</span>
             </div>
+            <div class="timeline-company">Digital Edify Pvt. Ltd. · Hyderabad, India</div>
+            <ul class="timeline-bullets">
+              <li>Built and validated predictive machine learning and NLP models using Python and Scikit-learn after thorough exploratory analysis.</li>
+              <li>Queried MySQL and PostgreSQL databases with advanced joins, CTEs, and window functions to extract business KPIs.</li>
+              <li>Gained practical exposure across the modern AI stack, covering statistics, data processing, and Generative AI fundamentals.</li>
+            </ul>
           </div>
 
-          <!-- Unified Mentor -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role">Data Analytics Intern</h3>
-                  <div class="timeline-company">Unified Mentor Pvt. Ltd. · Remote</div>
-                </div>
-                <span class="timeline-date">Sep 2025 – Dec 2025</span>
-              </div>
-              <ul class="timeline-bullets">
-                <li>Extracted, cleaned, and validated 5,000+ complex raw data records using SQL and Excel to ensure absolute data integrity.</li>
-                <li>Constructed interactive Power BI dashboards to track critical weekly performance KPIs and monitor emerging business trends.</li>
-                <li>Automated recurring analytical reports using advanced DAX measures and Power Query, cutting manual reporting effort by 30%.</li>
-              </ul>
+          <div class="timeline-card">
+            <div class="timeline-top">
+              <div class="timeline-role">Data Analytics Intern</div>
+              <span class="timeline-date">Sep 2025 – Dec 2025</span>
             </div>
+            <div class="timeline-company">Unified Mentor Pvt. Ltd. · Remote</div>
+            <ul class="timeline-bullets">
+              <li>Extracted, cleaned, and validated 5,000+ complex raw data records using SQL and Excel to ensure absolute data integrity.</li>
+              <li>Built interactive Power BI dashboards to track critical weekly performance KPIs and key business trends.</li>
+              <li>Automated recurring reports using advanced DAX measures and Power Query, reducing manual reporting effort by 30%.</li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Education & Certifications -->
-    <section id="education" class="section section-alt">
-      <div class="container">
-        <div class="edu-cert-grid">
-          
-          <!-- Education Column -->
-          <div>
-            <h3 class="sub-header">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-              Academic Background
-            </h3>
+        <!-- Education & Certifications Column -->
+        <div>
+          <h3 class="col-header">Education & Simulations</h3>
 
-            <div class="edu-card">
-              <h4 class="card-title">Master of Computer Applications (MCA)</h4>
-              <div class="card-sub">Ballarpur Institute of Technology, Gondwana University</div>
-              <div class="card-foot">
-                <span>Final Year</span>
-                <span>Expected 2027</span>
-              </div>
+          <div class="timeline-card">
+            <div class="timeline-top">
+              <div class="timeline-role">Master of Computer Applications (MCA)</div>
+              <span class="timeline-date">Expected 2027</span>
             </div>
-
-            <div class="edu-card">
-              <h4 class="card-title">B.Sc. in Information Technology</h4>
-              <div class="card-sub">Sardar Patel Mahavidyalaya, Gondwana University</div>
-              <div class="card-foot">
-                <span>CGPA: 7.26 / 10</span>
-                <span>Jul 2022 – May 2025</span>
-              </div>
-            </div>
+            <div class="timeline-company">Ballarpur Institute of Technology, Gondwana University</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 6px;">Final Year MCA student focusing on Advanced Data Science, Distributed Databases, and Artificial Intelligence.</p>
           </div>
 
-          <!-- Certifications & Simulations Column -->
-          <div>
-            <h3 class="sub-header">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-              Industry Simulations & Certifications
-            </h3>
-
-            <div class="cert-card">
-              <h4 class="card-title">BCG X GenAI Job Simulation</h4>
-              <div class="card-sub">Forage · Financial Chatbot & LLM Prompting</div>
-              <div class="card-foot">
-                <span>Completed</span>
-                <span>Jun 2025</span>
-              </div>
+          <div class="timeline-card">
+            <div class="timeline-top">
+              <div class="timeline-role">B.Sc. in Information Technology</div>
+              <span class="timeline-date">Jul 2022 – May 2025</span>
             </div>
-
-            <div class="cert-card">
-              <h4 class="card-title">TATA GenAI Data Analytics Simulation</h4>
-              <div class="card-sub">Forage · Business Scenario Modeling & Insights</div>
-              <div class="card-foot">
-                <span>Completed</span>
-                <span>Jul 2025</span>
-              </div>
-            </div>
-
-            <div class="cert-card">
-              <h4 class="card-title">British Airways Data Science Simulation</h4>
-              <div class="card-sub">Forage · Web Scraping & Predictive Modeling</div>
-              <div class="card-foot">
-                <span>Completed</span>
-                <span>Aug 2025</span>
-              </div>
-            </div>
+            <div class="timeline-company">Sardar Patel Mahavidyalaya, Gondwana University</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 6px;">Graduated with CGPA: 7.26 / 10. Core coursework in Data Structures, Relational Databases, and Statistics.</p>
           </div>
 
+          <div class="timeline-card">
+            <div class="timeline-top">
+              <div class="timeline-role">Industry Simulations (Forage)</div>
+              <span class="timeline-date">2025</span>
+            </div>
+            <div class="timeline-company">BCG X · TATA · British Airways</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 6px;">Completed certified industry job simulations covering Generative AI Chatbots, Executive BI Dashboards, and Predictive Modeling.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="contact-card-box">
-          <span class="section-badge">Get in Touch</span>
-          <h2 class="section-title">Ready to Add Immediate Value to Your Data Team</h2>
-          <p class="section-subtitle" style="margin: 0 auto; max-width: 600px;">
-            I am actively interviewing for <strong>Junior Data Scientist, Applied AI Engineer, and Data Analyst</strong> roles. Let’s connect to discuss how my technical and problem-solving skills align with your goals.
-          </p>
-
-          <div class="contact-channels">
-            <a href="mailto:ansht1194@gmail.com" class="btn btn-primary">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              ansht1194@gmail.com
-            </a>
-            <a href="https://www.linkedin.com/in/ansh-thakur-5407192b4/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.53 1.53 0 0 0 0-3.06 1.53 1.53 0 0 0 0 3.06m1.39 9.74v-8.37H5.07v8.37h2.78z"/></svg>
-              LinkedIn Profile
-            </a>
-            <a href="https://gitlab.com/ansht_121" target="_blank" rel="noopener noreferrer" class="btn btn-gitlab">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m23.6 9.58-1.54-4.75a.8.8 0 0 0-.3-.41.83.83 0 0 0-.52-.16.85.85 0 0 0-.52.17.8.8 0 0 0-.3.4l-2.07 6.39H5.15L3.08 4.83a.8.8 0 0 0-.3-.4.85.85 0 0 0-.52-.17.83.83 0 0 0-.52.16.8.8 0 0 0-.3.41L.4 9.58a1.64 1.64 0 0 0 .6 1.83l10.5 7.63a.87.87 0 0 0 1 0l10.5-7.63a1.64 1.64 0 0 0 .6-1.83"/></svg>
-              GitLab Portfolio
-            </a>
-          </div>
+    <!-- Contact Section (Reference structure) -->
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <h2>Let's work together</h2>
+        <p>I am actively interviewing for Junior Data Scientist, Applied AI Engineer, and Data Analyst roles across India. Send me an email or inspect my codebase on GitLab.</p>
+        <div class="btns">
+          <a class="btn cyan" href="mailto:ansht1194@gmail.com">Email Me</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/ansh-thakur-5407192b4/" target="_blank" rel="noopener">LinkedIn Profile ↗</a>
+          <a class="btn ghost" href="https://gitlab.com/ansht_121" target="_blank" rel="noopener">GitLab Repositories ↗</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-links">
-        <a href="#hero">Back to Top ↑</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="Analyst_Resume.pdf" target="_blank">Resume PDF</a>
-      </div>
-      <p>© 2026 Ansh Thakur. Engineered with statistical rigor and clean code.</p>
-    </div>
+  <footer>
+    Designed & Engineered by Ansh Thakur · 2026
   </footer>
 
-  <script src="script.js?v=40"></script>
+  <script src="script.js?v=50"></script>
 </body>
 </html>
